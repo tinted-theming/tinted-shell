@@ -1,14 +1,11 @@
-| This is a fork of [chriskempson](https://github.com/chriskempson)'s [base16-shell](https://github.com/chriskempson/base16-shell) which refreshes and commits new themes weekly automatically and has a documented build process. |
-| --- |
-
 # Base16 Shell
 
-See the [Base16 repository](https://github.com/chriskempson/base16) for more information.
+See the [Base16 repository](https://github.com/base16-project/base16) for more information.
 These scripts were built with [base16-builder-python](https://github.com/InspectorMustache/base16-builder-python).
 
 A shell script to change your shell's default ANSI colors but most importantly, colors 17 to 21 of your shell's 256 colorspace (if supported by your terminal). This script makes it possible to honor the original bright colors of your shell (e.g. bright green is still green and so on) while providing additional base16 colors to applications such as Vim.
 
-![Base16 Shell](https://raw.github.com/fnune/base16-shell/master/base16-shell.png)
+![Base16 Shell](/screenshots/base16-shell.png)
 
 ## Use Cases
 
@@ -19,7 +16,7 @@ A shell script to change your shell's default ANSI colors but most importantly, 
 ## Installation
 
 ```shell
-git clone https://github.com/fnune/base16-shell.git ~/.config/base16-shell
+git clone https://github.com/base16-project/base16-shell.git ~/.config/base16-shell
 ```
 
 ## Configuration
@@ -56,40 +53,38 @@ Open a new shell and type `base16` followed by a tab to perform tab completion.
 
 the profile_helper will update a ~/.vimrc_background file that will have your current the colorscheme, you just need to source this file in your vimrc: i.e. (remove the base16colorspace line if not needed)
 
-    if filereadable(expand("~/.vimrc_background"))
-      let base16colorspace=256
-      source ~/.vimrc_background
-    endif
+```shell
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+```
 
 ## Troubleshooting
 
 Run the included **colortest** script and check that your colour assignments appear correct. If your teminal does not support the setting of colours in within the 256 colorspace (e.g. Apple Terminal), colours 17 to 21 will appear blue.
 
-![setting 256 colourspace not supported](https://raw.github.com/fnune/base16-shell/master/setting-256-colourspace-not-supported.png)
+![setting 256 colourspace not supported](/screenshots/setting-256-colourspace-not-supported.png)
 
 If **colortest** is run without any arguments e.g. `./colortest` the hex values shown will correspond to the default scheme. If you'd like to see the hex values for a particular scheme pass the file name of the theme as the arguement e.g. `./colortest base16-ocean.sh`.
 
 ### Inverted blacks and whites
 
 This is the expected behaviour when using a light theme:
-https://github.com/chriskempson/base16-shell/issues/150
+https://github.com/base16-project/base16-shell/issues/150
 
 ## Building
 
-Dependencies:
+### Dependencies
 
-- Python, at least version 3.5
-- The `pybase16` command from [base16-builder-python](https://github.com/InspectorMustache/base16-builder-python)
-- The `make` command
+- `Python` >= 3.5
+- `pip`
+- `pybase16` from [base16-builder-python](https://github.com/InspectorMustache/base16-builder-python) (`pip3 install pybase16-builder`)
+- `make` (`apt install build-essential` on Debian based distros, `brew install make` on [Homebrew](https://formulae.brew.sh/))
 
-```
-# Install dependencies (you probably already have pip/pip3 and make)
-apt install build-essential # for make
-pip3 install pybase16-builder
+### Installation
 
-# Build the packages
-make
-```
+Run `make` at base16-shell project root.
 
 ### Keeping your themes up to date
 

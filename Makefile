@@ -1,4 +1,3 @@
-# Ref: https://github.com/fnune/base16-qutebrowser
 .PHONY: all clean update build
 
 BUILD=pybase16
