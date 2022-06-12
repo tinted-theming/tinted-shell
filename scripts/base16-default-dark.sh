@@ -1,6 +1,6 @@
 #!/bin/sh
-# base16-shell (https://github.com/chriskempson/base16-shell)
-# Base16 Shell template by Chris Kempson (http://chriskempson.com)
+# base16-shell (https://github.com/base16-project/base16-shell)
+# Base16 Shell template by base16-project (https://github.com/base16-project)
 # Default Dark scheme by Chris Kempson (http://chriskempson.com)
 
 color00="18/18/18" # Base 00 - Black

@@ -1,6 +1,6 @@
 #!/bin/sh
-# base16-shell (https://github.com/chriskempson/base16-shell)
-# Base16 Shell template by Chris Kempson (http://chriskempson.com)
+# base16-shell (https://github.com/base16-project/base16-shell)
+# Base16 Shell template by base16-project (https://github.com/base16-project)
 # Rebecca scheme by Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
 
 color00="29/2a/44" # Base 00 - Black

@@ -1,6 +1,6 @@
 #!/bin/sh
-# base16-shell (https://github.com/chriskempson/base16-shell)
-# Base16 Shell template by Chris Kempson (http://chriskempson.com)
+# base16-shell (https://github.com/base16-project/base16-shell)
+# Base16 Shell template by base16-project (https://github.com/base16-project)
 # XCode Dusk scheme by Elsa Gonsiorowski (https://github.com/gonsie)
 
 color00="28/2B/35" # Base 00 - Black

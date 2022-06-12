@@ -1,6 +1,6 @@
 #!/bin/sh
-# base16-shell (https://github.com/chriskempson/base16-shell)
-# Base16 Shell template by Chris Kempson (http://chriskempson.com)
+# base16-shell (https://github.com/base16-project/base16-shell)
+# Base16 Shell template by base16-project (https://github.com/base16-project)
 # Edge Light scheme by cjayross (https://github.com/cjayross)
 
 color00="fa/fa/fa" # Base 00 - Black
