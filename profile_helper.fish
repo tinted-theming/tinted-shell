@@ -28,6 +28,9 @@ for SCRIPT in $SCRIPT_DIR/scripts/*.sh
     sh $SCRIPT
     ln -sf $SCRIPT ~/.base16_theme
     set -gx BASE16_THEME (string split -m 1 '-' $THEME)[2]
+    if test -e ~/.tmux/plugins/base16-tmux
+      echo "set -g @colors-base16 '$THEME'" > ~/.tmux.base16.conf
+    end
     echo -e "if !exists('g:colors_name') || g:colors_name != '$THEME'\n  colorscheme $THEME\nendif" >  ~/.vimrc_background
     if test (count $BASE16_SHELL_HOOKS) -eq 1; and test -d "$BASE16_SHELL_HOOKS"
       for hook in $BASE16_SHELL_HOOKS/*

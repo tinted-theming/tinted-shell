@@ -3,7 +3,7 @@
 See the [Base16 repository](https://github.com/base16-project/base16) for more information.
 These scripts were built with [base16-builder-python](https://github.com/InspectorMustache/base16-builder-python).
 
-A shell script to change your shell's default ANSI colors but most importantly, colors 17 to 21 of your shell's 256 colorspace (if supported by your terminal). This script makes it possible to honor the original bright colors of your shell (e.g. bright green is still green and so on) while providing additional base16 colors to applications such as Vim.
+A shell script to change your shell's default ANSI colors but most importantly, colors 17 to 21 of your shell's 256 colorspace (if supported by your terminal). This script makes it possible to honor the original bright colors of your shell (e.g. bright green is still green and so on) while providing additional base16 colors to applications such as Vim and tmux.
 
 ![Base16 Shell](/screenshots/base16-shell.png)
 
@@ -51,7 +51,7 @@ Open a new shell and type `base16` followed by a tab to perform tab completion.
 
 ### Base16-Vim Users
 
-the profile_helper will update a ~/.vimrc_background file that will have your current the colorscheme, you just need to source this file in your vimrc: i.e. (remove the base16colorspace line if not needed)
+This section is for [base16-vim](https://github.com/base16-project/base16-vim) users. base16-shell will update (or create) the  `~/.vimrc_background` file and set the colorscheme. You need to source this file in your `.vimrc`. You can do this by adding the following to your `.vimrc`:
 
 ```shell
 if filereadable(expand("~/.vimrc_background"))
@@ -59,6 +59,17 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 ```
+Remove the base16colorspace line if it is not needed.
+
+### Base16-Tmux Users
+
+This section is for [base16-tmux](https://github.com/mattdavis90/base16-tmux) users. base16-shell will update (or create) the `~/.tmux.base16.conf` file and set the colorscheme. You need to source this file in your `.tmux.conf`. You can do this by adding the following to your `.tmux.conf`:
+
+```
+source-file ~/.tmux.base16.conf
+```
+
+Make sure to reload your `~/.tmux.conf` file after the theme has been updated through `profile_helper`.
 
 ## Troubleshooting
 
