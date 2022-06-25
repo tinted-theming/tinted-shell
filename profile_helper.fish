@@ -24,8 +24,8 @@ end
 # set aliases, like base16_*...
 for SCRIPT in $SCRIPT_DIR/scripts/*.sh
   set THEME (basename $SCRIPT .sh) # eg: base16-ocean
-  set partial_theme_name (string replace -a 'base16-' '' $THEME) # eg: ocean
   function $THEME -V SCRIPT -V THEME
+    set partial_theme_name (string replace -a 'base16-' '' $THEME) # eg: ocean
     sh $SCRIPT
     ln -sf $SCRIPT ~/.base16_theme
     set -gx BASE16_THEME (string split -m 1 '-' $THEME)[2]
