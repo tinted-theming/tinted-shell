@@ -23,13 +23,14 @@ end
 
 # set aliases, like base16_*...
 for SCRIPT in $SCRIPT_DIR/scripts/*.sh
-  set THEME (basename $SCRIPT .sh)
+  set THEME (basename $SCRIPT .sh) # eg: base16-ocean
+  set partial_theme_name (string replace -a 'base16-' '' $THEME) # eg: ocean
   function $THEME -V SCRIPT -V THEME
     sh $SCRIPT
     ln -sf $SCRIPT ~/.base16_theme
     set -gx BASE16_THEME (string split -m 1 '-' $THEME)[2]
     if test -e ~/.tmux/plugins/base16-tmux
-      echo "set -g @colors-base16 '$THEME'" > ~/.tmux.base16.conf
+      echo "set -g @colors-base16 '$partial_theme_name'" > ~/.tmux.base16.conf
     end
     echo -e "if !exists('g:colors_name') || g:colors_name != '$THEME'\n  colorscheme $THEME\nendif" >  ~/.vimrc_background
     if test (count $BASE16_SHELL_HOOKS) -eq 1; and test -d "$BASE16_SHELL_HOOKS"
