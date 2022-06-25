@@ -4,13 +4,13 @@
 # Framer scheme by Framer (Maintained by Jesse Hoyos)
 
 color00="18/18/18" # Base 00 - Black
-color01="FD/88/6B" # Base 08 - Red
-color02="32/CC/DC" # Base 0B - Green
-color03="FE/CB/6E" # Base 0A - Yellow
-color04="20/BC/FC" # Base 0D - Blue
-color05="BA/8C/FC" # Base 0E - Magenta
-color06="AC/DD/FD" # Base 0C - Cyan
-color07="D0/D0/D0" # Base 05 - White
+color01="fd/88/6b" # Base 08 - Red
+color02="32/cc/dc" # Base 0B - Green
+color03="fe/cb/6e" # Base 0A - Yellow
+color04="20/bc/fc" # Base 0D - Blue
+color05="ba/8c/fc" # Base 0E - Magenta
+color06="ac/dd/fd" # Base 0C - Cyan
+color07="d0/d0/d0" # Base 05 - White
 color08="74/74/74" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -18,14 +18,14 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="EE/EE/EE" # Base 07 - Bright White
-color16="FC/47/69" # Base 09
-color17="B1/5F/4A" # Base 0F
+color15="ee/ee/ee" # Base 07 - Bright White
+color16="fc/47/69" # Base 09
+color17="b1/5f/4a" # Base 0F
 color18="15/15/15" # Base 01
 color19="46/46/46" # Base 02
-color20="B9/B9/B9" # Base 04
-color21="E8/E8/E8" # Base 06
-color_foreground="D0/D0/D0" # Base 05
+color20="b9/b9/b9" # Base 04
+color21="e8/e8/e8" # Base 06
+color_foreground="d0/d0/d0" # Base 05
 color_background="18/18/18" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -78,12 +78,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg D0D0D0 # foreground
+  put_template_custom Pg d0d0d0 # foreground
   put_template_custom Ph 181818 # background
-  put_template_custom Pi D0D0D0 # bold color
+  put_template_custom Pi d0d0d0 # bold color
   put_template_custom Pj 464646 # selection color
-  put_template_custom Pk D0D0D0 # selected text color
-  put_template_custom Pl D0D0D0 # cursor
+  put_template_custom Pk d0d0d0 # selected text color
+  put_template_custom Pl d0d0d0 # cursor
   put_template_custom Pm 181818 # cursor text
 else
   put_template_var 10 $color_foreground

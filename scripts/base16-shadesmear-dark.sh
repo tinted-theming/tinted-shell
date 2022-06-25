@@ -4,28 +4,28 @@
 # ShadeSmear Dark scheme by Kyle Giammarco (http://kyle.giammar.co)
 
 color00="23/23/23" # Base 00 - Black
-color01="CC/54/50" # Base 08 - Red
-color02="71/98/3B" # Base 0B - Green
+color01="cc/54/50" # Base 08 - Red
+color02="71/98/3b" # Base 0B - Green
 color03="30/78/78" # Base 0A - Yellow
 color04="37/63/88" # Base 0D - Blue
-color05="D7/AB/54" # Base 0E - Magenta
-color06="C5/7D/42" # Base 0C - Cyan
-color07="DB/DB/DB" # Base 05 - White
-color08="C0/C0/C0" # Base 03 - Bright Black
+color05="d7/ab/54" # Base 0E - Magenta
+color06="c5/7d/42" # Base 0C - Cyan
+color07="db/db/db" # Base 05 - White
+color08="c0/c0/c0" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="1C/1C/1C" # Base 07 - Bright White
-color16="A6/42/70" # Base 09
-color17="6D/6D/6D" # Base 0F
-color18="1C/1C/1C" # Base 01
-color19="4E/4E/4E" # Base 02
-color20="E4/E4/E4" # Base 04
-color21="E4/E4/E4" # Base 06
-color_foreground="DB/DB/DB" # Base 05
+color15="1c/1c/1c" # Base 07 - Bright White
+color16="a6/42/70" # Base 09
+color17="6d/6d/6d" # Base 0F
+color18="1c/1c/1c" # Base 01
+color19="4e/4e/4e" # Base 02
+color20="e4/e4/e4" # Base 04
+color21="e4/e4/e4" # Base 06
+color_foreground="db/db/db" # Base 05
 color_background="23/23/23" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -78,12 +78,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg DBDBDB # foreground
+  put_template_custom Pg dbdbdb # foreground
   put_template_custom Ph 232323 # background
-  put_template_custom Pi DBDBDB # bold color
-  put_template_custom Pj 4E4E4E # selection color
-  put_template_custom Pk DBDBDB # selected text color
-  put_template_custom Pl DBDBDB # cursor
+  put_template_custom Pi dbdbdb # bold color
+  put_template_custom Pj 4e4e4e # selection color
+  put_template_custom Pk dbdbdb # selected text color
+  put_template_custom Pl dbdbdb # cursor
   put_template_custom Pm 232323 # cursor text
 else
   put_template_var 10 $color_foreground

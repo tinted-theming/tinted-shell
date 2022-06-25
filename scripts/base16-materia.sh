@@ -4,13 +4,13 @@
 # Materia scheme by Defman21
 
 color00="26/32/38" # Base 00 - Black
-color01="EC/5F/67" # Base 08 - Red
-color02="8B/D6/49" # Base 0B - Green
-color03="FF/CC/00" # Base 0A - Yellow
-color04="89/DD/FF" # Base 0D - Blue
-color05="82/AA/FF" # Base 0E - Magenta
-color06="80/CB/C4" # Base 0C - Cyan
-color07="CD/D3/DE" # Base 05 - White
+color01="ec/5f/67" # Base 08 - Red
+color02="8b/d6/49" # Base 0B - Green
+color03="ff/cc/00" # Base 0A - Yellow
+color04="89/dd/ff" # Base 0D - Blue
+color05="82/aa/ff" # Base 0E - Magenta
+color06="80/cb/c4" # Base 0C - Cyan
+color07="cd/d3/de" # Base 05 - White
 color08="70/78/80" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -18,14 +18,14 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="FF/FF/FF" # Base 07 - Bright White
-color16="EA/95/60" # Base 09
-color17="EC/5F/67" # Base 0F
-color18="2C/39/3F" # Base 01
-color19="37/47/4F" # Base 02
-color20="C9/CC/D3" # Base 04
-color21="D5/DB/E5" # Base 06
-color_foreground="CD/D3/DE" # Base 05
+color15="ff/ff/ff" # Base 07 - Bright White
+color16="ea/95/60" # Base 09
+color17="ec/5f/67" # Base 0F
+color18="2c/39/3f" # Base 01
+color19="37/47/4f" # Base 02
+color20="c9/cc/d3" # Base 04
+color21="d5/db/e5" # Base 06
+color_foreground="cd/d3/de" # Base 05
 color_background="26/32/38" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -78,12 +78,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg CDD3DE # foreground
+  put_template_custom Pg cdd3de # foreground
   put_template_custom Ph 263238 # background
-  put_template_custom Pi CDD3DE # bold color
-  put_template_custom Pj 37474F # selection color
-  put_template_custom Pk CDD3DE # selected text color
-  put_template_custom Pl CDD3DE # cursor
+  put_template_custom Pi cdd3de # bold color
+  put_template_custom Pj 37474f # selection color
+  put_template_custom Pk cdd3de # selected text color
+  put_template_custom Pl cdd3de # cursor
   put_template_custom Pm 263238 # cursor text
 else
   put_template_var 10 $color_foreground

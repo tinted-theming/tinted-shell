@@ -5,7 +5,7 @@
 
 color00="11/12/1d" # Base 00 - Black
 color01="a4/85/dd" # Base 08 - Red
-color02="d7/A6/5f" # Base 0B - Green
+color02="d7/a6/5f" # Base 0B - Green
 color03="71/99/ee" # Base 0A - Yellow
 color04="95/c5/61" # Base 0D - Blue
 color05="ee/6d/85" # Base 0E - Magenta

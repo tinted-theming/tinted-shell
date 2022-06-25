@@ -3,30 +3,30 @@
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Ayu Dark scheme by Khue Nguyen &lt;Z5483Y@gmail.com&gt;
 
-color00="0F/14/19" # Base 00 - Black
-color01="F0/71/78" # Base 08 - Red
-color02="B8/CC/52" # Base 0B - Green
-color03="FF/B4/54" # Base 0A - Yellow
-color04="59/C2/FF" # Base 0D - Blue
-color05="D2/A6/FF" # Base 0E - Magenta
-color06="95/E6/CB" # Base 0C - Cyan
-color07="E6/E1/CF" # Base 05 - White
-color08="3E/4B/59" # Base 03 - Bright Black
+color00="0f/14/19" # Base 00 - Black
+color01="f0/71/78" # Base 08 - Red
+color02="b8/cc/52" # Base 0B - Green
+color03="ff/b4/54" # Base 0A - Yellow
+color04="59/c2/ff" # Base 0D - Blue
+color05="d2/a6/ff" # Base 0E - Magenta
+color06="95/e6/cb" # Base 0C - Cyan
+color07="e6/e1/cf" # Base 05 - White
+color08="3e/4b/59" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="F3/F4/F5" # Base 07 - Bright White
-color16="FF/8F/40" # Base 09
-color17="E6/B6/73" # Base 0F
+color15="f3/f4/f5" # Base 07 - Bright White
+color16="ff/8f/40" # Base 09
+color17="e6/b6/73" # Base 0F
 color18="13/17/21" # Base 01
-color19="27/2D/38" # Base 02
-color20="BF/BD/B6" # Base 04
-color21="E6/E1/CF" # Base 06
-color_foreground="E6/E1/CF" # Base 05
-color_background="0F/14/19" # Base 00
+color19="27/2d/38" # Base 02
+color20="bf/bd/b6" # Base 04
+color21="e6/e1/cf" # Base 06
+color_foreground="e6/e1/cf" # Base 05
+color_background="0f/14/19" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -78,13 +78,13 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg E6E1CF # foreground
-  put_template_custom Ph 0F1419 # background
-  put_template_custom Pi E6E1CF # bold color
-  put_template_custom Pj 272D38 # selection color
-  put_template_custom Pk E6E1CF # selected text color
-  put_template_custom Pl E6E1CF # cursor
-  put_template_custom Pm 0F1419 # cursor text
+  put_template_custom Pg e6e1cf # foreground
+  put_template_custom Ph 0f1419 # background
+  put_template_custom Pi e6e1cf # bold color
+  put_template_custom Pj 272d38 # selection color
+  put_template_custom Pk e6e1cf # selected text color
+  put_template_custom Pl e6e1cf # cursor
+  put_template_custom Pm 0f1419 # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then

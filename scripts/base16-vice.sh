@@ -3,7 +3,7 @@
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # vice scheme by Thomas Leon Highbaugh thighbaugh@zoho.com
 
-color00="17/19/1E" # Base 00 - Black
+color00="17/19/1e" # Base 00 - Black
 color01="ff/29/a8" # Base 08 - Red
 color02="0b/ad/ff" # Base 0B - Green
 color03="f0/ff/aa" # Base 0A - Yellow
@@ -24,9 +24,9 @@ color17="ff/3d/81" # Base 0F
 color18="22/26/2d" # Base 01
 color19="3c/3f/4c" # Base 02
 color20="55/5e/70" # Base 04
-color21="B2/BF/D9" # Base 06
+color21="b2/bf/d9" # Base 06
 color_foreground="8b/9c/be" # Base 05
-color_background="17/19/1E" # Base 00
+color_background="17/19/1e" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -79,12 +79,12 @@ put_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   put_template_custom Pg 8b9cbe # foreground
-  put_template_custom Ph 17191E # background
+  put_template_custom Ph 17191e # background
   put_template_custom Pi 8b9cbe # bold color
   put_template_custom Pj 3c3f4c # selection color
   put_template_custom Pk 8b9cbe # selected text color
   put_template_custom Pl 8b9cbe # cursor
-  put_template_custom Pm 17191E # cursor text
+  put_template_custom Pm 17191e # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then

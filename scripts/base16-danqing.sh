@@ -4,13 +4,13 @@
 # DanQing scheme by Wenhan Zhu (Cosmos) (zhuwenhan950913@gmail.com)
 
 color00="2d/30/2f" # Base 00 - Black
-color01="F9/90/6F" # Base 08 - Red
-color02="8A/B3/61" # Base 0B - Green
-color03="F0/C2/39" # Base 0A - Yellow
-color04="B0/A4/E3" # Base 0D - Blue
-color05="CC/A4/E3" # Base 0E - Magenta
-color06="30/DF/F3" # Base 0C - Cyan
-color07="e0/f0/eF" # Base 05 - White
+color01="f9/90/6f" # Base 08 - Red
+color02="8a/b3/61" # Base 0B - Green
+color03="f0/c2/39" # Base 0A - Yellow
+color04="b0/a4/e3" # Base 0D - Blue
+color05="cc/a4/e3" # Base 0E - Magenta
+color06="30/df/f3" # Base 0C - Cyan
+color07="e0/f0/ef" # Base 05 - White
 color08="9d/a8/a3" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -19,13 +19,13 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="fc/fe/fd" # Base 07 - Bright White
-color16="B3/8A/61" # Base 09
-color17="CA/69/24" # Base 0F
+color16="b3/8a/61" # Base 09
+color17="ca/69/24" # Base 0F
 color18="43/48/46" # Base 01
 color19="5a/60/5d" # Base 02
 color20="ca/d8/d2" # Base 04
 color21="ec/f6/f2" # Base 06
-color_foreground="e0/f0/eF" # Base 05
+color_foreground="e0/f0/ef" # Base 05
 color_background="2d/30/2f" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -78,12 +78,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg e0f0eF # foreground
+  put_template_custom Pg e0f0ef # foreground
   put_template_custom Ph 2d302f # background
-  put_template_custom Pi e0f0eF # bold color
+  put_template_custom Pi e0f0ef # bold color
   put_template_custom Pj 5a605d # selection color
-  put_template_custom Pk e0f0eF # selected text color
-  put_template_custom Pl e0f0eF # cursor
+  put_template_custom Pk e0f0ef # selected text color
+  put_template_custom Pl e0f0ef # cursor
   put_template_custom Pm 2d302f # cursor text
 else
   put_template_var 10 $color_foreground

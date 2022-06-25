@@ -3,30 +3,30 @@
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Tokyo Night Light scheme by Michaël Ball
 
-color00="D5/D6/DB" # Base 00 - Black
-color01="34/3B/58" # Base 08 - Red
-color02="48/5E/30" # Base 0B - Green
+color00="d5/d6/db" # Base 00 - Black
+color01="34/3b/58" # Base 08 - Red
+color02="48/5e/30" # Base 0B - Green
 color03="16/67/75" # Base 0A - Yellow
-color04="34/54/8A" # Base 0D - Blue
-color05="5A/4A/78" # Base 0E - Magenta
-color06="3E/69/68" # Base 0C - Cyan
-color07="34/3B/59" # Base 05 - White
-color08="96/99/A3" # Base 03 - Bright Black
+color04="34/54/8a" # Base 0D - Blue
+color05="5a/4a/78" # Base 0E - Magenta
+color06="3e/69/68" # Base 0C - Cyan
+color07="34/3b/59" # Base 05 - White
+color08="96/99/a3" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="1A/1B/26" # Base 07 - Bright White
+color15="1a/1b/26" # Base 07 - Bright White
 color16="96/50/27" # Base 09
-color17="8C/43/51" # Base 0F
-color18="CB/CC/D1" # Base 01
-color19="DF/E0/E5" # Base 02
-color20="4C/50/5E" # Base 04
-color21="1A/1B/26" # Base 06
-color_foreground="34/3B/59" # Base 05
-color_background="D5/D6/DB" # Base 00
+color17="8c/43/51" # Base 0F
+color18="cb/cc/d1" # Base 01
+color19="df/e0/e5" # Base 02
+color20="4c/50/5e" # Base 04
+color21="1a/1b/26" # Base 06
+color_foreground="34/3b/59" # Base 05
+color_background="d5/d6/db" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -78,13 +78,13 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg 343B59 # foreground
-  put_template_custom Ph D5D6DB # background
-  put_template_custom Pi 343B59 # bold color
-  put_template_custom Pj DFE0E5 # selection color
-  put_template_custom Pk 343B59 # selected text color
-  put_template_custom Pl 343B59 # cursor
-  put_template_custom Pm D5D6DB # cursor text
+  put_template_custom Pg 343b59 # foreground
+  put_template_custom Ph d5d6db # background
+  put_template_custom Pi 343b59 # bold color
+  put_template_custom Pj dfe0e5 # selection color
+  put_template_custom Pk 343b59 # selected text color
+  put_template_custom Pl 343b59 # cursor
+  put_template_custom Pm d5d6db # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then

@@ -3,14 +3,14 @@
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Blue Forest scheme by alonsodomin (https://github.com/alonsodomin)
 
-color00="14/1F/2E" # Base 00 - Black
+color00="14/1f/2e" # Base 00 - Black
 color01="ff/fa/b1" # Base 08 - Red
 color02="80/ff/80" # Base 0B - Green
-color03="91/CC/FF" # Base 0A - Yellow
+color03="91/cc/ff" # Base 0A - Yellow
 color04="a2/cf/f5" # Base 0D - Blue
-color05="00/99/FF" # Base 0E - Magenta
+color05="00/99/ff" # Base 0E - Magenta
 color06="80/ff/80" # Base 0C - Cyan
-color07="FF/CC/33" # Base 05 - White
+color07="ff/cc/33" # Base 05 - White
 color08="a0/ff/a0" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -19,14 +19,14 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="37/57/80" # Base 07 - Bright White
-color16="FF/80/80" # Base 09
+color16="ff/80/80" # Base 09
 color17="e7/e7/e7" # Base 0F
 color18="1e/5c/1e" # Base 01
 color19="27/3e/5c" # Base 02
 color20="1e/5c/1e" # Base 04
-color21="91/CC/FF" # Base 06
-color_foreground="FF/CC/33" # Base 05
-color_background="14/1F/2E" # Base 00
+color21="91/cc/ff" # Base 06
+color_foreground="ff/cc/33" # Base 05
+color_background="14/1f/2e" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -78,13 +78,13 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg FFCC33 # foreground
-  put_template_custom Ph 141F2E # background
-  put_template_custom Pi FFCC33 # bold color
+  put_template_custom Pg ffcc33 # foreground
+  put_template_custom Ph 141f2e # background
+  put_template_custom Pi ffcc33 # bold color
   put_template_custom Pj 273e5c # selection color
-  put_template_custom Pk FFCC33 # selected text color
-  put_template_custom Pl FFCC33 # cursor
-  put_template_custom Pm 141F2E # cursor text
+  put_template_custom Pk ffcc33 # selected text color
+  put_template_custom Pl ffcc33 # cursor
+  put_template_custom Pm 141f2e # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then

@@ -3,30 +3,30 @@
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Solar Flare Light scheme by Chuck Harmston (https://chuck.harmston.ch)
 
-color00="F5/F7/FA" # Base 00 - Black
-color01="EF/52/53" # Base 08 - Red
-color02="7C/C8/44" # Base 0B - Green
-color03="E4/B5/1C" # Base 0A - Yellow
-color04="33/B5/E1" # Base 0D - Blue
-color05="A3/63/D5" # Base 0E - Magenta
-color06="52/CB/B0" # Base 0C - Cyan
+color00="f5/f7/fa" # Base 00 - Black
+color01="ef/52/53" # Base 08 - Red
+color02="7c/c8/44" # Base 0B - Green
+color03="e4/b5/1c" # Base 0A - Yellow
+color04="33/b5/e1" # Base 0D - Blue
+color05="a3/63/d5" # Base 0E - Magenta
+color06="52/cb/b0" # Base 0C - Cyan
 color07="58/68/75" # Base 05 - White
-color08="85/93/9E" # Base 03 - Bright Black
+color08="85/93/9e" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="18/26/2F" # Base 07 - Bright White
-color16="E6/6B/2B" # Base 09
-color17="D7/3C/9A" # Base 0F
-color18="E8/E9/ED" # Base 01
-color19="A6/AF/B8" # Base 02
+color15="18/26/2f" # Base 07 - Bright White
+color16="e6/6b/2b" # Base 09
+color17="d7/3c/9a" # Base 0F
+color18="e8/e9/ed" # Base 01
+color19="a6/af/b8" # Base 02
 color20="66/75/81" # Base 04
-color21="22/2E/38" # Base 06
+color21="22/2e/38" # Base 06
 color_foreground="58/68/75" # Base 05
-color_background="F5/F7/FA" # Base 00
+color_background="f5/f7/fa" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -79,12 +79,12 @@ put_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   put_template_custom Pg 586875 # foreground
-  put_template_custom Ph F5F7FA # background
+  put_template_custom Ph f5f7fa # background
   put_template_custom Pi 586875 # bold color
-  put_template_custom Pj A6AFB8 # selection color
+  put_template_custom Pj a6afb8 # selection color
   put_template_custom Pk 586875 # selected text color
   put_template_custom Pl 586875 # cursor
-  put_template_custom Pm F5F7FA # cursor text
+  put_template_custom Pm f5f7fa # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then

@@ -4,28 +4,28 @@
 # Material scheme by Nate Peterson
 
 color00="26/32/38" # Base 00 - Black
-color01="F0/71/78" # Base 08 - Red
-color02="C3/E8/8D" # Base 0B - Green
-color03="FF/CB/6B" # Base 0A - Yellow
-color04="82/AA/FF" # Base 0D - Blue
-color05="C7/92/EA" # Base 0E - Magenta
-color06="89/DD/FF" # Base 0C - Cyan
-color07="EE/FF/FF" # Base 05 - White
-color08="54/6E/7A" # Base 03 - Bright Black
+color01="f0/71/78" # Base 08 - Red
+color02="c3/e8/8d" # Base 0B - Green
+color03="ff/cb/6b" # Base 0A - Yellow
+color04="82/aa/ff" # Base 0D - Blue
+color05="c7/92/ea" # Base 0E - Magenta
+color06="89/dd/ff" # Base 0C - Cyan
+color07="ee/ff/ff" # Base 05 - White
+color08="54/6e/7a" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="FF/FF/FF" # Base 07 - Bright White
-color16="F7/8C/6C" # Base 09
-color17="FF/53/70" # Base 0F
-color18="2E/3C/43" # Base 01
+color15="ff/ff/ff" # Base 07 - Bright White
+color16="f7/8c/6c" # Base 09
+color17="ff/53/70" # Base 0F
+color18="2e/3c/43" # Base 01
 color19="31/45/49" # Base 02
-color20="B2/CC/D6" # Base 04
-color21="EE/FF/FF" # Base 06
-color_foreground="EE/FF/FF" # Base 05
+color20="b2/cc/d6" # Base 04
+color21="ee/ff/ff" # Base 06
+color_foreground="ee/ff/ff" # Base 05
 color_background="26/32/38" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -78,12 +78,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg EEFFFF # foreground
+  put_template_custom Pg eeffff # foreground
   put_template_custom Ph 263238 # background
-  put_template_custom Pi EEFFFF # bold color
+  put_template_custom Pi eeffff # bold color
   put_template_custom Pj 314549 # selection color
-  put_template_custom Pk EEFFFF # selected text color
-  put_template_custom Pl EEFFFF # cursor
+  put_template_custom Pk eeffff # selected text color
+  put_template_custom Pl eeffff # cursor
   put_template_custom Pm 263238 # cursor text
 else
   put_template_var 10 $color_foreground

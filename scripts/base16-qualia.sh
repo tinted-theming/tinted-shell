@@ -4,13 +4,13 @@
 # Qualia scheme by isaacwhanson
 
 color00="10/10/10" # Base 00 - Black
-color01="EF/A6/A2" # Base 08 - Red
-color02="80/C9/90" # Base 0B - Green
-color03="E6/A3/DC" # Base 0A - Yellow
-color04="50/CA/CD" # Base 0D - Blue
-color05="E0/AF/85" # Base 0E - Magenta
-color06="C8/C8/74" # Base 0C - Cyan
-color07="C0/C0/C0" # Base 05 - White
+color01="ef/a6/a2" # Base 08 - Red
+color02="80/c9/90" # Base 0B - Green
+color03="e6/a3/dc" # Base 0A - Yellow
+color04="50/ca/cd" # Base 0D - Blue
+color05="e0/af/85" # Base 0E - Magenta
+color06="c8/c8/74" # Base 0C - Cyan
+color07="c0/c0/c0" # Base 05 - White
 color08="45/45/45" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -19,13 +19,13 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="45/45/45" # Base 07 - Bright White
-color16="A3/B8/EF" # Base 09
+color16="a3/b8/ef" # Base 09
 color17="80/80/80" # Base 0F
 color18="45/45/45" # Base 01
 color19="45/45/45" # Base 02
 color20="80/80/80" # Base 04
-color21="C0/C0/C0" # Base 06
-color_foreground="C0/C0/C0" # Base 05
+color21="c0/c0/c0" # Base 06
+color_foreground="c0/c0/c0" # Base 05
 color_background="10/10/10" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -78,12 +78,12 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg C0C0C0 # foreground
+  put_template_custom Pg c0c0c0 # foreground
   put_template_custom Ph 101010 # background
-  put_template_custom Pi C0C0C0 # bold color
+  put_template_custom Pi c0c0c0 # bold color
   put_template_custom Pj 454545 # selection color
-  put_template_custom Pk C0C0C0 # selected text color
-  put_template_custom Pl C0C0C0 # cursor
+  put_template_custom Pk c0c0c0 # selected text color
+  put_template_custom Pl c0c0c0 # cursor
   put_template_custom Pm 101010 # cursor text
 else
   put_template_var 10 $color_foreground
