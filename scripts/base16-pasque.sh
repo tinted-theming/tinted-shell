@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Pasque scheme by Gabriel Fontes (https://github.com/Misterio77)
+export BASE16_THEME=pasque
 
 color00="27/1c/3a" # Base 00 - Black
 color01="a9/22/58" # Base 08 - Red

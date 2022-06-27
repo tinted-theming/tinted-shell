@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Da One Paper scheme by NNB (https://github.com/NNBnh)
+export BASE16_THEME=da-one-paper
 
 color00="fa/f0/dc" # Base 00 - Black
 color01="de/5d/6e" # Base 08 - Red

@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # DanQing scheme by Wenhan Zhu (Cosmos) (zhuwenhan950913@gmail.com)
+export BASE16_THEME=danqing
 
 color00="2d/30/2f" # Base 00 - Black
 color01="f9/90/6f" # Base 08 - Red

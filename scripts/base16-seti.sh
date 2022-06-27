@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Seti UI scheme by 
+export BASE16_THEME=seti
 
 color00="15/17/18" # Base 00 - Black
 color01="cd/3f/45" # Base 08 - Red

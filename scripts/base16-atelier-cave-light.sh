@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Atelier Cave Light scheme by Bram de Haan (http://atelierbramdehaan.nl)
+export BASE16_THEME=atelier-cave-light
 
 color00="ef/ec/f4" # Base 00 - Black
 color01="be/46/78" # Base 08 - Red

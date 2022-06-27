@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # UwUnicorn scheme by Fernando Marques (https://github.com/RakkiUwU) and Gabriel Fontes (https://github.com/Misterio77)
+export BASE16_THEME=uwunicorn
 
 color00="24/1b/26" # Base 00 - Black
 color01="87/7b/b6" # Base 08 - Red

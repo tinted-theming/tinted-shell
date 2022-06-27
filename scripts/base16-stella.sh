@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Stella scheme by Shrimpram
+export BASE16_THEME=stella
 
 color00="2b/21/3c" # Base 00 - Black
 color01="c7/99/87" # Base 08 - Red

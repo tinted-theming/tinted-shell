@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Bright scheme by Chris Kempson (http://chriskempson.com)
+export BASE16_THEME=bright
 
 color00="00/00/00" # Base 00 - Black
 color01="fb/01/20" # Base 08 - Red

@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Equilibrium Light scheme by Carlo Abelli
+export BASE16_THEME=equilibrium-light
 
 color00="f5/f0/e7" # Base 00 - Black
 color01="d0/20/23" # Base 08 - Red

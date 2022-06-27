@@ -27,8 +27,6 @@ git clone https://github.com/base16-project/base16-shell.git \
   ~/.config/base16-shell
 ```
 
-## Configuration
-
 ### Bash/ZSH
 
 Add following lines to `~/.bashrc` or `~/.zshrc`:
@@ -38,7 +36,7 @@ Add following lines to `~/.bashrc` or `~/.zshrc`:
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
   [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-    eval "$("$BASE16_SHELL/profile_helper.sh")"
+    source "$BASE16_SHELL/profile_helper.sh"
 ```
 
 Open a new shell and type `base16` followed by a tab to perform tab
@@ -56,22 +54,22 @@ if status --is-interactive
 end
 ```
 
-Open a new shell and type `base16` followed by a tab to perform tab
-completion.
+## Configuration
 
 ### Base16-Vim Users
 
-This section is for [base16-vim][2] users. base16-shell will update (or
-create) the  `~/.vimrc_background` file and set the colorscheme. You
-need to source this file in your `.vimrc`. You can do this by adding the
+The `BASE16_THEME` environment variable will set to your current
+colorscheme. You can set the [base16-vim][2] colorscheme by adding the
 following to your `.vimrc`:
 
-```shell
-if filereadable(expand("~/.vimrc_background"))
+```vim
+if exists('$BASE16_THEME')
+    \ && (!exists('g:colors_name') || g:colors_name != 'base16-$BASE16_THEME')
   let base16colorspace=256
-  source ~/.vimrc_background
+  colorscheme base16-$BASE16_THEME
 endif
 ```
+
 Remove the base16colorspace line if it is not needed.
 
 ### Base16-Tmux Users
@@ -93,6 +91,20 @@ updated through `profile_helper`.
 To update, just `git pull` wherever you've cloned `base16-shell`. The
 themes are updated on a weekly basis thanks to GitHub Actions. See the
 GitHub Actions workflow in [`.github/workflows/update.yml`][6].
+
+### Default theme
+
+You can set the `$BASE16_THEME_DEFAULT` environment variable to the name
+of a theme and it will use that theme if there is no theme currently
+set. This can be useful for when you're using your dotfiles in a brand
+new environment and you don't want to manually set the theme for the
+first time.
+
+For example: `$BASE16_THEME_DEFAULT="solarized-light"` 
+
+## Usage
+
+Open a new shell and type `base16` followed by a tab to perform tab completion.
 
 ## Troubleshooting
 

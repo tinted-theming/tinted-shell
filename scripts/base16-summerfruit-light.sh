@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Summerfruit Light scheme by Christopher Corley (http://christop.club/)
+export BASE16_THEME=summerfruit-light
 
 color00="ff/ff/ff" # Base 00 - Black
 color01="ff/00/86" # Base 08 - Red

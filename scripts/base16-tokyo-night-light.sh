@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Tokyo Night Light scheme by Michaël Ball
+export BASE16_THEME=tokyo-night-light
 
 color00="d5/d6/db" # Base 00 - Black
 color01="34/3b/58" # Base 08 - Red

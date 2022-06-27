@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Solar Flare scheme by Chuck Harmston (https://chuck.harmston.ch)
+export BASE16_THEME=solarflare
 
 color00="18/26/2f" # Base 00 - Black
 color01="ef/52/53" # Base 08 - Red

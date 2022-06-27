@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # XCode Dusk scheme by Elsa Gonsiorowski (https://github.com/gonsie)
+export BASE16_THEME=xcode-dusk
 
 color00="28/2b/35" # Base 00 - Black
 color01="b2/18/89" # Base 08 - Red

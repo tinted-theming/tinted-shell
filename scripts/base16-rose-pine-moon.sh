@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Rosé Pine Moon scheme by Emilia Dunfelt &lt;sayhi@dunfelt.se&gt;
+export BASE16_THEME=rose-pine-moon
 
 color00="23/21/36" # Base 00 - Black
 color01="ec/eb/f0" # Base 08 - Red

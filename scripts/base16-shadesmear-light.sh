@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # ShadeSmear Light scheme by Kyle Giammarco (http://kyle.giammar.co)
+export BASE16_THEME=shadesmear-light
 
 color00="db/db/db" # Base 00 - Black
 color01="cc/54/50" # Base 08 - Red

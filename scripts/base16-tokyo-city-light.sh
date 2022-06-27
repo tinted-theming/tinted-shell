@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Tokyo City Light scheme by Michaël Ball
+export BASE16_THEME=tokyo-city-light
 
 color00="fb/fb/fd" # Base 00 - Black
 color01="8c/43/51" # Base 08 - Red

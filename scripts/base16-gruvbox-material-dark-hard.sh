@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Gruvbox Material Dark, Medium scheme by Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)
+export BASE16_THEME=gruvbox-material-dark-hard
 
 color00="20/20/20" # Base 00 - Black
 color01="ea/69/62" # Base 08 - Red

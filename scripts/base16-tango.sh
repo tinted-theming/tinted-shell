@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Tango scheme by @Schnouki, based on the Tango Desktop Project
+export BASE16_THEME=tango
 
 color00="2e/34/36" # Base 00 - Black
 color01="cc/00/00" # Base 08 - Red

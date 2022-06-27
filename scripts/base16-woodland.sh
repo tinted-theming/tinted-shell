@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Woodland scheme by Jay Cornwall (https://jcornwall.com)
+export BASE16_THEME=woodland
 
 color00="23/1e/18" # Base 00 - Black
 color01="d3/5c/5c" # Base 08 - Red

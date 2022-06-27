@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Green Screen scheme by Chris Kempson (http://chriskempson.com)
+export BASE16_THEME=greenscreen
 
 color00="00/11/00" # Base 00 - Black
 color01="00/77/00" # Base 08 - Red

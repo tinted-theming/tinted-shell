@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Outrun Dark scheme by Hugo Delahousse (http://github.com/hugodelahousse/)
+export BASE16_THEME=outrun-dark
 
 color00="00/00/2a" # Base 00 - Black
 color01="ff/42/42" # Base 08 - Red

@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Gruvbox light, hard scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+export BASE16_THEME=gruvbox-light-hard
 
 color00="f9/f5/d7" # Base 00 - Black
 color01="9d/00/06" # Base 08 - Red

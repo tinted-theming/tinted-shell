@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Heetch Light scheme by Geoffrey Teale (tealeg@gmail.com)
+export BASE16_THEME=heetch-light
 
 color00="fe/ff/ff" # Base 00 - Black
 color01="27/d9/d5" # Base 08 - Red

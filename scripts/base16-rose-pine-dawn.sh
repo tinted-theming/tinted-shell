@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Rosé Pine Dawn scheme by Emilia Dunfelt &lt;sayhi@dunfelt.se&gt;
+export BASE16_THEME=rose-pine-dawn
 
 color00="fa/f4/ed" # Base 00 - Black
 color01="1f/1d/2e" # Base 08 - Red

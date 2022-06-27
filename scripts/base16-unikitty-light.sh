@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Unikitty Light scheme by Josh W Lewis (@joshwlewis)
+export BASE16_THEME=unikitty-light
 
 color00="ff/ff/ff" # Base 00 - Black
 color01="d8/13/7f" # Base 08 - Red

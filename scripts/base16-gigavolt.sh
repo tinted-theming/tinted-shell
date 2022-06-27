@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Gigavolt scheme by Aidan Swope (http://github.com/Whillikers)
+export BASE16_THEME=gigavolt
 
 color00="20/21/26" # Base 00 - Black
 color01="ff/66/1a" # Base 08 - Red

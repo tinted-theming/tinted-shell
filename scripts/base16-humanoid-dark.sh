@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Humanoid dark scheme by Thomas (tasmo) Friese
+export BASE16_THEME=humanoid-dark
 
 color00="23/26/29" # Base 00 - Black
 color01="f1/12/35" # Base 08 - Red

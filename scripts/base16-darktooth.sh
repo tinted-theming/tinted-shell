@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Darktooth scheme by Jason Milkins (https://github.com/jasonm23)
+export BASE16_THEME=darktooth
 
 color00="1d/20/21" # Base 00 - Black
 color01="fb/54/3f" # Base 08 - Red

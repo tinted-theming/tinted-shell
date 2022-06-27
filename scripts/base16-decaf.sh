@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Decaf scheme by Alex Mirrington (https://github.com/alexmirrington)
+export BASE16_THEME=decaf
 
 color00="2d/2d/2d" # Base 00 - Black
 color01="ff/7f/7b" # Base 08 - Red

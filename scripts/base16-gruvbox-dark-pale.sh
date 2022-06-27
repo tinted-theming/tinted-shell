@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Gruvbox dark, pale scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+export BASE16_THEME=gruvbox-dark-pale
 
 color00="26/26/26" # Base 00 - Black
 color01="d7/5f/5f" # Base 08 - Red

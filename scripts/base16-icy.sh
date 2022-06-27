@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Icy Dark scheme by icyphox (https://icyphox.ga)
+export BASE16_THEME=icy
 
 color00="02/10/12" # Base 00 - Black
 color01="16/c1/d9" # Base 08 - Red

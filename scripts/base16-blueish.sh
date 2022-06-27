@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # better-contrast scheme by Ben Mayoras
+export BASE16_THEME=blueish
 
 color00="18/24/30" # Base 00 - Black
 color01="4c/e5/87" # Base 08 - Red

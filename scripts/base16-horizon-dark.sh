@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Horizon Dark scheme by Michaël Ball (http://github.com/michael-ball/)
+export BASE16_THEME=horizon-dark
 
 color00="1c/1e/26" # Base 00 - Black
 color01="e9/3c/58" # Base 08 - Red

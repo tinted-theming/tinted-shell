@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Rosé Pine scheme by Emilia Dunfelt &lt;sayhi@dunfelt.se&gt;
+export BASE16_THEME=rose-pine
 
 color00="19/17/24" # Base 00 - Black
 color01="e2/e1/e7" # Base 08 - Red

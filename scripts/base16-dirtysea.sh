@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # dirtysea scheme by Kahlil (Kal) Hodgson
+export BASE16_THEME=dirtysea
 
 color00="e0/e0/e0" # Base 00 - Black
 color01="84/00/00" # Base 08 - Red

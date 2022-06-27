@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Atelier Heath scheme by Bram de Haan (http://atelierbramdehaan.nl)
+export BASE16_THEME=atelier-heath
 
 color00="1b/18/1b" # Base 00 - Black
 color01="ca/40/2b" # Base 08 - Red

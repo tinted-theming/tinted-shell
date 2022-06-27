@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # EverForest scheme by sainnhe
+export BASE16_THEME=everforest
 
 color00="2b/33/39" # Base 00 - Black
 color01="e6/7e/80" # Base 08 - Red

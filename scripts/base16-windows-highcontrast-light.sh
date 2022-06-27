@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Windows High Contrast Light scheme by Fergus Collins (https://github.com/C-Fergus)
+export BASE16_THEME=windows-highcontrast-light
 
 color00="fc/fc/fc" # Base 00 - Black
 color01="80/00/00" # Base 08 - Red

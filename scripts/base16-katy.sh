@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Katy scheme by George Essig (https://github.com/gessig)
+export BASE16_THEME=katy
 
 color00="29/2d/3e" # Base 00 - Black
 color01="6e/98/e1" # Base 08 - Red

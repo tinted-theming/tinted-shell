@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # pinky scheme by Benjamin (https://github.com/b3nj5m1n)
+export BASE16_THEME=pinky
 
 color00="17/15/17" # Base 00 - Black
 color01="ff/a6/00" # Base 08 - Red

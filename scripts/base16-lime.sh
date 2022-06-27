@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # lime scheme by limelier
+export BASE16_THEME=lime
 
 color00="1a/1a/2f" # Base 00 - Black
 color01="ff/66/2a" # Base 08 - Red

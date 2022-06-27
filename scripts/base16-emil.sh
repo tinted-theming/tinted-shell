@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # emil scheme by limelier
+export BASE16_THEME=emil
 
 color00="ef/ef/ef" # Base 00 - Black
 color01="f4/39/79" # Base 08 - Red

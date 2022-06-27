@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Spacemacs scheme by Nasser Alshammari (https://github.com/nashamri/spacemacs-theme)
+export BASE16_THEME=spacemacs
 
 color00="1f/20/22" # Base 00 - Black
 color01="f2/24/1f" # Base 08 - Red

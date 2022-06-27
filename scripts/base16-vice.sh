@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # vice scheme by Thomas Leon Highbaugh thighbaugh@zoho.com
+export BASE16_THEME=vice
 
 color00="17/19/1e" # Base 00 - Black
 color01="ff/29/a8" # Base 08 - Red

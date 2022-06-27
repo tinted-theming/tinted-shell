@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Synth Midnight Terminal Light scheme by Michaël Ball (http://github.com/michael-ball/)
+export BASE16_THEME=synth-midnight-light
 
 color00="dd/df/e0" # Base 00 - Black
 color01="b5/3b/50" # Base 08 - Red

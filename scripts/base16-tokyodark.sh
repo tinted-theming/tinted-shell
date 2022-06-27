@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Tokyodark scheme by Tiagovla (https://github.com/tiagovla/)
+export BASE16_THEME=tokyodark
 
 color00="11/12/1d" # Base 00 - Black
 color01="a4/85/dd" # Base 08 - Red

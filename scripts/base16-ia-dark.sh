@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # iA Dark scheme by iA Inc. (modified by aramisgithub)
+export BASE16_THEME=ia-dark
 
 color00="1a/1a/1a" # Base 00 - Black
 color01="d8/85/68" # Base 08 - Red

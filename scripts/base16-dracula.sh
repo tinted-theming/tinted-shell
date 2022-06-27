@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Dracula scheme by Mike Barkmin (http://github.com/mikebarkmin) based on Dracula Theme (http://github.com/dracula)
+export BASE16_THEME=dracula
 
 color00="28/29/36" # Base 00 - Black
 color01="ea/51/b2" # Base 08 - Red

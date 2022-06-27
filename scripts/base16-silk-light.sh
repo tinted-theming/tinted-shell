@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Silk Light scheme by Gabriel Fontes (https://github.com/Misterio77)
+export BASE16_THEME=silk-light
 
 color00="e9/f1/ef" # Base 00 - Black
 color01="cf/43/2e" # Base 08 - Red

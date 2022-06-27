@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Solarized Dark scheme by Ethan Schoonover (modified by aramisgithub)
+export BASE16_THEME=solarized-dark
 
 color00="00/2b/36" # Base 00 - Black
 color01="dc/32/2f" # Base 08 - Red

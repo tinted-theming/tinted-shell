@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Twilight scheme by David Hart (https://github.com/hartbit)
+export BASE16_THEME=twilight
 
 color00="1e/1e/1e" # Base 00 - Black
 color01="cf/6a/4c" # Base 08 - Red

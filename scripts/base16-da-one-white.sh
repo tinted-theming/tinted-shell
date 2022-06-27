@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Da One White scheme by NNB (https://github.com/NNBnh)
+export BASE16_THEME=da-one-white
 
 color00="ff/ff/ff" # Base 00 - Black
 color01="de/5d/6e" # Base 08 - Red

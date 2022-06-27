@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Ashes scheme by Jannik Siebert (https://github.com/janniks)
+export BASE16_THEME=ashes
 
 color00="1c/20/23" # Base 00 - Black
 color01="c7/ae/95" # Base 08 - Red

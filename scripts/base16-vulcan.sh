@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # vulcan scheme by Andrey Varfolomeev
+export BASE16_THEME=vulcan
 
 color00="04/15/23" # Base 00 - Black
 color01="81/85/91" # Base 08 - Red

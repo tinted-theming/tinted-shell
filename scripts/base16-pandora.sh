@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # pandora scheme by Cassandra Fox
+export BASE16_THEME=pandora
 
 color00="13/12/13" # Base 00 - Black
 color01="b0/0b/69" # Base 08 - Red

@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Spaceduck scheme by Guillermo Rodriguez (https://github.com/pineapplegiant), packaged by Gabriel Fontes (https://github.com/Misterio77)
+export BASE16_THEME=spaceduck
 
 color00="16/17/2d" # Base 00 - Black
 color01="e3/34/00" # Base 08 - Red

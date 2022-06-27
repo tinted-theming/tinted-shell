@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Ayu Mirage scheme by Khue Nguyen &lt;Z5483Y@gmail.com&gt;
+export BASE16_THEME=ayu-mirage
 
 color00="17/1b/24" # Base 00 - Black
 color01="f2/87/79" # Base 08 - Red

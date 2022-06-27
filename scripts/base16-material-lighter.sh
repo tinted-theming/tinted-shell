@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Material Lighter scheme by Nate Peterson
+export BASE16_THEME=material-lighter
 
 color00="fa/fa/fa" # Base 00 - Black
 color01="ff/53/70" # Base 08 - Red

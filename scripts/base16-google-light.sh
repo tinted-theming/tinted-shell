@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Google Light scheme by Seth Wright (http://sethawright.com)
+export BASE16_THEME=google-light
 
 color00="ff/ff/ff" # Base 00 - Black
 color01="cc/34/2b" # Base 08 - Red

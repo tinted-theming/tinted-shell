@@ -2,6 +2,7 @@
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
 # Bespin scheme by Jan T. Sott
+export BASE16_THEME=bespin
 
 color00="28/21/1c" # Base 00 - Black
 color01="cf/6a/4c" # Base 08 - Red
