@@ -1,8 +1,9 @@
 #!/usr/bin/env fish
 
-# [what] provides aliases for base16 themes and sets ~/.base16_theme
+# [what] provides aliases for base16 themes and sets
+# $HOME/.config/base16-project/base16_shell_theme
 #
-# [usage] can be added to ~/.config/fish/config.fish like so:
+# [usage] can be added to $HOME/.config/fish/config.fish like so:
 #
 # if status --is-interactive
 #    source $HOME/.config/base16-shell/profile_helper.fish
@@ -10,32 +11,38 @@
 #
 # TODO: maybe port to $HOME/.config/fish/functions ?
 
+set BASE16_CONFIG_PATH "$HOME/.config/base16-project"
+set BASE16_SHELL_COLORSCHEME_PATH "$BASE16_CONFIG_PATH/base16_shell_theme"
+set BASE16_SHELL_TMUXCONF_PATH "$BASE16_CONFIG_PATH/tmux.base16.conf"
+set BASE16_TMUX_PLUGIN_PATH "$HOME/.tmux/plugins/base16-tmux"
 
-if test -z $BASE16_SHELL
-  set -g BASE16_SHELL (cd (dirname (status -f)); and pwd)
+
+if test -z $BASE16_SHELL_PATH
+  set -g BASE16_SHELL_PATH (cd (dirname (status -f)); and pwd)
 end
 
-# load currently active theme...
-if test -e ~/.base16_theme
-  eval sh ~/.base16_theme
+# Load the active theme
+if test -e $BASE16_SHELL_COLORSCHEME_PATH
+  sh $BASE16_SHELL_COLORSCHEME_PATH
 end
 
-if test -n "$BASE16_DEFAULT_THEME"; and not test -e ~/.base16_theme
-  ln -s "$BASE16_SHELL/scripts/base16-$BASE16_DEFAULT_THEME.sh" \
-    ~/.base16_theme
+if test -n "$BASE16_THEME_DEFAULT"; and not test -e $BASE16_SHELL_COLORSCHEME_PATH
+  ln -s "$BASE16_SHELL_PATH/scripts/base16-$BASE16_THEME_DEFAULT.sh" \
+    $BASE16_SHELL_COLORSCHEME_PATH
 end
 
-# set aliases, like base16_*...
-for SCRIPT in $BASE16_SHELL/scripts/*.sh
-  set THEME (basename $SCRIPT .sh) # eg: base16-ocean
+# Set base16-* aliases
+for SCRIPT in $BASE16_SHELL_PATH/scripts/*.sh
+  set THEME (basename $SCRIPT .sh)
   function $THEME -V SCRIPT -V THEME
     set partial_theme_name (string replace -a 'base16-' '' $THEME) # eg: ocean
     sh $SCRIPT
-    ln -sf $SCRIPT ~/.base16_theme
-    set -gx BASE16_THEME (string split -m 1 '-' $THEME)[2]
-    if test -e ~/.tmux/plugins/base16-tmux
-      echo "set -g @colors-base16 '$partial_theme_name'" > ~/.tmux.base16.conf
+    ln -sf $SCRIPT $BASE16_SHELL_COLORSCHEME_PATH
+    # If base16-tmux is used, provide a file to source when the theme changes
+    if test -e "$BASE16_TMUX_PLUGIN_PATH"
+      echo "set -g @colors-base16 '$partial_theme_name'" > "$BASE16_SHELL_TMUXCONF_PATH"
     end
+
     if test (count $BASE16_SHELL_HOOKS) -eq 1; and test -d "$BASE16_SHELL_HOOKS"
       for hook in $BASE16_SHELL_HOOKS/*
         test -f "$hook"; and test -x "$hook"; and "$hook"
@@ -44,4 +51,6 @@ for SCRIPT in $BASE16_SHELL/scripts/*.sh
   end
 end
 
-alias reset "command reset && [ -f ~/.base16_theme ] && sh ~/.base16_theme"
+alias reset "command reset \
+  && [ -f $BASE16_SHELL_COLORSCHEME_PATH ] \
+  && sh $BASE16_SHELL_COLORSCHEME_PATH"
