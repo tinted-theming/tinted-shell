@@ -39,8 +39,17 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
     source "$BASE16_SHELL/profile_helper.sh"
 ```
 
-Open a new shell and type `base16` followed by a tab to perform tab
-completion.
+### Oh my zsh
+
+```bash
+mkdir $HOME/.oh-my-zsh/plugins/base16-shell
+ln -s $HOME/.config/base16-shell/base16-shell.plugin.zsh \
+  $HOME/.oh-my-zsh/plugins/base16-shell/base16-shell.plugin.zsh
+```
+
+To use it, add `base16-shell` to the plugins array in your `.zshrc` file:
+
+`plugins=(... base16-shell)`
 
 ### Fish
 
