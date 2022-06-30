@@ -16,6 +16,9 @@ set BASE16_SHELL_COLORSCHEME_PATH "$BASE16_CONFIG_PATH/base16_shell_theme"
 set BASE16_SHELL_TMUXCONF_PATH "$BASE16_CONFIG_PATH/tmux.base16.conf"
 set BASE16_TMUX_PLUGIN_PATH "$HOME/.tmux/plugins/base16-tmux"
 
+if not test -d "$BASE16_CONFIG_PATH"
+  mkdir -p "$BASE16_CONFIG_PATH"
+end
 
 if test -z $BASE16_SHELL_PATH
   set -g BASE16_SHELL_PATH (cd (dirname (status -f)); and pwd)
