@@ -28,7 +28,7 @@ _base16()
 
   # If base16-tmux is used, provide a file to source when the theme
   # changes
-  if [ -e "$BASE16_TMUX_PLUGIN_PATH" ]; then 
+  if [ -e "$BASE16_TMUX_PLUGIN_PATH" ]; then
     echo -e "set -g \0100colors-base16 '$theme'" >| \
       "$BASE16_SHELL_TMUXCONF_PATH"
   fi
@@ -58,7 +58,7 @@ for script in "$BASE16_SHELL_PATH"/scripts/base16*.sh; do
   script_name=${script_name%.sh}
   theme=${script_name#*-}
   func_name="base16_${theme}"
-  alias $func_name="_base16 \"${script}\" ${theme}"
+  alias $func_name="_base16 \"${script}\" ${theme} && echo \"${theme}\" > \"$HOME/.config/base16-theme\""
 done;
 
 alias reset="command reset \

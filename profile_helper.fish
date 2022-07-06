@@ -46,6 +46,8 @@ for SCRIPT in $BASE16_SHELL_PATH/scripts/*.sh
       echo "set -g @colors-base16 '$partial_theme_name'" > "$BASE16_SHELL_TMUXCONF_PATH"
     end
 
+    echo "$partial_theme_name" > "$HOME/.config/base16-theme"
+
     if test (count $BASE16_SHELL_HOOKS) -eq 1; and test -d "$BASE16_SHELL_HOOKS"
       for hook in $BASE16_SHELL_HOOKS/*
         test -f "$hook"; and test -x "$hook"; and "$hook"
