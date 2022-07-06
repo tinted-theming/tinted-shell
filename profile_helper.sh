@@ -6,8 +6,6 @@
 
 BASE16_CONFIG_PATH="$HOME/.config/base16-project"
 BASE16_SHELL_COLORSCHEME_PATH="$BASE16_CONFIG_PATH/base16_shell_theme"
-BASE16_SHELL_TMUXCONF_PATH="$BASE16_CONFIG_PATH/tmux.base16.conf"
-BASE16_TMUX_PLUGIN_PATH="$HOME/.tmux/plugins/base16-tmux"
 
 # Allow users to optionally configure their base16-shell path and set
 # the value if one doesn't exist
@@ -21,10 +19,10 @@ if [ -z "$BASE16_SHELL_PATH" ]; then
   BASE16_SHELL_PATH=${script_path%/*}
 fi
 
-# Allow users to optionally configure their tmux plugin path and set
-# the value if one doesn't exist
-if [ -z "$BASE16_TMUX_PLUGIN_PATH" ]; then
-  BASE16_TMUX_PLUGIN_PATH="$HOME/.tmux/plugins/base16-tmux"
+# If the user hasn't specified a hooks dir path or it is invalid, use
+# the existing path
+if [ -z "$BASE16_SHELL_HOOKS_PATH" ] && [ ! -d "$BASE16_SHELL_HOOKS_PATH" ]; then
+  BASE16_SHELL_HOOKS_PATH="$BASE16_SHELL_PATH/hooks"
 fi
 
 # Create the config path if the path doesn't currently exist
@@ -65,16 +63,9 @@ set_theme()
   [ -f "$BASE16_SHELL_COLORSCHEME_PATH" ] \
     && . "$BASE16_SHELL_COLORSCHEME_PATH"
 
-  # If base16-tmux is used, provide a file for base16-tmux to source
-  if [ -e "$BASE16_TMUX_PLUGIN_PATH" ]; then 
-    echo -e "set -g \0100colors-base16 '$theme_name'" >| \
-      "$BASE16_SHELL_TMUXCONF_PATH"
-  fi
-
-  if [ -n ${BASE16_SHELL_HOOKS:+s} ] \
-    && [ -d "${BASE16_SHELL_HOOKS}" ]; then
-    for hook in $BASE16_SHELL_HOOKS/*; do
-      [ -f "$hook" ] && [ -x "$hook" ] && "$hook"
+  if [ -d "${BASE16_SHELL_HOOKS_PATH}" ]; then
+    for hook in $BASE16_SHELL_HOOKS_PATH/*.sh; do
+      [ -x "$hook" ] && . "$hook"
     done
   fi
 }
