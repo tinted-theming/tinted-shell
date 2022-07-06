@@ -114,6 +114,15 @@ do this by adding the following to your `.tmux.conf`:
 source-file $HOME/.config/base16-project/tmux.base16.conf
 ```
 
+### Base16-FZF Users
+
+This section is for [base16-fzf][11] users. If you have cloned
+[base16-fzf][11] to `$HOME/.config/base16-fzf` the base16-shell hook
+will work automatically. If you want to clone [base16-fzf][11] to a
+different path, make sure to have the `$BASE16_FZF_PATH` environment
+variable set in your `.*rc` file before the base16-shell script is
+sourced.
+
 ### Keeping your themes up to date
 
 To update, just `git pull` wherever you've cloned `base16-shell`. The
@@ -193,3 +202,4 @@ instructions.
 [8]: screenshots/base16-shell.png
 [9]: screenshots/setting-256-colourspace-not-supported.png
 [10]: https://github.com/tmux-plugins/tpm
+[11]: https://github.com/base16-project/base16-fzf

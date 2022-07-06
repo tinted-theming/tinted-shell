@@ -33,14 +33,18 @@ function set_theme
   set theme_name $argv[1]
 
   if not test -e $BASE16_CONFIG_PATH
-    echo "\$BASE16_CONFIG_PATH doesn't exist. Try sourcing this script \
-      and then try again"
+    set output string join ' ' \
+      "\$BASE16_CONFIG_PATH doesn't exist. Try sourcing this script" \
+      "and then try again"
+    echo $output
     return 2
   end
 
   if test -z $theme_name
-    echo "Provide a theme name to set_theme or ensure \
-      \$BASE16_THEME_DEFAULT is set"
+    set output string join ' ' \
+      "Provide a theme name to set_theme or ensure" \
+      "\$BASE16_THEME_DEFAULT is set"
+    echo $output
     return 1
   end
 
@@ -49,8 +53,10 @@ function set_theme
     "$BASE16_SHELL_PATH/scripts/base16-$theme_name.sh" \
     "$BASE16_SHELL_COLORSCHEME_PATH"
   if not test -e "$BASE16_SHELL_COLORSCHEME_PATH"
-    echo "Attempted symbolic link failed. Ensure \$BASE16_SHELL_PATH \
-    and \$BASE16_SHELL_COLORSCHEME_PATH are valid paths."
+    set output string join ' ' \
+      "Attempted symbolic link failed. Ensure \$BASE16_SHELL_PATH" \
+      "and \$BASE16_SHELL_COLORSCHEME_PATH are valid paths."
+    echo $output
     return 2
   end
 

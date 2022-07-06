@@ -40,22 +40,25 @@ set_theme()
   local script_path="$BASE16_SHELL_PATH/scripts/base16-$theme_name.sh"
 
   if [ ! -e $BASE16_CONFIG_PATH ]; then
-    echo "\$BASE16_CONFIG_PATH doesn't exist. Try sourcing this script \
-      and then try again"
+    output="\$BASE16_CONFIG_PATH doesn't exist. Try sourcing this "
+    output+="script and then try again"
+    echo $output
     return 2
   fi
 
   if [ -z $theme_name ]; then
-    echo "Provide a theme name to set_theme or ensure \
-      \$BASE16_THEME_DEFAULT is set"
+    output="Provide a theme name to set_theme or ensure "
+    output+="\$BASE16_THEME_DEFAULT is set"
+    echo $output
     return 1
   fi
 
   # Symlink new colorscheme
   ln -fs "$script_path" "$BASE16_SHELL_COLORSCHEME_PATH"
   if [ ! -e "$BASE16_SHELL_COLORSCHEME_PATH" ]; then
-    echo "Attempted symbolic link failed. Ensure \$BASE16_SHELL_PATH \
-      and \$BASE16_SHELL_COLORSCHEME_PATH are valid paths."
+    output="Attempted symbolic link failed. Ensure \$BASE16_SHELL_PATH "
+    output+="and \$BASE16_SHELL_COLORSCHEME_PATH are valid paths."
+    echo $output
     return 2
   fi
 
