@@ -104,17 +104,15 @@ end
 
 ### Base16-Tmux Users
 
-This section is for [base16-tmux][3] users. base16-shell will update (or
-create) the `$HOME/.config/base16-project/tmux.base16.conf` file and
-set the colorscheme. You need to source this file in your `.tmux.conf`.
-You can do this by adding the following to your `.tmux.conf`:
+This section is for [base16-tmux][3] users who have installed
+[base16-tmux][3] through [TPM][10]. base16-shell will update (or create)
+the `$HOME/.config/base16-project/tmux.base16.conf` file and set the
+colorscheme. You need to source this file in your `.tmux.conf`. You can
+do this by adding the following to your `.tmux.conf`:
 
 ```
 source-file $HOME/.config/base16-project/tmux.base16.conf
 ```
-
-Make sure to reload your `.tmux.conf` file after the theme has been
-updated through `profile_helper`.
 
 ### Keeping your themes up to date
 
@@ -134,8 +132,32 @@ For example: `$BASE16_THEME_DEFAULT="solarized-light"`
 
 ## Usage
 
-Open a new shell and type `base16` followed by a tab to perform tab
-completion.
+### Bash/ZSH
+
+Theme aliases are prefixed with `base16_`. Type that in the command line
+and press tab to perform tab-completion.
+
+All relevant scripts have the extension `.sh`
+
+### Fish
+
+Theme aliases are prefixed with `base16-`. Type that in the command line
+and press tab to perform tab-completion.
+
+All relevant scripts have the extension `.fish`
+
+### Base16-shell hooks
+
+You can create your own base16-shell hooks. These scripts will execute
+every time you use base16-shell to change your theme. When a theme is
+changed via the command line alias prefixes, all executable scripts will
+then be sourced. 
+
+The hooks are used to switch the [base16-tmux][3] theme. If you want to
+use your own `$BASE16_SHELL_HOOKS_PATH` directory, make sure to copy the
+`$BASE16_SHELL_PATH/hooks` files across and set the
+`$BASE16_SHELL_HOOKS_PATH` variable before sourcing base16-shell
+profile_helper.
 
 ## Troubleshooting
 
@@ -170,3 +192,4 @@ instructions.
 [7]: CONTRIBUTING.md
 [8]: screenshots/base16-shell.png
 [9]: screenshots/setting-256-colourspace-not-supported.png
+[10]: https://github.com/tmux-plugins/tpm
