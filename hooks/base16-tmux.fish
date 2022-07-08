@@ -30,6 +30,8 @@ if test -d "$BASE16_TMUX_PLUGIN_PATH"
   echo "set -g @colors-base16 '$BASE16_THEME'" > \
     "$BASE16_SHELL_TMUXCONF_PATH"
 
-  # Source tmux config
-  tmux source-file $(tmux display-message -p "#{config_files}")
+  # Source tmux config if tmux is running
+  if test -n "$TMUX"
+    tmux source-file $(tmux display-message -p "#{config_files}")
+  end
 end
