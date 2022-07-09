@@ -8,11 +8,11 @@
 # value if one doesn't exist. This runs each time a script is switched
 # so it's important to check for previously set values.
 
-if [ -z "$BASE16_SHELL_TMUXCONF_PATH" ]; then
+if [ -n "$BASE16_SHELL_TMUXCONF_PATH" ]; then
   BASE16_SHELL_TMUXCONF_PATH="$BASE16_CONFIG_PATH/tmux.base16.conf"
 fi
 
-if [ -z "$BASE16_TMUX_PLUGIN_PATH" ]; then
+if [ -n "$BASE16_TMUX_PLUGIN_PATH" ]; then
   BASE16_TMUX_PLUGIN_PATH="$HOME/.tmux/plugins/base16-tmux"
 fi
 
