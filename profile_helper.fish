@@ -87,6 +87,12 @@ for script_path in $BASE16_SHELL_PATH/scripts/*.sh
   alias $function_name="set_theme \"$theme_name\""
 end
 
+# If $BASE16_THEME is set, this has already been loaded. This guards
+# against a bug where this script is sourced two or more times.
+if test -n "$BASE16_THEME"
+  return 1
+end
+
 # Load the active theme
 if test -e "$BASE16_SHELL_COLORSCHEME_PATH"
   # Get the active theme name from the export variable in the script
