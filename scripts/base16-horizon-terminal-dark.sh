@@ -1,7 +1,7 @@
 #!/bin/sh
 # base16-shell (https://github.com/base16-project/base16-shell)
 # Base16 Shell template by base16-project (https://github.com/base16-project)
-# Horizon Dark scheme by Michaël Ball (http://github.com/michael-ball/)
+# Horizon Terminal Dark scheme by Michaël Ball (http://github.com/michael-ball/)
 export BASE16_THEME=horizon-terminal-dark
 
 color00="1c/1e/26" # Base 00 - Black
