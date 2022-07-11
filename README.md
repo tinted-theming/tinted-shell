@@ -204,7 +204,7 @@ https://github.com/base16-project/base16-shell/issues/150
 See [`CONTRIBUTING.md`][7], which contains building and contributing
 instructions.
 
-[1]: https://github.com/base16-project/base16
+[1]: https://github.com/base16-project/home
 [2]: https://github.com/base16-project/base16-vim
 [3]: https://github.com/mattdavis90/base16-tmux
 [4]: https://github.com/base16-project/base16-builder-go
