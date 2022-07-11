@@ -102,17 +102,51 @@ if base16_project_theme and g.colors_name ~= 'base16-'..base16_project_theme the
 end
 ```
 
-### Base16-Tmux Users
+### Hooks
 
-This section is for [base16-tmux][3] users who have installed
-[base16-tmux][3] through [TPM][10]. base16-shell will update (or create)
-the `$HOME/.config/base16-project/tmux.base16.conf` file and set the
+You can create your own base16-shell hooks. These scripts will execute
+every time you use base16-shell to change your theme. When a theme is
+changed via the command line alias prefixes, all executable scripts will
+then be sourced. 
+
+The hooks are used to switch the [base16-tmux][3] theme. If you want to
+use your own `$BASE16_SHELL_HOOKS_PATH` directory, make sure to copy the
+`$BASE16_SHELL_PATH/hooks` files across and set the
+`$BASE16_SHELL_HOOKS_PATH` variable before sourcing base16-shell
+profile_helper.
+
+#### Tmux
+
+You can use this hook if you have installed [base16-tmux][3] through
+[TPM][10]. base16-shell will update (or create) the
+`$HOME/.config/base16-project/tmux.base16.conf` file and set the
 colorscheme. You need to source this file in your `.tmux.conf`. You can
 do this by adding the following to your `.tmux.conf`:
 
 ```
 source-file $HOME/.config/base16-project/tmux.base16.conf
 ```
+
+#### FZF
+
+Clone [base16-fzf][11] to `$HOME/.config/base16-fzf`. Once that is done
+the hook will automatically pick that up and things will work as
+expected.
+
+If you'd like to install to a different path, you can do that and set
+`$BASE16_FZF_PATH` to your custom path.
+
+#### HexChat (XChat)
+
+1. Clone [base16-hexchat][12] to `$HOME/base16-hexchat`. Or optionally
+   install to a custom path and set `$BASE16_HEXCHAT_PATH` to that path.
+2. Set the `$HEXCHAT_COLORS_CONF_PATH` shell variable to your hexchat
+   `colors.conf` file. If you don't know where that is, read the
+   [base16-hexchat][12] repo for more information. the hook will
+   automatically pick that up and things will work as expected.
+
+Note: Restart HexChat after you've changed the theme with base16-shell
+to apply changes.
 
 ### Keeping your themes up to date
 
@@ -145,19 +179,6 @@ Theme aliases are prefixed with `base16-`. Type that in the command line
 and press tab to perform tab-completion.
 
 All relevant scripts have the extension `.fish`
-
-### Base16-shell hooks
-
-You can create your own base16-shell hooks. These scripts will execute
-every time you use base16-shell to change your theme. When a theme is
-changed via the command line alias prefixes, all executable scripts will
-then be sourced. 
-
-The hooks are used to switch the [base16-tmux][3] theme. If you want to
-use your own `$BASE16_SHELL_HOOKS_PATH` directory, make sure to copy the
-`$BASE16_SHELL_PATH/hooks` files across and set the
-`$BASE16_SHELL_HOOKS_PATH` variable before sourcing base16-shell
-profile_helper.
 
 ## Troubleshooting
 
@@ -193,3 +214,5 @@ instructions.
 [8]: screenshots/base16-shell.png
 [9]: screenshots/setting-256-colourspace-not-supported.png
 [10]: https://github.com/tmux-plugins/tpm
+[11]: https://github.com/base16-project/base16-fzf
+[12]: https://github.com/base16-project/base16-hexchat
