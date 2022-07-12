@@ -65,7 +65,7 @@ set_theme()
 
   if [ -d "${BASE16_SHELL_HOOKS_PATH}" ]; then
     for hook in $BASE16_SHELL_HOOKS_PATH/*.sh; do
-      [ -x "$hook" ] && "$hook"
+      [ -x "$hook" ] && . "$hook"
     done
   fi
 }
@@ -91,17 +91,19 @@ done;
 
 # If $BASE16_THEME is set, this has already been loaded. This guards
 # against a bug where this script is sourced two or more times.
-if [ -z "$BASE16_THEME" ]; then
-  # Load the active theme
-  if [ -e "$BASE16_SHELL_COLORSCHEME_PATH" ]; then
-    # Get the active theme name from the export variable in the script
-    current_theme_name=$(grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
-    current_theme_name=${current_theme_name#*=}
-    set_theme "$current_theme_name"
-  # If a colorscheme file doesn't exist and BASE16_THEME_DEFAULT is set,
-  # then create the colorscheme file based on the BASE16_THEME_DEFAULT
-  # scheme name
-  elif [ -n "$BASE16_THEME_DEFAULT" ]; then
-    set_theme "$BASE16_THEME_DEFAULT"
-  fi
+if [ -n "$BASE16_THEME" ]; then
+  return 1
+fi
+
+# Load the active theme
+if [ -e "$BASE16_SHELL_COLORSCHEME_PATH" ]; then
+  # Get the active theme name from the export variable in the script
+  current_theme_name=$(grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
+  current_theme_name=${current_theme_name#*=}
+  set_theme "$current_theme_name"
+# If a colorscheme file doesn't exist and BASE16_THEME_DEFAULT is set,
+# then create the colorscheme file based on the BASE16_THEME_DEFAULT
+# scheme name
+elif [ -n "$BASE16_THEME_DEFAULT" ]; then
+  set_theme "$BASE16_THEME_DEFAULT"
 fi

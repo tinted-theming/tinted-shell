@@ -14,12 +14,12 @@ fi
 
 # If BASE16_HEXCHAT_PATH doesn't exist, stop hook
 if [ ! -d "$BASE16_HEXCHAT_PATH" ]; then
-  exit 2
+  return 2
 fi
 
 # If HEXCHAT_COLORS_CONF_PATH hasn't been configured, stop hook
 if [ -z "$HEXCHAT_COLORS_CONF_PATH" ]; then
-  exit 1
+  return 1
 fi
 
 # If HEXCHAT_COLORS_CONF_PATH has been configured, but the file doesn't
@@ -27,7 +27,7 @@ fi
 if [ -n "$HEXCHAT_COLORS_CONF_PATH" ] \
   && [ ! -f "$HEXCHAT_COLORS_CONF_PATH" ]; then
   echo "\$HEXCHAT_COLORS_CONF_PATH is not a file."
-  exit 2
+  return 2
 fi
 
 hexchat_theme_path="$BASE16_HEXCHAT_PATH/colors/base16-$BASE16_THEME.conf"
@@ -39,7 +39,7 @@ if [ ! -f "$hexchat_theme_path" ]; \
   output+="the directory and try doing a \`git pull\`."
 
   echo $output
-  exit 2
+  return 2
 fi
 
 # ----------------------------------------------------------------------
