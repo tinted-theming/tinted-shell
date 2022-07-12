@@ -98,7 +98,7 @@ fi
 # Load the active theme
 if [ -e "$BASE16_SHELL_COLORSCHEME_PATH" ]; then
   # Get the active theme name from the export variable in the script
-  current_theme_name=$(grep -P 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
+  current_theme_name=$(grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
   current_theme_name=${current_theme_name#*=}
   set_theme "$current_theme_name"
 # If a colorscheme file doesn't exist and BASE16_THEME_DEFAULT is set,

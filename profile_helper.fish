@@ -97,7 +97,7 @@ end
 if test -e "$BASE16_SHELL_COLORSCHEME_PATH"
   # Get the active theme name from the export variable in the script
   set current_theme_name \
-    $(grep -P 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
+    $(grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
   set current_theme_name \
     $(string replace -r 'export BASE16_THEME=' '' $current_theme_name)
   set_theme "$current_theme_name"
