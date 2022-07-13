@@ -92,7 +92,7 @@ done;
 # If $BASE16_THEME is set, this has already been loaded. This guards
 # against a bug where this script is sourced two or more times.
 if [ -n "$BASE16_THEME" ]; then
-  return 1
+  return 0
 fi
 
 # Load the active theme
