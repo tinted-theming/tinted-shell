@@ -8,6 +8,10 @@
 # stored by specifying BASE16_CONFIG_PATH before loading this script
 BASE16_CONFIG_PATH="${BASE16_CONFIG_PATH:=$HOME/.config/base16-project}"
 BASE16_SHELL_COLORSCHEME_PATH="$BASE16_CONFIG_PATH/base16_shell_theme"
+# Store the theme name in a file so we aren't reliant on environment
+# variables to store this value alone since it can be inaccurate when
+# using session managers such as TMUX
+BASE16_SHELL_THEME_NAME_PATH="$BASE16_CONFIG_PATH/theme_name" 
 
 # Allow users to optionally configure their base16-shell path and set
 # the value if one doesn't exist
@@ -29,7 +33,12 @@ fi
 
 # Create the config path if the path doesn't currently exist
 if [ ! -d "$BASE16_CONFIG_PATH" ]; then
-  mkdir -p "$BASE16_CONFIG_PATH"
+  mkdir -p "$BASE16_CONFIG_PATH";
+fi
+
+# Create a file containing the current theme name
+if [ ! -e "$BASE16_SHELL_THEME_NAME_PATH" ]; then
+  touch "$BASE16_SHELL_THEME_NAME_PATH";
 fi
 
 # ----------------------------------------------------------------------
@@ -51,6 +60,10 @@ set_theme()
     echo "Provide a theme name to set_theme or ensure \
       \$BASE16_THEME_DEFAULT is set"
     return 1
+  fi
+
+  if [ -f "$BASE16_SHELL_THEME_NAME_PATH" ]; then
+    echo "$theme_name" >| "$BASE16_SHELL_THEME_NAME_PATH";
   fi
 
   # Symlink new colorscheme
@@ -98,7 +111,12 @@ if [ -n "$BASE16_THEME" ]; then
 fi
 
 # Load the active theme
-if [ -e "$BASE16_SHELL_COLORSCHEME_PATH" ]; then
+# If the theme name can be easily retrieved
+read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+if [ -n "$current_theme_name" ]; then
+  set_theme "$current_theme_name"
+# Else extract from the colorscheme file
+elif [ -e "$BASE16_SHELL_COLORSCHEME_PATH" ]; then
   # Get the active theme name from the export variable in the script
   current_theme_name=$(grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
   current_theme_name=${current_theme_name#*=}

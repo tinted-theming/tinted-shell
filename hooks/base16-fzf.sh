@@ -21,12 +21,15 @@ fi
 # Execution
 # ----------------------------------------------------------------------
 
+read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+
 # If base16-fzf is used, provide a file for base16-fzf to source
-if [ -e "$BASE16_FZF_PATH/bash/base16-$BASE16_THEME.config" ]; then 
-  source "$BASE16_FZF_PATH/bash/base16-$BASE16_THEME.config"
+if [ -e "$BASE16_FZF_PATH/bash/base16-$current_theme_name.config" ]; then 
+  source "$BASE16_FZF_PATH/bash/base16-$current_theme_name.config"
 else
-  output="'$BASE16_THEME' theme could not be found. "
+  output="'$current_theme_name' theme could not be found. "
   output+="Make sure '$BASE16_FZF_PATH' is running the most up-to-date "
   output+="version by doing a 'git pull' in the repository directory."
+
   echo $output
 fi

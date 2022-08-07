@@ -30,15 +30,18 @@ if [ -n "$HEXCHAT_COLORS_CONF_PATH" ] \
   return 2
 fi
 
-hexchat_theme_path="$BASE16_HEXCHAT_PATH/colors/base16-$BASE16_THEME.conf"
+# Set current theme name
+read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 
-if [ ! -f "$hexchat_theme_path" ]; \
-  then
-  output="'$BASE16_THEME' theme doesn't exist in base16-hex. Make sure "
+hexchat_theme_path="$BASE16_HEXCHAT_PATH/colors/base16-$current_theme_name.conf"
+
+if [ ! -f "$hexchat_theme_path" ]; then
+  output="'$current_theme_name' theme doesn't exist in base16-hex. Make sure "
   output+="the local repository is using the latest commit. \`cd\` to "
   output+="the directory and try doing a \`git pull\`."
 
   echo $output
+
   return 2
 fi
 
