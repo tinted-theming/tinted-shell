@@ -4,7 +4,11 @@
 # Setup variables and env
 # ----------------------------------------------------------------------
 
-set BASE16_CONFIG_PATH "$HOME/.config/base16-project"
+# Allow users to optionally configure where their base16-shell config is
+# stored by specifying BASE16_CONFIG_PATH before loading this script
+if test -z $BASE16_CONFIG_PATH
+  set BASE16_CONFIG_PATH "$HOME/.config/base16-project"
+end
 set BASE16_SHELL_COLORSCHEME_PATH \
   "$BASE16_CONFIG_PATH/base16_shell_theme"
 

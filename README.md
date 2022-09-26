@@ -164,6 +164,16 @@ first time.
 
 For example: `$BASE16_THEME_DEFAULT="solarized-light"` 
 
+### Default config path
+
+You can customize where the generated configuration of this script is 
+stored by setting the `$BASE16_CONFIG_PATH` environment variable before
+the `profile_helper` script is loaded. This variable defaults to
+`$HOME/.config/base16-project`.
+
+If you are using oh-my-zsh you need to set this variable before 
+`oh-my-zsh.sh` is sourced in your `.zshrc`.
+
 ## Usage
 
 ### Bash/ZSH
