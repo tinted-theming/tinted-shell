@@ -95,10 +95,40 @@ If you have a lua neovim config, add the following to your `init.lua`:
 local cmd = vim.cmd
 local g = vim.g
 
-local base16_project_theme = os.getenv('BASE16_THEME')
-if base16_project_theme and g.colors_name ~= 'base16-'..base16_project_theme then
+local current_theme_name = os.getenv('BASE16_THEME')
+if current_theme_name and g.colors_name ~= 'base16-'..current_theme_name then
   cmd('let base16colorspace=256')
-  cmd('colorscheme base16-'..base16_project_theme)
+  cmd('colorscheme base16-'..current_theme_name)
+end
+```
+
+#### Tmux & Vim
+
+You should source the `set_theme` scripts to initialise your Vim
+theme. This is necessary due to the way TMUX sessions handle environment
+variables. Without this you may run into the issue where you've changed
+your theme, but Vim loads with the theme you initialised TMUX with.
+
+**Vim**
+
+```vim
+if filereadable(expand("$HOME/.config/base16-project/set_theme.vim"))
+  let base16colorspace=256
+  source $HOME/.config/base16-project/set_theme.vim
+endif
+```
+
+**Neovim (Lua)**
+
+```lua
+local fn = vim.fn
+local cmd = vim.cmd
+local set_theme_path = "$HOME/.config/base16-project/set_theme.lua"
+local is_set_theme_file_readable = fn.filereadable(fn.expand(set_theme_path)) == 1 and true or false
+
+if is_set_theme_file_readable then
+  cmd("let base16colorspace=256")
+  cmd("source " .. set_theme_path)
 end
 ```
 
@@ -117,9 +147,9 @@ profile_helper.
 
 #### Tmux
 
-You can use this hook if you have installed [base16-tmux][3] through
-[TPM][10]. base16-shell will update (or create) the
-`$HOME/.config/base16-project/tmux.base16.conf` file and set the
+You will automatically use this hook if you have installed
+[base16-tmux][3] through [TPM][10]. base16-shell will update (or create)
+the `$HOME/.config/base16-project/tmux.base16.conf` file and set the
 colorscheme. You need to source this file in your `.tmux.conf`. You can
 do this by adding the following to your `.tmux.conf`:
 

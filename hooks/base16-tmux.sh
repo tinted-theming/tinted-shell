@@ -27,7 +27,10 @@ fi
 
 # If base16-tmux is used, provide a file for base16-tmux to source
 if [ -d "$BASE16_TMUX_PLUGIN_PATH" ]; then 
-  echo -e "set -g \0100colors-base16 '$theme_name'" >| \
+  # Set current theme name
+  read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+
+  echo -e "set -g \0100colors-base16 '$current_theme_name'" >| \
     "$BASE16_SHELL_TMUXCONF_PATH"
 
   # Source tmux config if tmux is running

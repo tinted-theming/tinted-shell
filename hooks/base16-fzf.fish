@@ -21,12 +21,16 @@ end
 # Execution
 # ----------------------------------------------------------------------
 
+read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+
 # If base16-fzf is used, provide a file for base16-fzf to source
-if test -e "$BASE16_FZF_PATH/fish/base16-$BASE16_THEME.fish"
-  source "$BASE16_FZF_PATH/fish/base16-$BASE16_THEME.fish"
+if test -e "$BASE16_FZF_PATH/fish/base16-$current_theme_name.fish"
+  source "$BASE16_FZF_PATH/fish/base16-$current_theme_name.fish"
 else
   set output $(string join ' ' \
-   "\$BASE16_FZF_PATH doesn't seem to be a clone of the " \
-   "base16-fzf GitHub repository.")
+   "'$current_theme_name' theme could not be found."
+   "Make sure '$BASE16_FZF_PATH' is running the most up-to-date" \
+   "version by doing a 'git pull' in the repository directory.")
+
   echo $output
 end

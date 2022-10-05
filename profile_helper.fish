@@ -11,6 +11,10 @@ if test -z $BASE16_CONFIG_PATH
 end
 set BASE16_SHELL_COLORSCHEME_PATH \
   "$BASE16_CONFIG_PATH/base16_shell_theme"
+# Store the theme name in a file so we aren't reliant on environment
+# variables to store this value alone since it can be inaccurate when
+# using session managers such as TMUX
+set BASE16_SHELL_THEME_NAME_PATH "$BASE16_CONFIG_PATH/theme_name" 
 
 # Allow users to optionally configure their base16-shell path and set
 # the value if one doesn't exist
@@ -27,6 +31,11 @@ end
 # Create the config path if the path doesn't currently exist
 if not test -d "$BASE16_CONFIG_PATH"
   mkdir -p "$BASE16_CONFIG_PATH"
+end
+
+# Create a file containing the current theme name
+if not test -e "$BASE16_SHELL_THEME_NAME_PATH"
+  touch "$BASE16_SHELL_THEME_NAME_PATH";
 end
 
 # ----------------------------------------------------------------------
@@ -46,6 +55,10 @@ function set_theme
     echo "Provide a theme name to set_theme or ensure \
       \$BASE16_THEME_DEFAULT is set"
     return 1
+  end
+
+  if test -f "$BASE16_SHELL_THEME_NAME_PATH"
+    echo "$theme_name" > "$BASE16_SHELL_THEME_NAME_PATH";
   end
 
   # Symlink and source
@@ -94,11 +107,16 @@ end
 # If $BASE16_THEME is set, this has already been loaded. This guards
 # against a bug where this script is sourced two or more times.
 if test -n "$BASE16_THEME"
-  return 1
+  return 0
 end
 
 # Load the active theme
-if test -e "$BASE16_SHELL_COLORSCHEME_PATH"
+# If the theme name can be easily retrieved
+read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+if test -n "$current_theme_name"
+  set_theme "$current_theme_name"
+# Else extract from the colorscheme file
+else if test -e "$BASE16_SHELL_COLORSCHEME_PATH"
   # Get the active theme name from the export variable in the script
   set current_theme_name \
     $(grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
