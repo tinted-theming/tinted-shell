@@ -220,6 +220,18 @@ and press tab to perform tab-completion.
 
 All relevant scripts have the extension `.fish`
 
+### Customization using base16-shell
+
+There are times when base16 templates don't exist for command line
+applications, or perhaps you just want to play around with base16
+colors. For those situations you can access active base16-shell theme
+colors via `BASE16_COLOR_01_HEX` to `BASE16_COLOR_09_HEX` for colors 0-9
+and `BASE16_COLOR_0A_HEX` to `BASE16_COLOR_0F_HEX` for colors 10-16.
+Have a look at the [styling guidlines][13] for more information.
+
+To enable this feature, make sure to export `BASE16_SHELL_ENABLE_VARS=1`
+before base16-shell is loaded.
+
 ## Troubleshooting
 
 Run the included **colortest** script and check that your colour
@@ -256,3 +268,4 @@ instructions.
 [10]: https://github.com/tmux-plugins/tpm
 [11]: https://github.com/base16-project/base16-fzf
 [12]: https://github.com/base16-project/base16-hexchat
+[13]: https://github.com/base16-project/home/blob/main/styling.md
