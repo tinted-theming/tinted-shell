@@ -125,3 +125,23 @@ unset color20
 unset color21
 unset color_foreground
 unset color_background
+
+# Optionally export variables
+if [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
+  export BASE16_COLOR_00_HEX="2a3b4d"
+  export BASE16_COLOR_01_HEX="3d566f"
+  export BASE16_COLOR_02_HEX="4b6988"
+  export BASE16_COLOR_03_HEX="55799c"
+  export BASE16_COLOR_04_HEX="7e90a3"
+  export BASE16_COLOR_05_HEX="9fa2a6"
+  export BASE16_COLOR_06_HEX="d6d7d9"
+  export BASE16_COLOR_07_HEX="ffffff"
+  export BASE16_COLOR_08_HEX="c4676c"
+  export BASE16_COLOR_09_HEX="ff9966"
+  export BASE16_COLOR_0A_HEX="ffff66"
+  export BASE16_COLOR_0B_HEX="66ff66"
+  export BASE16_COLOR_0C_HEX="4b8f77"
+  export BASE16_COLOR_0D_HEX="15f4ee"
+  export BASE16_COLOR_0E_HEX="9c6cd3"
+  export BASE16_COLOR_0F_HEX="bb64a9"
+fi
