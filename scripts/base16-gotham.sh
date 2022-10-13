@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Gotham scheme by Andrea Leopardi (arranged by Brett Jones)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Gotham 
+# Scheme author: Andrea Leopardi (arranged by Brett Jones)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gotham
 
 color00="0c/10/14" # Base 00 - Black

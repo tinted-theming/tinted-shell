@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Brewer scheme by Timothée Poisot (http://github.com/tpoisot)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Brewer 
+# Scheme author: Timothée Poisot (http://github.com/tpoisot)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=brewer
 
 color00="0c/0d/0e" # Base 00 - Black

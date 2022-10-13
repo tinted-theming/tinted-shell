@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Circus scheme by Stephan Boyer (https://github.com/stepchowfun) and Esther Wang (https://github.com/ewang12)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Circus 
+# Scheme author: Stephan Boyer (https://github.com/stepchowfun) and Esther Wang (https://github.com/ewang12)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=circus
 
 color00="19/19/19" # Base 00 - Black

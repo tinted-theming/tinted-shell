@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Harmonic16 Dark scheme by Jannik Siebert (https://github.com/janniks)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Harmonic16 Dark 
+# Scheme author: Jannik Siebert (https://github.com/janniks)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=harmonic16-dark
 
 color00="0b/1c/2c" # Base 00 - Black

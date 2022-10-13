@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Summerfruit Light scheme by Christopher Corley (http://christop.club/)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Summerfruit Light 
+# Scheme author: Christopher Corley (http://christop.club/)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=summerfruit-light
 
 color00="ff/ff/ff" # Base 00 - Black

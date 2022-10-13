@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Helios scheme by Alex Meyer (https://github.com/reyemxela)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Helios 
+# Scheme author: Alex Meyer (https://github.com/reyemxela)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=helios
 
 color00="1d/20/21" # Base 00 - Black

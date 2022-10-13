@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Google Light scheme by Seth Wright (http://sethawright.com)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Google Light 
+# Scheme author: Seth Wright (http://sethawright.com)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=google-light
 
 color00="ff/ff/ff" # Base 00 - Black

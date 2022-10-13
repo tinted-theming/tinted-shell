@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Pasque scheme by Gabriel Fontes (https://github.com/Misterio77)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Pasque 
+# Scheme author: Gabriel Fontes (https://github.com/Misterio77)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=pasque
 
 color00="27/1c/3a" # Base 00 - Black

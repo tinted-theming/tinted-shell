@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Nord scheme by arcticicestudio
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Nord 
+# Scheme author: arcticicestudio
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=nord
 
 color00="2e/34/40" # Base 00 - Black

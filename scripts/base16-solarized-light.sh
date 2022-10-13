@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Solarized Light scheme by Ethan Schoonover (modified by aramisgithub)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Solarized Light 
+# Scheme author: Ethan Schoonover (modified by aramisgithub)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=solarized-light
 
 color00="fd/f6/e3" # Base 00 - Black

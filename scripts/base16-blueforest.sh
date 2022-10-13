@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Blue Forest scheme by alonsodomin (https://github.com/alonsodomin)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Blue Forest 
+# Scheme author: alonsodomin (https://github.com/alonsodomin)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=blueforest
 
 color00="14/1f/2e" # Base 00 - Black

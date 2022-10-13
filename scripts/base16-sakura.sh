@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Sakura scheme by Misterio77 (http://github.com/Misterio77)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Sakura 
+# Scheme author: Misterio77 (http://github.com/Misterio77)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=sakura
 
 color00="fe/ed/f3" # Base 00 - Black

@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# darkmoss scheme by Gabriel Avanzi (https://github.com/avanzzzi)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: darkmoss 
+# Scheme author: Gabriel Avanzi (https://github.com/avanzzzi)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=darkmoss
 
 color00="17/1e/1f" # Base 00 - Black

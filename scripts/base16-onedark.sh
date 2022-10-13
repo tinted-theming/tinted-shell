@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# OneDark scheme by Lalit Magant (http://github.com/tilal6991)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: OneDark 
+# Scheme author: Lalit Magant (http://github.com/tilal6991)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=onedark
 
 color00="28/2c/34" # Base 00 - Black

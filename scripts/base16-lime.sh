@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# lime scheme by limelier
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: lime 
+# Scheme author: limelier
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=lime
 
 color00="1a/1a/2f" # Base 00 - Black

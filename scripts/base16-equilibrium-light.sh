@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Equilibrium Light scheme by Carlo Abelli
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Equilibrium Light 
+# Scheme author: Carlo Abelli
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=equilibrium-light
 
 color00="f5/f0/e7" # Base 00 - Black

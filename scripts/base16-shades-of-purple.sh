@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Shades of Purple scheme by Iolar Demartini Junior (http://github.com/demartini) based on Shades of Purple Theme (https://github.com/ahmadawais/shades-of-purple-vscode).
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Shades of Purple 
+# Scheme author: Iolar Demartini Junior (http://github.com/demartini) based on Shades of Purple Theme (https://github.com/ahmadawais/shades-of-purple-vscode).
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=shades-of-purple
 
 color00="1e/1e/3f" # Base 00 - Black

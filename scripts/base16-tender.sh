@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# tender scheme by Jacobo Tabernero (https://github/com/jacoborus/tender.vim)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: tender 
+# Scheme author: Jacobo Tabernero (https://github/com/jacoborus/tender.vim)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=tender
 
 color00="28/28/28" # Base 00 - Black

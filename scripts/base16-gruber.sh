@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Gruber scheme by Patel, Nimai &lt;nimai.m.patel@gmail.com&gt;, colors from www.github.com/rexim/gruber-darker-theme
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Gruber 
+# Scheme author: Patel, Nimai &lt;nimai.m.patel@gmail.com&gt;, colors from www.github.com/rexim/gruber-darker-theme
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gruber
 
 color00="18/18/18" # Base 00 - Black

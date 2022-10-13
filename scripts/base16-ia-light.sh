@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# iA Light scheme by iA Inc. (modified by aramisgithub)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: iA Light 
+# Scheme author: iA Inc. (modified by aramisgithub)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=ia-light
 
 color00="f6/f6/f6" # Base 00 - Black

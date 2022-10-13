@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Dark Violet scheme by ruler501 (https://github.com/ruler501/base16-darkviolet)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Dark Violet 
+# Scheme author: ruler501 (https://github.com/ruler501/base16-darkviolet)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=darkviolet
 
 color00="00/00/00" # Base 00 - Black

@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Gigavolt scheme by Aidan Swope (http://github.com/Whillikers)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Gigavolt 
+# Scheme author: Aidan Swope (http://github.com/Whillikers)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gigavolt
 
 color00="20/21/26" # Base 00 - Black

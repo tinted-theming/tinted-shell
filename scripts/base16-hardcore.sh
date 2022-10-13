@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Hardcore scheme by Chris Caller
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Hardcore 
+# Scheme author: Chris Caller
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=hardcore
 
 color00="21/21/21" # Base 00 - Black

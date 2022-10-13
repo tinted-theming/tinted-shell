@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Seti UI scheme by 
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Seti UI 
+# Scheme author: 
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=seti
 
 color00="15/17/18" # Base 00 - Black

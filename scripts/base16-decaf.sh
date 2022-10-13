@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Decaf scheme by Alex Mirrington (https://github.com/alexmirrington)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Decaf 
+# Scheme author: Alex Mirrington (https://github.com/alexmirrington)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=decaf
 
 color00="2d/2d/2d" # Base 00 - Black

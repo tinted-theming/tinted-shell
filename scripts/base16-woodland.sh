@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Woodland scheme by Jay Cornwall (https://jcornwall.com)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Woodland 
+# Scheme author: Jay Cornwall (https://jcornwall.com)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=woodland
 
 color00="23/1e/18" # Base 00 - Black

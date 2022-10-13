@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Green Screen scheme by Chris Kempson (http://chriskempson.com)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Green Screen 
+# Scheme author: Chris Kempson (http://chriskempson.com)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=greenscreen
 
 color00="00/11/00" # Base 00 - Black

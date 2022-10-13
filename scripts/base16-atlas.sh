@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Atlas scheme by Alex Lende (https://ajlende.com)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Atlas 
+# Scheme author: Alex Lende (https://ajlende.com)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=atlas
 
 color00="00/26/35" # Base 00 - Black

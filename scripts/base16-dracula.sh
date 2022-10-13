@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Dracula scheme by Mike Barkmin (http://github.com/mikebarkmin) based on Dracula Theme (http://github.com/dracula)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Dracula 
+# Scheme author: Mike Barkmin (http://github.com/mikebarkmin) based on Dracula Theme (http://github.com/dracula)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=dracula
 
 color00="28/29/36" # Base 00 - Black

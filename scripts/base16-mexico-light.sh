@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Mexico Light scheme by Sheldon Johnson
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Mexico Light 
+# Scheme author: Sheldon Johnson
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=mexico-light
 
 color00="f8/f8/f8" # Base 00 - Black

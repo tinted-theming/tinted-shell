@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Zenburn scheme by elnawe
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Zenburn 
+# Scheme author: elnawe
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=zenburn
 
 color00="38/38/38" # Base 00 - Black

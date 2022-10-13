@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Edge Light scheme by cjayross (https://github.com/cjayross)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Edge Light 
+# Scheme author: cjayross (https://github.com/cjayross)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=edge-light
 
 color00="fa/fa/fa" # Base 00 - Black

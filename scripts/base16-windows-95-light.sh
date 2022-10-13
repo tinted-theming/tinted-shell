@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Windows 95 Light scheme by Fergus Collins (https://github.com/C-Fergus)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Windows 95 Light 
+# Scheme author: Fergus Collins (https://github.com/C-Fergus)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=windows-95-light
 
 color00="fc/fc/fc" # Base 00 - Black

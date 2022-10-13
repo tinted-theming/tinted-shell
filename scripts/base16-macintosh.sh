@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Macintosh scheme by Rebecca Bettencourt (http://www.kreativekorp.com)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Macintosh 
+# Scheme author: Rebecca Bettencourt (http://www.kreativekorp.com)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=macintosh
 
 color00="00/00/00" # Base 00 - Black

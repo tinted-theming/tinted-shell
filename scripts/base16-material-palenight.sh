@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Material Palenight scheme by Nate Peterson
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Material Palenight 
+# Scheme author: Nate Peterson
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=material-palenight
 
 color00="29/2d/3e" # Base 00 - Black

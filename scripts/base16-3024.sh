@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# 3024 scheme by Jan T. Sott (http://github.com/idleberg)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: 3024 
+# Scheme author: Jan T. Sott (http://github.com/idleberg)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=3024
 
 color00="09/03/00" # Base 00 - Black

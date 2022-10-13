@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Apathy scheme by Jannik Siebert (https://github.com/janniks)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Apathy 
+# Scheme author: Jannik Siebert (https://github.com/janniks)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=apathy
 
 color00="03/1a/16" # Base 00 - Black

@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Bespin scheme by Jan T. Sott
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Bespin 
+# Scheme author: Jan T. Sott
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=bespin
 
 color00="28/21/1c" # Base 00 - Black

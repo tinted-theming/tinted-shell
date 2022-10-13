@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Horizon Terminal Light scheme by Michaël Ball (http://github.com/michael-ball/)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Horizon Terminal Light 
+# Scheme author: Michaël Ball (http://github.com/michael-ball/)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=horizon-terminal-light
 
 color00="fd/f0/ed" # Base 00 - Black

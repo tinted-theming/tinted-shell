@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Kimber scheme by Mishka Nguyen (https://github.com/akhsiM)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Kimber 
+# Scheme author: Mishka Nguyen (https://github.com/akhsiM)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=kimber
 
 color00="22/22/22" # Base 00 - Black

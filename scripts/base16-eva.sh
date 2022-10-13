@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Eva scheme by kjakapat (https://github.com/kjakapat)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Eva 
+# Scheme author: kjakapat (https://github.com/kjakapat)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=eva
 
 color00="2a/3b/4d" # Base 00 - Black

@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Colors scheme by mrmrs (http://clrs.cc)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Colors 
+# Scheme author: mrmrs (http://clrs.cc)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=colors
 
 color00="11/11/11" # Base 00 - Black

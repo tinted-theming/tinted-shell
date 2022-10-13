@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Solar Flare scheme by Chuck Harmston (https://chuck.harmston.ch)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Solar Flare 
+# Scheme author: Chuck Harmston (https://chuck.harmston.ch)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=solarflare
 
 color00="18/26/2f" # Base 00 - Black

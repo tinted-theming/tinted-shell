@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Gruvbox Material Dark, Medium scheme by Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Gruvbox Material Dark, Medium 
+# Scheme author: Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gruvbox-material-dark-medium
 
 color00="29/28/28" # Base 00 - Black

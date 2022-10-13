@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Tokyo City Light scheme by Michaël Ball
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Tokyo City Light 
+# Scheme author: Michaël Ball
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=tokyo-city-light
 
 color00="fb/fb/fd" # Base 00 - Black

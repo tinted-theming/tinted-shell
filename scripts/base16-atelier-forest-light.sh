@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Atelier Forest Light scheme by Bram de Haan (http://atelierbramdehaan.nl)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Atelier Forest Light 
+# Scheme author: Bram de Haan (http://atelierbramdehaan.nl)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=atelier-forest-light
 
 color00="f1/ef/ee" # Base 00 - Black

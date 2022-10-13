@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Silk Dark scheme by Gabriel Fontes (https://github.com/Misterio77)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Silk Dark 
+# Scheme author: Gabriel Fontes (https://github.com/Misterio77)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=silk-dark
 
 color00="0e/3c/46" # Base 00 - Black

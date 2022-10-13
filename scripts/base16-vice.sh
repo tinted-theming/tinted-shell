@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# vice scheme by Thomas Leon Highbaugh thighbaugh@zoho.com
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: vice 
+# Scheme author: Thomas Leon Highbaugh thighbaugh@zoho.com
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=vice
 
 color00="17/19/1e" # Base 00 - Black

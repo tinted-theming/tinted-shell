@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Flat scheme by Chris Kempson (http://chriskempson.com)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Flat 
+# Scheme author: Chris Kempson (http://chriskempson.com)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=flat
 
 color00="2c/3e/50" # Base 00 - Black

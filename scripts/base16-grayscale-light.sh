@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Grayscale Light scheme by Alexandre Gavioli (https://github.com/Alexx2/)
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Grayscale Light 
+# Scheme author: Alexandre Gavioli (https://github.com/Alexx2/)
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=grayscale-light
 
 color00="f7/f7/f7" # Base 00 - Black

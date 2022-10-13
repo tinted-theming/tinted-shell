@@ -1,7 +1,8 @@
 #!/bin/sh
-# base16-shell (https://github.com/base16-project/base16-shell)
-# Base16 Shell template by base16-project (https://github.com/base16-project)
-# Tango scheme by @Schnouki, based on the Tango Desktop Project
+# base16-shell (https://github.com/tinted-theming/base16-shell)
+# Scheme name: Tango 
+# Scheme author: @Schnouki, based on the Tango Desktop Project
+# Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=tango
 
 color00="2e/34/36" # Base 00 - Black
