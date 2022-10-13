@@ -62,5 +62,5 @@ for padded_value in `seq -w 0 21`; do
   printf "%s %s %s %-30s %s\x1b[0m\n" $foreground $base16_color_name $current_color_label ${ansi_label:-""} $block
 done;
 if [ $# -eq 1 ]; then
-    printf "To restore current theme, source $HOME/.config/base16-project/base16_theme or reopen your terminal\n"
+    printf "To restore current theme, source $HOME/.config/tinted-theming/base16_theme or reopen your terminal\n"
 fi
