@@ -3,6 +3,7 @@
 Base16 Shell is released under the MIT License:
 
 > Copyright (C) 2012 [Chris Kempson](http://chriskempson.com)
+> Copyright (C) 2022 [Tinted Theming](https://github.com/tinted-theming)
 > 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the

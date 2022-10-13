@@ -6,7 +6,7 @@
 
 # Allow users to optionally configure where their base16-shell config is
 # stored by specifying BASE16_CONFIG_PATH before loading this script
-BASE16_CONFIG_PATH="${BASE16_CONFIG_PATH:=$HOME/.config/base16-project}"
+BASE16_CONFIG_PATH="${BASE16_CONFIG_PATH:=$HOME/.config/tinted-theming}"
 BASE16_SHELL_COLORSCHEME_PATH="$BASE16_CONFIG_PATH/base16_shell_theme"
 # Store the theme name in a file so we aren't reliant on environment
 # variables to store this value alone since it can be inaccurate when

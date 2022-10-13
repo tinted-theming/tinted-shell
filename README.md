@@ -23,7 +23,7 @@ as Vim and tmux.
 ## Installation
 
 ```shell
-git clone https://github.com/base16-project/base16-shell.git \
+git clone https://github.com/tinted-theming/base16-shell.git \
   $HOME/.config/base16-shell
 ```
 
@@ -112,9 +112,9 @@ your theme, but Vim loads with the theme you initialised TMUX with.
 **Vim**
 
 ```vim
-if filereadable(expand("$HOME/.config/base16-project/set_theme.vim"))
+if filereadable(expand("$HOME/.config/tinted-theming/set_theme.vim"))
   let base16colorspace=256
-  source $HOME/.config/base16-project/set_theme.vim
+  source $HOME/.config/tinted-theming/set_theme.vim
 endif
 ```
 
@@ -123,7 +123,7 @@ endif
 ```lua
 local fn = vim.fn
 local cmd = vim.cmd
-local set_theme_path = "$HOME/.config/base16-project/set_theme.lua"
+local set_theme_path = "$HOME/.config/tinted-theming/set_theme.lua"
 local is_set_theme_file_readable = fn.filereadable(fn.expand(set_theme_path)) == 1 and true or false
 
 if is_set_theme_file_readable then
@@ -149,12 +149,12 @@ profile_helper.
 
 You will automatically use this hook if you have installed
 [base16-tmux][3] through [TPM][10]. base16-shell will update (or create)
-the `$HOME/.config/base16-project/tmux.base16.conf` file and set the
+the `$HOME/.config/tinted-theming/tmux.base16.conf` file and set the
 colorscheme. You need to source this file in your `.tmux.conf`. You can
 do this by adding the following to your `.tmux.conf`:
 
 ```
-source-file $HOME/.config/base16-project/tmux.base16.conf
+source-file $HOME/.config/tinted-theming/tmux.base16.conf
 ```
 
 #### FZF
@@ -199,7 +199,7 @@ For example: `$BASE16_THEME_DEFAULT="solarized-light"`
 You can customize where the generated configuration of this script is 
 stored by setting the `$BASE16_CONFIG_PATH` environment variable before
 the `profile_helper` script is loaded. This variable defaults to
-`$HOME/.config/base16-project`.
+`$HOME/.config/tinted-theming`.
 
 If you are using oh-my-zsh you need to set this variable before 
 `oh-my-zsh.sh` is sourced in your `.zshrc`.
@@ -249,23 +249,23 @@ as the arguement e.g. `./colortest base16-ocean.sh`.
 ### Inverted blacks and whites
 
 This is the expected behaviour when using a light theme:
-https://github.com/base16-project/base16-shell/issues/150
+https://github.com/tinted-theming/base16-shell/issues/150
 
 ## Contributing
 
 See [`CONTRIBUTING.md`][7], which contains building and contributing
 instructions.
 
-[1]: https://github.com/base16-project/home
-[2]: https://github.com/base16-project/base16-vim
+[1]: https://github.com/tinted-theming/home
+[2]: https://github.com/tinted-theming/base16-vim
 [3]: https://github.com/mattdavis90/base16-tmux
-[4]: https://github.com/base16-project/base16-builder-go
+[4]: https://github.com/tinted-theming/base16-builder-go
 [5]: https://formulae.brew.sh
 [6]: .github/workflows/update.yml
 [7]: CONTRIBUTING.md
 [8]: screenshots/base16-shell.png
 [9]: screenshots/setting-256-colourspace-not-supported.png
 [10]: https://github.com/tmux-plugins/tpm
-[11]: https://github.com/base16-project/base16-fzf
-[12]: https://github.com/base16-project/base16-hexchat
-[13]: https://github.com/base16-project/home/blob/main/styling.md
+[11]: https://github.com/tinted-theming/base16-fzf
+[12]: https://github.com/tinted-theming/base16-hexchat
+[13]: https://github.com/tinted-theming/home/blob/main/styling.md
