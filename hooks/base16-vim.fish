@@ -20,12 +20,12 @@ end
 # ----------------------------------------------------------------------
 read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 
-set vim_output $(string join \
+set vim_output (string join \
   "if !exists('g:colors_name') || g:colors_name != 'base16-$current_theme_name'\n" \
   "  colorscheme base16-$current_theme_name\n" \
   "endif")
 
-set nvim_output $(string join \
+set nvim_output (string join \
   "local current_theme_name = \"$current_theme_name\"" \
   "if current_theme_name ~= \"\" and vim.g.colors_name ~= 'base16-' .. current_theme_name then" \
   "  vim.cmd('colorscheme base16-' .. current_theme_name)" \

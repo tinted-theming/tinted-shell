@@ -18,7 +18,7 @@ end
 
 # If base16-tmux path directory doesn't exist, stop hook
 if not test -d $BASE16_TMUX_PLUGIN_PATH
-  return 2
+  exit 2
 end
 
 # ----------------------------------------------------------------------
@@ -35,6 +35,6 @@ if test -d "$BASE16_TMUX_PLUGIN_PATH"
 
   # Source tmux config if tmux is running
   if test -n "$TMUX"
-    tmux source-file $(tmux display-message -p "#{config_files}")
+    tmux source-file (tmux display-message -p "#{config_files}")
   end
 end
