@@ -36,7 +36,7 @@ read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 set hexchat_theme_path "$BASE16_HEXCHAT_PATH/colors/base16-$current_theme_name.conf"
 
 if not test -f "$hexchat_theme_path"
-  set output (string join \
+  set output (string join "\n" \
     "'$current_theme_name' theme doesn't exist in base16-hex. Make sure " \
     "the local repository is using the latest commit. \`cd\` to " \
     "the directory and try doing a \`git pull\`.")
