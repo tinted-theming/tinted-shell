@@ -21,8 +21,8 @@ end
 read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 
 set vim_output (string join "\n" \
-  "if !exists('g:colors_name') || g:colors_name != 'base16-$current_theme_name'\n" \
-  "  colorscheme base16-$current_theme_name\n" \
+  "if !exists('g:colors_name') || g:colors_name != 'base16-$current_theme_name'" \
+  "  colorscheme base16-$current_theme_name" \
   "endif")
 
 set nvim_output (string join "\n" \
