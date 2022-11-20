@@ -107,7 +107,7 @@ end
 # If $BASE16_THEME is set, this has already been loaded. This guards
 # against a bug where this script is sourced two or more times.
 if test -n "$BASE16_THEME"
-  return 0
+  exit 0
 end
 
 # Load the active theme
@@ -119,9 +119,9 @@ if test -n "$current_theme_name"
 else if test -e "$BASE16_SHELL_COLORSCHEME_PATH"
   # Get the active theme name from the export variable in the script
   set current_theme_name \
-    $(grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
+    (grep 'export BASE16_THEME' "$BASE16_SHELL_COLORSCHEME_PATH")
   set current_theme_name \
-    $(string replace -r 'export BASE16_THEME=' '' $current_theme_name)
+    (string replace -r 'export BASE16_THEME=' '' $current_theme_name)
   set_theme "$current_theme_name"
 # If a colorscheme file doesn't exist and BASE16_THEME_DEFAULT is set,
 # then create the colorscheme file based on the BASE16_THEME_DEFAULT

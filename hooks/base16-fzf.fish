@@ -14,7 +14,7 @@ end
 
 # If BASE16_FZF_PATH doesn't exist, stop hook
 if not test -d "$BASE16_FZF_PATH"
-  return 2
+  exit 2
 end
 
 # ----------------------------------------------------------------------
@@ -27,7 +27,7 @@ read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 if test -e "$BASE16_FZF_PATH/fish/base16-$current_theme_name.fish"
   source "$BASE16_FZF_PATH/fish/base16-$current_theme_name.fish"
 else
-  set output $(string join ' ' \
+  set output (string join ' ' \
    "'$current_theme_name' theme could not be found."
    "Make sure '$BASE16_FZF_PATH' is running the most up-to-date" \
    "version by doing a 'git pull' in the repository directory.")
