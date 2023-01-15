@@ -19,9 +19,7 @@ set BASE16_SHELL_THEME_NAME_PATH "$BASE16_CONFIG_PATH/theme_name"
 # Allow users to optionally configure their base16-shell path and set
 # the value if one doesn't exist
 if test -z $BASE16_SHELL_PATH
-  set -l CWD (pwd)
-  set -g BASE16_SHELL_PATH (cd (dirname (status -f)); and pwd)
-  cd "$CWD"
+  set -g BASE16_SHELL_PATH (realpath (dirname (status -f)))
 end
 
 # If the user hasn't specified a hooks dir path or it is invalid, use
