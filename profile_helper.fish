@@ -19,7 +19,7 @@ set BASE16_SHELL_THEME_NAME_PATH "$BASE16_CONFIG_PATH/theme_name"
 # Allow users to optionally configure their base16-shell path and set
 # the value if one doesn't exist
 if test -z $BASE16_SHELL_PATH
-  set -g BASE16_SHELL_PATH (cd (dirname (status -f)); and pwd)
+  set -g BASE16_SHELL_PATH (realpath (dirname (status -f)))
 end
 
 # If the user hasn't specified a hooks dir path or it is invalid, use
@@ -76,7 +76,7 @@ function set_theme
     sh $BASE16_SHELL_COLORSCHEME_PATH
 
     # Env variables aren't globally set when bash shell is sourced
-    set -g BASE16_THEME "$theme_name"
+    set -gx BASE16_THEME "$theme_name"
   end
 
   if test -d "$BASE16_SHELL_HOOKS_PATH"; \
