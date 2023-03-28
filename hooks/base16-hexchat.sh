@@ -9,7 +9,7 @@
 # switched so it's important to check for previously set values.
 
 if [ -z "$BASE16_HEXCHAT_PATH" ]; then
-  BASE16_HEXCHAT_PATH="$HOME/.config/base16-hexchat"
+  BASE16_HEXCHAT_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming/base16-hexchat"
 fi
 
 # If BASE16_HEXCHAT_PATH doesn't exist, stop hook

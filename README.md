@@ -145,11 +145,17 @@ use your own `$BASE16_SHELL_HOOKS_PATH` directory, make sure to copy the
 `$BASE16_SHELL_HOOKS_PATH` variable before sourcing base16-shell
 profile_helper.
 
+base16-shell follows the [XDG Base Directory Specification]. If you have
+the `$XDG_CONFIG_HOME` variable set, it will look for the `base16-*`
+cloned repos used for the shell hooks in
+`$XDG_CONFIG_HOME/tinted-theming/base16-*`.
+
 #### Tmux
 
 You will automatically use this hook if you have installed
 [base16-tmux][3] through [TPM][10]. base16-shell will update (or create)
-the `$HOME/.config/tinted-theming/tmux.base16.conf` file and set the
+the `$HOME/.config/tinted-theming/tmux.base16.conf` (or
+`$XDG_CONFIG_HOME/tinted-theming/tmux.base16.conf`) file and set the
 colorscheme. You need to source this file in your `.tmux.conf`. You can
 do this by adding the following to your `.tmux.conf`:
 
@@ -157,18 +163,32 @@ do this by adding the following to your `.tmux.conf`:
 source-file $HOME/.config/tinted-theming/tmux.base16.conf
 ```
 
+If you're using XDG, make sure to have your tmux settings installed at
+`$XDG_CONFIG_HOME/tmux`.
+
+##### XDG
+
+If you have XDG set up, make sure your tmux setup is installed at
+`$XDG_CONFIG_HOME/tmux`
+
+```
+source-file $XDG_CONFIG_HOME/tinted-theming/tmux.base16.conf
+```
+
 #### FZF
 
-Clone [base16-fzf][11] to `$HOME/.config/base16-fzf`. Once that is done
-the hook will automatically pick that up and things will work as
-expected.
+Clone [base16-fzf][11] to `$HOME/.config/tinted-theming/base16-fzf` (or
+`$XDG_CONFIG_HOME/tinted-theming/base16-fzf`). Once that is done the
+hook will automatically pick that up and things will work as expected.
 
 If you'd like to install to a different path, you can do that and set
 `$BASE16_FZF_PATH` to your custom path.
 
 #### HexChat (XChat)
 
-1. Clone [base16-hexchat][12] to `$HOME/base16-hexchat`. Or optionally
+1. Clone [base16-hexchat][12] to
+   `$HOME/.config/tinted-theming/base16-hexchat` (or
+   `$XDG_CONFIG_HOME/tinted-theming/base16-hexchat`). Or optionally
    install to a custom path and set `$BASE16_HEXCHAT_PATH` to that path.
 2. Set the `$HEXCHAT_COLORS_CONF_PATH` shell variable to your hexchat
    `colors.conf` file. If you don't know where that is, read the
@@ -269,3 +289,4 @@ instructions.
 [11]: https://github.com/tinted-theming/base16-fzf
 [12]: https://github.com/tinted-theming/base16-hexchat
 [13]: https://github.com/tinted-theming/home/blob/main/styling.md
+[XDG Base Directory Specification]: https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
