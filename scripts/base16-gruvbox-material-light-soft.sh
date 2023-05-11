@@ -30,7 +30,7 @@ color21="3c/38/36" # Base 06
 color_foreground="65/47/35" # Base 05
 color_background="f2/e5/bc" # Base 00
 
-if [ -n "$TMUX" ]; then
+if [ -n "$TMUX" ] || [ "${TERM%%[-.]*}" = tmux ]; then
   # Tell tmux to pass the escape sequences through
   # (Source: http://permalink.gmane.org/gmane.comp.terminal-emulators.tmux.user/1324)
   put_template() { printf '\033Ptmux;\033\033]4;%d;rgb:%s\033\033\\\033\\' $@; }
