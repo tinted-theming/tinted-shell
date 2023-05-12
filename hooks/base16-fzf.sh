@@ -9,7 +9,7 @@
 # so it's important to check for previously set values.
 
 if [ -z "$BASE16_FZF_PATH" ]; then
-  BASE16_FZF_PATH="$HOME/.config/base16-fzf"
+  BASE16_FZF_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming/base16-fzf"
 fi
 
 # If BASE16_FZF_PATH doesn't exist, stop hook

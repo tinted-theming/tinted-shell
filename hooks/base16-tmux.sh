@@ -13,7 +13,11 @@ if [ -z "$BASE16_SHELL_TMUXCONF_PATH" ]; then
 fi
 
 if [ -z "$BASE16_TMUX_PLUGIN_PATH" ]; then
-  BASE16_TMUX_PLUGIN_PATH="$HOME/.tmux/plugins/base16-tmux"
+  if [ -d "$XDG_CONFIG_HOME/tmux" ]; then
+    BASE16_TMUX_PLUGIN_PATH="$XDG_CONFIG_HOME/tmux/plugins/base16-tmux"
+  fi
+    BASE16_TMUX_PLUGIN_PATH="$HOME/.tmux/plugins/base16-tmux"
+  else
 fi
 
 # If base16-tmux path directory doesn't exist, stop hook

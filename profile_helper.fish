@@ -7,7 +7,11 @@
 # Allow users to optionally configure where their base16-shell config is
 # stored by specifying BASE16_CONFIG_PATH before loading this script
 if test -z $BASE16_CONFIG_PATH
-  set BASE16_CONFIG_PATH "$HOME/.config/tinted-theming"
+  if test -n "XDG_CONFIG_HOME"
+    set -g BASE16_CONFIG_PATH "$XDG_CONFIG_HOME/tinted-theming"
+  else
+    set -g BASE16_CONFIG_PATH "$HOME/.config/tinted-theming"
+  end
 end
 set BASE16_SHELL_COLORSCHEME_PATH \
   "$BASE16_CONFIG_PATH/base16_shell_theme"
