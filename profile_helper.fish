@@ -104,6 +104,9 @@ for script_path in $BASE16_SHELL_PATH/scripts/*.sh
   alias $function_name="set_theme \"$theme_name\""
 end
 
+# unset loop variables to not leak to user's shell
+set -e script_path function_name theme_name
+
 # If $BASE16_THEME is set, this has already been loaded. This guards
 # against a bug where this script is sourced two or more times.
 if test -n "$BASE16_THEME"

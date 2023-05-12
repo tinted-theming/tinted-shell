@@ -98,11 +98,14 @@ alias reset="command reset \
 for script_path in "$BASE16_SHELL_PATH"/scripts/base16*.sh; do
   script_name=${script_path##*/}
   script_name=${script_name%.sh}
-  theme_name=${script_name#*-} # eg: solarized-light
+  theme_name=${script_name#base16-} # eg: solarized-light
   function_name="base16_${theme_name}"
 
   alias $function_name="set_theme \"${theme_name}\""
 done;
+
+# unset loop variables to not leak to user's shell
+unset script_path script_name theme_name function_name
 
 # If $BASE16_THEME is set, this has already been loaded. This guards
 # against a bug where this script is sourced two or more times.
