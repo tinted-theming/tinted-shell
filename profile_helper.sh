@@ -84,6 +84,7 @@ set_theme()
     for hook in $BASE16_SHELL_HOOKS_PATH/*.sh; do
       [ -x "$hook" ] && . "$hook"
     done
+    unset hook
   fi
 }
 
