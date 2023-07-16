@@ -1,32 +1,32 @@
 #!/bin/sh
 # base16-shell (https://github.com/tinted-theming/base16-shell)
 # Scheme name: Rosé Pine Moon 
-# Scheme author: Emilia Dunfelt &lt;sayhi@dunfelt.se&gt;
+# Scheme author: Emilia Dunfelt &lt;edun@dunfelt.se&gt;
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=rose-pine-moon
 
 color00="23/21/36" # Base 00 - Black
-color01="ec/eb/f0" # Base 08 - Red
-color02="ea/9a/97" # Base 0B - Green
-color03="f6/c1/77" # Base 0A - Yellow
-color04="9c/cf/d8" # Base 0D - Blue
-color05="c4/a7/e7" # Base 0E - Magenta
-color06="3e/8f/b0" # Base 0C - Cyan
+color01="eb/6f/92" # Base 08 - Red
+color02="3e/8f/b0" # Base 0B - Green
+color03="ea/9a/97" # Base 0A - Yellow
+color04="c4/a7/e7" # Base 0D - Blue
+color05="f6/c1/77" # Base 0E - Magenta
+color06="9c/cf/d8" # Base 0C - Cyan
 color07="e0/de/f4" # Base 05 - White
-color08="59/54/6d" # Base 03 - Bright Black
+color08="6e/6a/86" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="d9/d7/e1" # Base 07 - Bright White
-color16="eb/6f/92" # Base 09
-color17="b9/b9/bc" # Base 0F
+color15="56/52/6e" # Base 07 - Bright White
+color16="f6/c1/77" # Base 09
+color17="56/52/6e" # Base 0F
 color18="2a/27/3f" # Base 01
 color19="39/35/52" # Base 02
-color20="81/7c/9c" # Base 04
-color21="f5/f5/f7" # Base 06
+color20="90/8c/aa" # Base 04
+color21="e0/de/f4" # Base 06
 color_foreground="e0/de/f4" # Base 05
 color_background="23/21/36" # Base 00
 
@@ -132,17 +132,17 @@ if [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
   export BASE16_COLOR_00_HEX="232136"
   export BASE16_COLOR_01_HEX="2a273f"
   export BASE16_COLOR_02_HEX="393552"
-  export BASE16_COLOR_03_HEX="59546d"
-  export BASE16_COLOR_04_HEX="817c9c"
+  export BASE16_COLOR_03_HEX="6e6a86"
+  export BASE16_COLOR_04_HEX="908caa"
   export BASE16_COLOR_05_HEX="e0def4"
-  export BASE16_COLOR_06_HEX="f5f5f7"
-  export BASE16_COLOR_07_HEX="d9d7e1"
-  export BASE16_COLOR_08_HEX="ecebf0"
-  export BASE16_COLOR_09_HEX="eb6f92"
-  export BASE16_COLOR_0A_HEX="f6c177"
-  export BASE16_COLOR_0B_HEX="ea9a97"
-  export BASE16_COLOR_0C_HEX="3e8fb0"
-  export BASE16_COLOR_0D_HEX="9ccfd8"
-  export BASE16_COLOR_0E_HEX="c4a7e7"
-  export BASE16_COLOR_0F_HEX="b9b9bc"
+  export BASE16_COLOR_06_HEX="e0def4"
+  export BASE16_COLOR_07_HEX="56526e"
+  export BASE16_COLOR_08_HEX="eb6f92"
+  export BASE16_COLOR_09_HEX="f6c177"
+  export BASE16_COLOR_0A_HEX="ea9a97"
+  export BASE16_COLOR_0B_HEX="3e8fb0"
+  export BASE16_COLOR_0C_HEX="9ccfd8"
+  export BASE16_COLOR_0D_HEX="c4a7e7"
+  export BASE16_COLOR_0E_HEX="f6c177"
+  export BASE16_COLOR_0F_HEX="56526e"
 fi
