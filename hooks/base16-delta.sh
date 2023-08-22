@@ -19,21 +19,24 @@ if [[ -z $BASE16_COLOR_00_HEX ]]; then
   return
 fi
 
-read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+read -r current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 
 # Determine if theme is dark or light based on HSP calculation:
 # http://alienryderflex.com/hsp.html
 
 # We'll calculate the "perceived brightness" of the theme's background color.
 # We will use `bc`, and it only understands upper-case hex values:
-current_bg_color=$(echo $BASE16_COLOR_00_HEX | tr '[:lower:]' '[:upper:]')
+current_bg_color=$(echo "$BASE16_COLOR_00_HEX" | tr '[:lower:]' '[:upper:]')
 
 r_hex_value=${current_bg_color:0:2}
 g_hex_value=${current_bg_color:2:2}
 b_hex_value=${current_bg_color:4:2}
 
 # Calculate the perceived brightness, and check against brightness threshold of 7F.8 (127.5 in decimal).
-# We'll do it in a way that we can print out as part of the gitconfig file for debugging purposes:
+# We'll do it in a way that bc outputs an evaluatable bash script that contains:
+# 1.) The final result is_light_theme=1 or is_light_theme=0
+# 2.) The relevant values & HSP calculations that is in Bash comments,
+#     and will be added in the header section of the generated gitconfig.
 bc_output=$(bc -g <<-HSP_BC
 scale=3
 obase=10
@@ -47,23 +50,26 @@ define hex2dec(x) {
 r=hex2dec($r_hex_value)
 g=hex2dec($g_hex_value)
 b=hex2dec($b_hex_value)
-
-print "# hex = $current_bg_color\n"
-print "# r   = ", r, "\n"
-print "# g   = ", g, "\n"
-print "# b   = ", b, "\n"
-print "# hsp = sqrt(.299r^2 + .587g^2 + .114b^2)\n"
 hsp=sqrt((.4C8 * ${r_hex_value} ^ 2) + (0.964 * ${g_hex_value} ^ 2) + (.1D2 * ${b_hex_value} ^ 2))
-print "# hsp = ", hsp, "\n"
 
 is_light_theme=(hsp>7F.8)
 
-print "# hsp > 127.5 = ", is_light_theme, "\n"
+# gitconfig headers (Bash comments)
+print "# hex            = #$current_bg_color\n"
+print "# r              = ", r, "\n"
+print "# g              = ", g, "\n"
+print "# b              = ", b, "\n"
+print "# hsp            = sqrt(.299r^2 + .587g^2 + .114b^2)\n"
+print "# hsp            = ", hsp, "\n"
+print "# is_light_theme = hsp > 127.5\n"
+print "# is_light_theme = ", is_light_theme, "\n"
+
+# Variable assignment to Bash variable is_light_theme
 print "is_light_theme=", is_light_theme
 HSP_BC
 )
 
-eval $bc_output
+eval "$bc_output"
 
 if [[ $is_light_theme == "1" ]]; then
     is_light_theme="true"
@@ -81,12 +87,8 @@ gitconfig_output+="#\n"
 gitconfig_output+="# Base16 Theme: ${current_theme_name}\n"
 gitconfig_output+="#\n"
 gitconfig_output+="# Values & HSP calculation results:\n"
-echo $bc_output | while read line; do
-    if [[ $line == "#"* ]]; then
-        gitconfig_output+="${line}\n"
-    fi
-done
-
+gitconfig_output+=$(echo "$bc_output" | grep "^#")
+gitconfig_output+="\n"
 gitconfig_output+="[delta]\n"
 gitconfig_output+="\tlight = ${is_light_theme}"
 
