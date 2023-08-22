@@ -34,13 +34,8 @@ r_hex_value=$(echo ${current_bg_color:0:2} | tr '[:lower:]' '[:upper:]')
 g_hex_value=$(echo ${current_bg_color:2:2} | tr '[:lower:]' '[:upper:]')
 b_hex_value=$(echo ${current_bg_color:4:2} | tr '[:lower:]' '[:upper:]')
 
-# Actual conversion of hex values to decimal values via `bc`:
-r_value=$(echo "obase=10;ibase=16;${r_hex_value}" | bc)
-g_value=$(echo "obase=10;ibase=16;${r_hex_value}" | bc)
-b_value=$(echo "obase=10;ibase=16;${r_hex_value}" | bc)
-
-# Calculate the perceived brightness. It is considered a light color if greataer than 127.5:
-echo "sqrt((0.299 * ${r_value} ^ 2) + (0.587 * ${g_value} ^ 2) + (0.114 * ${b_value} ^ 2)) > 127.5" | bc | read hsp
+# Calculate the perceived brightness, and check against brightness threshold of 7F.8 (127.5 in decimal):
+echo "ibase=16; sqrt((.4C8 * ${r_hex_value} ^ 2) + (0.964 * ${g_hex_value} ^ 2) + (.1D2 * ${b_hex_value} ^ 2)) > 7F.8" | bc | read hsp
 
 is_light_theme="false"
 if [[ $hsp == "1" ]]; then
