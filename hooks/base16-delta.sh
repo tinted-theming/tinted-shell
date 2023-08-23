@@ -6,7 +6,7 @@
 
 DELTA_GITCONFIG_PATH="$BASE16_CONFIG_PATH/delta.gitconfig"
 
-if [ -f "$DELTA_GITCONFIG_PATH" ]; then
+if [ ! -e "$DELTA_GITCONFIG_PATH" ]; then
   touch "$DELTA_GITCONFIG_PATH"
 fi
 
@@ -14,7 +14,7 @@ fi
 # Execution
 # ----------------------------------------------------------------------
 
-if [[ -z $BASE16_COLOR_00_HEX ]]; then
+if [ -z "$BASE16_COLOR_00_HEX" ]; then
   # BASE16_SHELL_ENABLE_VARS not set.
   return
 fi
