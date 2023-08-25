@@ -14,8 +14,8 @@ fi
 # Execution
 # ----------------------------------------------------------------------
 
-if [ -z "$BASE16_COLOR_00_HEX" ]; then
-  # BASE16_SHELL_ENABLE_VARS not set.
+if [[ -z "$BASE16_COLOR_00_HEX" || -z "$(command -v 'bc')" ]]; then
+  # BASE16_SHELL_ENABLE_VARS not set or `bc` command does not exist.
   return
 fi
 
@@ -37,19 +37,14 @@ b_hex_value=${current_bg_color:4:2}
 # 1.) The final result is_light_theme=1 or is_light_theme=0
 # 2.) The relevant values & HSP calculations that is in Bash comments,
 #     and will be added in the header section of the generated gitconfig.
-bc_output=$(bc -g <<-HSP_BC
+bc_output=$(bc <<-HSP_BC
 scale=3
 obase=10
 ibase=16
-define hex2dec(x) {
-    ibase=16
-    obase=10
-    return(x)
-}
 
-r=hex2dec($r_hex_value)
-g=hex2dec($g_hex_value)
-b=hex2dec($b_hex_value)
+r=$r_hex_value
+g=$g_hex_value
+b=$b_hex_value
 hsp=sqrt((.4C8 * ${r_hex_value} ^ 2) + (0.964 * ${g_hex_value} ^ 2) + (.1D2 * ${b_hex_value} ^ 2))
 
 is_light_theme=(hsp>7F.8)
@@ -72,9 +67,9 @@ HSP_BC
 eval "$bc_output"
 
 if [[ $is_light_theme == "1" ]]; then
-    is_light_theme="true"
+  is_light_theme="true"
 else
-    is_light_theme="false"
+  is_light_theme="false"
 fi
 
 gitconfig_output="# vim: ft=gitconfig\n"
