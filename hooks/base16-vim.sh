@@ -7,11 +7,11 @@
 BASE16_SHELL_VIM_PATH="$BASE16_CONFIG_PATH/set_theme.vim"
 BASE16_SHELL_NVIM_PATH="$BASE16_CONFIG_PATH/set_theme.lua"
 
-if [ -f "$BASE16_SHELL_VIM_PATH" ]; then
+if ! [ -e "$BASE16_SHELL_VIM_PATH" ]; then
   touch "$BASE16_SHELL_VIM_PATH"
 fi
 
-if [ -f "$BASE16_SHELL_NVIM_PATH" ]; then
+if ! [ -e "$BASE16_SHELL_NVIM_PATH" ]; then
   touch "$BASE16_SHELL_NVIM_PATH"
 fi
 
