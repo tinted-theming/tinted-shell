@@ -198,6 +198,33 @@ If you'd like to install to a different path, you can do that and set
 Note: Restart HexChat after you've changed the theme with base16-shell
 to apply changes.
 
+#### Delta
+
+Add this line to your shell rc file:
+
+```sh
+export BASE16_SHELL_ENABLE_VARS=1
+```
+
+Include `delta.gitconfig` in your Git config file i.e. `~/.gitconfig`:
+
+```gitconfig
+[delta]
+	syntax-theme = "ansi" # Use terminal colors
+	# Rest of your delta config:
+	navigate = true
+	line-numbers = true
+	# etc.
+
+[include]
+	# Import ${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming/delta.gitconfig.
+	# It will set delta.light=(true|false):
+	path = ~/.config/tinted-theming/delta.gitconfig
+```
+
+> [!NOTE]
+> You may need to restart your terminal/start a new shell for the changes to take effect.
+
 ### Keeping your themes up to date
 
 To update, just `git pull` wherever you've cloned `base16-shell`. The
