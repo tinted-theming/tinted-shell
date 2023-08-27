@@ -6,8 +6,8 @@
 
 # Allow users to optionally configure where their base16-shell config is
 # stored by specifying BASE16_CONFIG_PATH before loading this script
-if test -z $BASE16_CONFIG_PATH
-  if test -n "XDG_CONFIG_HOME"
+if test -z "$BASE16_CONFIG_PATH"
+  if test -n "$XDG_CONFIG_HOME"
     set -g BASE16_CONFIG_PATH "$XDG_CONFIG_HOME/tinted-theming"
   else
     set -g BASE16_CONFIG_PATH "$HOME/.config/tinted-theming"
@@ -22,7 +22,7 @@ set BASE16_SHELL_THEME_NAME_PATH "$BASE16_CONFIG_PATH/theme_name"
 
 # Allow users to optionally configure their base16-shell path and set
 # the value if one doesn't exist
-if test -z $BASE16_SHELL_PATH
+if test -z "$BASE16_SHELL_PATH"
   set -g BASE16_SHELL_PATH (realpath (dirname (status -f)))
 end
 
@@ -49,13 +49,13 @@ end
 function set_theme
   set theme_name $argv[1]
 
-  if not test -e $BASE16_CONFIG_PATH
+  if not test -e "$BASE16_CONFIG_PATH"
     echo "\$BASE16_CONFIG_PATH doesn't exist. Try sourcing this script \
       and then try again"
     return 2
   end
 
-  if test -z $theme_name
+  if test -z "$theme_name"
     echo "Provide a theme name to set_theme or ensure \
       \$BASE16_THEME_DEFAULT is set"
     return 1
