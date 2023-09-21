@@ -66,7 +66,7 @@ function set_theme
   end
 
   # Symlink and source
-  ln -fs \
+  command ln -fs \
     "$BASE16_SHELL_PATH/scripts/base16-$theme_name.sh" \
     "$BASE16_SHELL_COLORSCHEME_PATH"
   if not test -e "$BASE16_SHELL_COLORSCHEME_PATH"
