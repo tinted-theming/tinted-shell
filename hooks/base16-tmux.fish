@@ -14,7 +14,7 @@ end
 
 if test -z "$BASE16_TMUX_PLUGIN_PATH"
   if test -n "$XDG_CONFIG_HOME"
-    set -g BASE16_HEXCHAT_PATH "$XDG_CONFIG_HOME/tmux/plugins/base16-tmux"
+    set -g BASE16_TMUX_PLUGIN_PATH "$XDG_CONFIG_HOME/tmux/plugins/base16-tmux"
   else
     set -g BASE16_TMUX_PLUGIN_PATH "$HOME/.tmux/plugins/base16-tmux"
   end
