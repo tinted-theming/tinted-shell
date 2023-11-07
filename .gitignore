@@ -1,2 +1,7 @@
 schemes
 *.zwc
+
+
+# Added by cargo
+
+/target
