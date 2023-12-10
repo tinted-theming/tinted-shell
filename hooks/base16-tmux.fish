@@ -32,7 +32,7 @@ end
 # If base16-tmux is used, provide a file for base16-tmux to source
 if test -d "$BASE16_TMUX_PLUGIN_PATH"
   # Set current theme name
-  read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+  set current_theme_name (cat "$BASE16_SHELL_THEME_NAME_PATH")
 
   echo "set -g @colors-base16 '$current_theme_name'" > \
     "$BASE16_SHELL_TMUXCONF_PATH"
