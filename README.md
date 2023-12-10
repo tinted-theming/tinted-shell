@@ -225,6 +225,19 @@ Include `delta.gitconfig` in your Git config file i.e. `~/.gitconfig`:
 > [!NOTE]
 > You may need to restart your terminal/start a new shell for the changes to take effect.
 
+#### Sublime Merge
+
+[base16-sublime-merge] is required to be cloned or symlinked at
+`path/to/sublimemerge/Packages/base16-sublime-merge`.
+
+The Sublime Merge package path must be added to your shell `.*rc` file.
+You find find this value by opening `Sublime Merge -> Preferences ->
+Browse Packages...`. Add this directory path to your shell `.*rc` file:
+
+```shell
+export BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH="path/to/sublime-merge/Packages"
+```
+
 ### Keeping your themes up to date
 
 To update, just `git pull` wherever you've cloned `base16-shell`. The
@@ -317,3 +330,4 @@ instructions.
 [12]: https://github.com/tinted-theming/base16-hexchat
 [13]: https://github.com/tinted-theming/home/blob/main/styling.md
 [XDG Base Directory Specification]: https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+[base16-sublime-merge]: https://github.com/tinted-theming/base16-sublime-merge
