@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env fish
 
 # ----------------------------------------------------------------------
 # Setup config variables and env
@@ -35,7 +35,7 @@ if test -n "$HEXCHAT_COLORS_CONF_PATH"; \
 end
 
 # Set current theme name
-read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+set current_theme_name (cat "$BASE16_SHELL_THEME_NAME_PATH")
 
 set hexchat_theme_path "$BASE16_HEXCHAT_PATH/colors/base16-$current_theme_name.conf"
 

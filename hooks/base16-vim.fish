@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env fish
 
 # ----------------------------------------------------------------------
 # Setup config variables and env
@@ -18,7 +18,7 @@ end
 # ----------------------------------------------------------------------
 # Execution
 # ----------------------------------------------------------------------
-read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+set current_theme_name (cat "$BASE16_SHELL_THEME_NAME_PATH")
 
 set vim_output (string join "\n" \
   "if !exists('g:colors_name') || g:colors_name != 'base16-$current_theme_name'" \

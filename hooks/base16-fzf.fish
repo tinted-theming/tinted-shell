@@ -25,7 +25,7 @@ end
 # Execution
 # ----------------------------------------------------------------------
 
-read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+set current_theme_name (cat "$BASE16_SHELL_THEME_NAME_PATH")
 
 # If base16-fzf is used, provide a file for base16-fzf to source
 if test -e "$BASE16_FZF_PATH/fish/base16-$current_theme_name.fish"
