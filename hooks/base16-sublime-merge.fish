@@ -12,12 +12,19 @@ if not test -f "$BASE16_SHELL_THEME_NAME_PATH"
   exit 1
 end
 
+# The path/to/sublime-merge/Package must be set
 if not test -d "$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH"
+  exit 1
+end
+
+# The base16-sublime-merge repo must be cloned at
+if not test -d "$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH/base16-sublime-merge"
   exit 1
 end
 
 set BASE16_SHELL_SUBLIMEMERGE_SETTINGS_PATH "$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH/User/Preferences.sublime-settings"
 
+# The Sublime Merge settings path should exist
 if not test -f "$BASE16_SHELL_SUBLIMEMERGE_SETTINGS_PATH"
   exit 1
 end
