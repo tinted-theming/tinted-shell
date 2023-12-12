@@ -65,6 +65,14 @@ if status --is-interactive
 end
 ```
 
+### Tmux
+
+Add the following to your `.tmux.conf` file.
+
+```tmux
+set -g allow-passthrough on # Enables ANSI pass through
+```
+
 ## Configuration
 
 ### Base16-Vim Users
