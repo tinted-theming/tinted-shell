@@ -5,28 +5,28 @@
 # ----------------------------------------------------------------------
 
 if [ -z "$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH" ]; then
-  exit 1
+  return 1
 fi
 
 if ! [ -f "$BASE16_SHELL_THEME_NAME_PATH" ]; then
-  exit 1
+  return 1
 fi
 
 # The path/to/sublime-merge/Package must be set
 if ! [ -d "$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH" ]; then
-  exit 1
+  return 1
 fi
 
 # The base16-sublime-merge repo must be cloned at
 if ! [ -d "$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH/base16-sublime-merge" ]; then
-  exit 1
+  return 1
 fi
 
 BASE16_SHELL_SUBLIMEMERGE_SETTINGS_PATH="$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH"/User/Preferences.sublime-settings 
 
 # The Sublime Merge settings path should exist
 if ! [ -f "$BASE16_SHELL_SUBLIMEMERGE_SETTINGS_PATH" ]; then
-  exit 1
+  return 1
 fi
 
 find_replace_json_value_in_sublimemerge_settings() {
