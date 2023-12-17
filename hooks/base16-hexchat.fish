@@ -18,12 +18,12 @@ end
 
 # If BASE16_HEXCHAT_PATH doesn't exist, stop hook
 if not test -d "$BASE16_HEXCHAT_PATH"
-  exit 2
+  return 2
 end
 
 # If HEXCHAT_COLORS_CONF_PATH hasn't been configured, stop hook
 if test -z "$HEXCHAT_COLORS_CONF_PATH"
-  exit 1
+  return 1
 end
 
 # If HEXCHAT_COLORS_CONF_PATH has been configured, but the file doesn't
@@ -31,7 +31,7 @@ end
 if test -n "$HEXCHAT_COLORS_CONF_PATH"; \
   and not test -f "$HEXCHAT_COLORS_CONF_PATH"
   echo "\$HEXCHAT_COLORS_CONF_PATH is not a file."
-  exit 2
+  return 2
 end
 
 # Set current theme name
@@ -47,7 +47,7 @@ if not test -f "$hexchat_theme_path"
 
   echo $output
 
-  exit 2
+  return 2
 end
 
 # ----------------------------------------------------------------------
