@@ -30,7 +30,7 @@ fi
 # ----------------------------------------------------------------------
 
 # If base16-tmux is used, provide a file for base16-tmux to source
-if [ -d "$BASE16_TMUX_PLUGIN_PATH" ]; then
+if [[ -d "$BASE16_TMUX_PLUGIN_PATH" && "$(command -v 'tmux')" ]]; then
   # Set current theme name
   read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 
