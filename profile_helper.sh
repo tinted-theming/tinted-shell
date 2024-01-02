@@ -93,7 +93,7 @@ set_theme()
   fi
 
   # Symlink new colorscheme
-  ln -fs "$script_path" "$BASE16_SHELL_COLORSCHEME_PATH"
+  ln -fs "$script_path" "$BASE16_SHELL_COLORSCHEME_PATH" >/dev/null
   if [ ! -e "$BASE16_SHELL_COLORSCHEME_PATH" ]; then
     echo "Attempted symbolic link failed. Ensure \$BASE16_SHELL_PATH \
       and \$BASE16_SHELL_COLORSCHEME_PATH are valid paths."
