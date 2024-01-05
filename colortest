@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
-theme=$(dirname $0)/scripts/${1:-base16-default-dark.sh}
+
+if [[ -z $BASE16_SHELL_THEME_NAME_PATH ]]; then
+  BASE16_SHELL_THEME_NAME_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming/theme_name" 
+fi
+
+# If $BASE16_SHELL_THEME_NAME_PATH exists extract the file contents
+read current_theme_name_from_config_file < "$BASE16_SHELL_THEME_NAME_PATH"
+
+# Use $current_theme_name_from_config_file else $BASE16_THEME else $BASE16_THEME_DEFAULT else "default-dark"
+theme_name="${1:-${current_theme_name_from_config_file:-${BASE16_THEME:-${BASE16_THEME_DEFAULT:-default-dark}}}}"
+theme=$(dirname $0)/scripts/base16-${theme_name}.sh
 if [ -f $theme ]; then
   # get the color declarations in said theme, assumes there is a block of text that starts with color00= and ends with new line
   source $theme
