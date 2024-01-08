@@ -29,6 +29,18 @@ if ! [ -f "$BASE16_SHELL_SUBLIMEMERGE_SETTINGS_PATH" ]; then
   return 1
 fi
 
+read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
+
+# The Sublime Merge theme should exist
+if ! [ -f "$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH/base16-sublime-merge/colorschemes/base16-$current_theme_name.sublime-color-scheme" ]; then
+  output="'$current_theme_name' theme doesn't exist in base16-sublime-merge. Make sure "
+  output+="the local repository is using the latest commit. \`cd\` to "
+  output+="the directory and try doing a \`git pull\`."
+
+  echo $output
+  exit 1
+fi
+
 find_replace_json_value_in_sublimemerge_settings() {
   local property=$1
   local value=$2
@@ -41,7 +53,5 @@ find_replace_json_value_in_sublimemerge_settings() {
 # ----------------------------------------------------------------------
 # Execution
 # ----------------------------------------------------------------------
-read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
-
 find_replace_json_value_in_sublimemerge_settings "theme" "base16-$current_theme_name.sublime-theme"
 find_replace_json_value_in_sublimemerge_settings "color_scheme" "base16-$current_theme_name.sublime-color-scheme"
