@@ -239,12 +239,28 @@ Include `delta.gitconfig` in your Git config file i.e. `~/.gitconfig`:
 `path/to/sublimemerge/Packages/base16-sublime-merge`.
 
 The Sublime Merge package path must be added to your shell `.*rc` file.
-You find find this value by opening `Sublime Merge -> Preferences ->
-Browse Packages...`. Add this directory path to your shell `.*rc` file:
+You find find this value in Linux by opening `Sublime Merge ->
+Preferences -> Browse Packages...` or on MacOS with `Sublime Merge ->
+Settings... -> Browse Packages...`. Add this directory path to your
+shell `.*rc` file:
 
 ```shell
 export BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH="path/to/sublime-merge/Packages"
 ```
+
+Make sure
+`$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH/User/Preferences.sublime-settings`
+exists and contains the `theme` and `color_scheme` json properties. If
+they don't exist, make sure the file contains them:
+
+```json
+{
+    "theme": "Merge Dark.sublime-theme",
+    "color_scheme": "Merge Dark.sublime-color-scheme"
+}
+```
+This is necessary because the hook finds those properties and replaces
+the values.
 
 ### Keeping your themes up to date
 
