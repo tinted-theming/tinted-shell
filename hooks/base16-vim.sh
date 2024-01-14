@@ -20,14 +20,29 @@ fi
 # ----------------------------------------------------------------------
 read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 
-vim_output="if !exists('g:colors_name') || g:colors_name != 'base16-$current_theme_name'\n"
-vim_output+="  colorscheme base16-$current_theme_name\n"
-vim_output+="endif"
+cat > "$BASE16_SHELL_VIM_PATH" << EOF
+function! ColorschemeExists(theme)
+    try
+        execute 'colorscheme ' . a:theme
+        return 1
+    catch
+        return 0
+    endtry
+endfunction
 
-nvim_output="local current_theme_name = \"$current_theme_name\"\n"
-nvim_output+="if current_theme_name ~= \"\" and vim.g.colors_name ~= 'base16-' .. current_theme_name then\n"
-nvim_output+="  vim.cmd('colorscheme base16-' .. current_theme_name)\n"
-nvim_output+="end"
+if strlen('$current_theme_name') > 0 && (!exists('g:colors_name') || g:colors_name != 'base16-$current_theme_name') && ColorschemeExists('base16-$current_theme_name')
+  colorscheme base16-$current_theme_name
+endif
+EOF
 
-echo -e "$vim_output" >| "$BASE16_SHELL_VIM_PATH"
-echo -e "$nvim_output" >| "$BASE16_SHELL_NVIM_PATH"
+cat > "$BASE16_SHELL_NVIM_PATH" << EOF
+local current_theme_name = "$current_theme_name"
+function colorscheme_exists(scheme)
+    local status_ok, _ = pcall(vim.cmd, "colorscheme " .. scheme)
+    return status_ok
+end
+
+if current_theme_name and current_theme_name ~= "" and vim.g.colors_name ~= 'base16-' .. current_theme_name and colorscheme_exists('base16-' .. current_theme_name) then
+  vim.cmd('colorscheme base16-' .. current_theme_name)
+end
+EOF
