@@ -46,8 +46,23 @@ find_replace_json_value_in_sublimemerge_settings() {
   local value=$2
   local json_file="$BASE16_SHELL_SUBLIMEMERGE_PACKAGE_PATH"/User/Preferences.sublime-settings
 
-  # Use sed to find the property and change its value
-  sed -i "s/\"$property\": \".*\"/\"$property\": \"$value\"/" $BASE16_SHELL_SUBLIMEMERGE_SETTINGS_PATH
+  # Determine the operating system
+  OS="$(uname)"
+
+  # Define the sed command based on the operating system
+  case "$OS" in
+    Darwin|FreeBSD)
+      # macOS system (BSD sed)
+      SED_COMMAND=(sed -i '')
+      ;;
+    *)
+      # Assume Linux or other (GNU sed)
+      SED_COMMAND=(sed -i)
+      ;;
+  esac
+
+  # Use the determined sed command in your script
+  "${SED_COMMAND[@]}" "s/\"$property\": \".*\"/\"$property\": \"$value\"/" "$BASE16_SHELL_SUBLIMEMERGE_SETTINGS_PATH"
 }
 
 # ----------------------------------------------------------------------
