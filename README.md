@@ -310,9 +310,10 @@ of colours in within the 256 colorspace (e.g. Apple Terminal), colours
 ![setting 256 colourspace not supported][9]
 
 If **colortest** is run without any arguments e.g. `./colortest` the hex
-values shown will correspond to the default scheme. If you'd like to see
-the hex values for a particular scheme pass the file name of the theme
-as the arguement e.g. `./colortest base16-ocean.sh`.
+values shown will correspond to the currently set theme or the default
+theme set with `BASE16_THEME_DEFAULT`. If you'd like to see the hex
+values for a particular scheme pass the file name of the theme name as
+the arguement e.g. `./colortest ocean`.
 
 ### Inverted blacks and whites
 
