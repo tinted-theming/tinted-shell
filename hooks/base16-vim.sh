@@ -20,7 +20,7 @@ fi
 # ----------------------------------------------------------------------
 read current_theme_name < "$BASE16_SHELL_THEME_NAME_PATH"
 
-cat > "$BASE16_SHELL_VIM_PATH" << EOF
+cat >| "$BASE16_SHELL_VIM_PATH" << EOF
 function! ColorschemeExists(theme)
     try
         execute 'colorscheme ' . a:theme
@@ -35,7 +35,7 @@ if strlen('$current_theme_name') > 0 && (!exists('g:colors_name') || g:colors_na
 endif
 EOF
 
-cat > "$BASE16_SHELL_NVIM_PATH" << EOF
+cat >| "$BASE16_SHELL_NVIM_PATH" << EOF
 local current_theme_name = "$current_theme_name"
 function colorscheme_exists(scheme)
     local status_ok, _ = pcall(vim.cmd, "colorscheme " .. scheme)
