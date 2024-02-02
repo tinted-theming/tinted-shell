@@ -198,7 +198,7 @@ If you'd like to install to a different path, you can do that and set
    `$HOME/.config/tinted-theming/base16-hexchat` (or
    `$XDG_CONFIG_HOME/tinted-theming/base16-hexchat`). Or optionally
    install to a custom path and set `$BASE16_HEXCHAT_PATH` to that path.
-2. Set the `$HEXCHAT_COLORS_CONF_PATH` shell variable to your hexchat
+2. Set the `$BASE16_HEXCHAT_COLORS_CONF_PATH` shell variable to your hexchat
    `colors.conf` file. If you don't know where that is, read the
    [base16-hexchat][12] repo for more information. the hook will
    automatically pick that up and things will work as expected.

@@ -17,16 +17,16 @@ if [ ! -d "$BASE16_HEXCHAT_PATH" ]; then
   return 2
 fi
 
-# If HEXCHAT_COLORS_CONF_PATH hasn't been configured, stop hook
-if [ -z "$HEXCHAT_COLORS_CONF_PATH" ]; then
+# If BASE16_HEXCHAT_COLORS_CONF_PATH hasn't been configured, stop hook
+if [ -z "$BASE16_HEXCHAT_COLORS_CONF_PATH" ]; then
   return 1
 fi
 
-# If HEXCHAT_COLORS_CONF_PATH has been configured, but the file doesn't
+# If BASE16_HEXCHAT_COLORS_CONF_PATH has been configured, but the file doesn't
 # exist
-if [ -n "$HEXCHAT_COLORS_CONF_PATH" ] \
-  && [ ! -f "$HEXCHAT_COLORS_CONF_PATH" ]; then
-  echo "\$HEXCHAT_COLORS_CONF_PATH is not a file."
+if [ -n "$BASE16_HEXCHAT_COLORS_CONF_PATH" ] \
+  && [ ! -f "$BASE16_HEXCHAT_COLORS_CONF_PATH" ]; then
+  echo "\$BASE16_HEXCHAT_COLORS_CONF_PATH is not a file."
   return 2
 fi
 
@@ -49,4 +49,4 @@ fi
 # Execution
 # ----------------------------------------------------------------------
 
-cp -f "$hexchat_theme_path" "$HEXCHAT_COLORS_CONF_PATH"
+cp -f "$hexchat_theme_path" "$BASE16_HEXCHAT_COLORS_CONF_PATH"
