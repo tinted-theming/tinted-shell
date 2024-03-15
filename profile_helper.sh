@@ -4,7 +4,7 @@
 # Setup config variables and env
 # ----------------------------------------------------------------------
 
-# Allow users to optionally configure where their base16-shell config is
+# Allow users to optionally configure where their tinted-shell config is
 # stored by specifying BASE16_CONFIG_PATH before loading this script
 if [ -z $BASE16_CONFIG_PATH ]; then
   BASE16_CONFIG_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming"
@@ -15,7 +15,7 @@ BASE16_SHELL_COLORSCHEME_PATH="$BASE16_CONFIG_PATH/base16_shell_theme"
 # using session managers such as TMUX
 BASE16_SHELL_THEME_NAME_PATH="$BASE16_CONFIG_PATH/theme_name" 
 
-# Allow users to optionally configure their base16-shell path and set
+# Allow users to optionally configure their tinted-shell path and set
 # the value if one doesn't exist
 if [ -z "$BASE16_SHELL_PATH" ]; then
   if [ -n "$BASH_VERSION" ]; then
