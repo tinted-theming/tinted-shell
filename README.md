@@ -1,5 +1,7 @@
 # Base16 Shell
 
+[![Matrix Chat](https://img.shields.io/matrix/tinted-theming:matrix.org)](https://matrix.to/#/#tinted-theming:matrix.org)
+
 See the [Base16 repository][1] for more information.
 
 A shell script to change your shell's default ANSI colors but most
