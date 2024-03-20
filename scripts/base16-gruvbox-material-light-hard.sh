@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# base16-shell (https://github.com/tinted-theming/base16-shell)
+# tinted-shell (https://github.com/tinted-theming/tinted-shell)
 # Scheme name: Gruvbox Material Light, Hard 
 # Scheme author: Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
@@ -132,7 +132,7 @@ unset color_foreground
 unset color_background
 
 # Optionally export variables
-if [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
+if [ -n "$TINTED_SHELL_ENABLE_BASE16_VARS" ] || [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
   export BASE16_COLOR_00_HEX="f9f5d7"
   export BASE16_COLOR_01_HEX="fbf1c7"
   export BASE16_COLOR_02_HEX="e0cfa9"

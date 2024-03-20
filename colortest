@@ -1,76 +1,108 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-if [[ -z $BASE16_SHELL_THEME_NAME_PATH ]]; then
-  BASE16_SHELL_THEME_NAME_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming/theme_name" 
+if [ -n "$BASE16_THEME" ]; then
+  current_theme="base16-$BASE16_THEME"
 fi
 
-# If $BASE16_SHELL_THEME_NAME_PATH exists extract the file contents
-read current_theme_name_from_config_file < "$BASE16_SHELL_THEME_NAME_PATH"
+if [ -n "$BASE24_THEME" ]; then
+  current_theme="base24-$BASE24_THEME"
+fi
 
-# Use $current_theme_name_from_config_file else $BASE16_THEME else $BASE16_THEME_DEFAULT else "default-dark"
-theme_name="${1:-${current_theme_name_from_config_file:-${BASE16_THEME:-${BASE16_THEME_DEFAULT:-default-dark}}}}"
-theme=$(dirname $0)/scripts/base16-${theme_name}.sh
-if [ -f $theme ]; then
-  # get the color declarations in said theme, assumes there is a block of text that starts with color00= and ends with new line
-  source $theme
-  eval $(awk '/^color00=/,/^$/ {print}' $theme | sed 's/#.*//')
+theme_name="${1:-${current_theme:-default-dark}}"
+theme_path="$(dirname "$0")/scripts/$theme_name.sh"
+
+if [ -f "$theme_path" ]; then
+  . "$theme_path"
+  eval "$(awk '/^color00=/,/^$/ {print}' "$theme_path" | sed 's/#.*//')"
 else
-  printf "No theme file %s found\n" $theme
-fi;
-ansi_mappings=(
-  Black
-  Red
-  Green
-  Yellow
-  Blue
-  Magenta
-  Cyan
-  White
-  Bright_Black
-  Bright_Red
-  Bright_Green
-  Bright_Yellow
-  Bright_Blue
-  Bright_Magenta
-  Bright_Cyan
-  Bright_White
-)
-colors=(
-  base00
-  base08
-  base0B
-  base0A
-  base0D
-  base0E
-  base0C
-  base05
-  base03
-  base08
-  base0B
-  base0A
-  base0D
-  base0E
-  base0C
-  base07
-  base09
-  base0F
-  base01
-  base02
-  base04
-  base06
-)
-for padded_value in `seq -w 0 21`; do
-  color_variable="color${padded_value}"
-  eval current_color=\$${color_variable}
-  current_color=$(echo ${current_color//\//} | tr '[:lower:]' '[:upper:]') # get rid of slashes, and uppercase
-  non_padded_value=$((10#$padded_value))
-  base16_color_name=${colors[$non_padded_value]}
-  current_color_label=${current_color:-unknown}
-  ansi_label=${ansi_mappings[$non_padded_value]} 
-  block=$(printf "\x1b[48;5;${non_padded_value}m___________________________")
-  foreground=$(printf "\x1b[38;5;${non_padded_value}m$color_variable")
-  printf "%s %s %s %-30s %s\x1b[0m\n" $foreground $base16_color_name $current_color_label ${ansi_label:-""} $block
-done;
-if [ $# -eq 1 ]; then
-    printf "To restore current theme, source $HOME/.config/tinted-theming/base16_theme or reopen your terminal\n"
+  printf "No theme file %s found\n" "$theme_path"
 fi
+
+case "$theme_name" in
+  "base16"*) 
+    color_variables="\
+      base00 \
+      base08 \
+      base0B \
+      base0A \
+      base0D \
+      base0E \
+      base0C \
+      base05 \
+      base03 \
+      base08 \
+      base0B \
+      base0A \
+      base0D \
+      base0E \
+      base0C \
+      base07 \
+      base09 \
+      base0F \
+      base01 \
+      base02 \
+      base04 \
+      base06";;
+  "base24"*) 
+    color_variables="\
+      base00 \
+      base08 \
+      base0B \
+      base09 \
+      base0D \
+      base0E \
+      base0C \
+      base06 \
+      base02 \
+      base12 \
+      base14 \
+      base13 \
+      base16 \
+      base17 \
+      base15 \
+      base07 \
+      base09 \
+      base0F \
+      base01 \
+      base02 \
+      base04 \
+      base06";;
+*) echo "Theme name should start with the scheme system, eg \"base16-oceanicnext\" or \"base24-chalk\": $theme_name" && exit 1 ;;
+esac
+
+ansi_labels="\
+  Black \
+  Red \
+  Green \
+  Yellow \
+  Blue \
+  Magenta \
+  Cyan \
+  White \
+  Bright_Black \
+  Bright_Red \
+  Bright_Green \
+  Bright_Yellow \
+  Bright_Blue \
+  Bright_Magenta \
+  Bright_Cyan \
+  Bright_White"
+
+set -- $color_variables
+i=0
+while [ $i -lt 22 ]; do
+  color_variable="color$(printf "%02d" $i)"
+  eval current_color=\$$color_variable
+  current_color=$(printf "%s" "$current_color" | tr 'a-f' 'A-F' | tr -d '/') # POSIX-compliant uppercase & remove slashes
+  
+  # Fetching the color name and ANSI label based on position
+  base16_color_name=$(printf "%s\n" $color_variables | sed -n "$((i + 1))p")
+  ansi_label=$(printf "%s\n" $ansi_labels | sed -n "$((i + 1))p")
+  
+  # Displaying the color block
+  block=$(printf "\033[48;5;%dm___________________________" $i)
+  foreground=$(printf "\033[38;5;%dm%s" $i "$color_variable")
+  printf "%s %s %s %-30s %s\033[0m\n" "$foreground" "$base16_color_name" "${current_color:-space}" "${ansi_label:-""}" "$block"
+  
+  i=$((i + 1))
+done

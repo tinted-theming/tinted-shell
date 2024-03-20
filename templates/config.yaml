@@ -1,3 +1,8 @@
-default: 
+base16: 
     extension: .sh
     output: scripts
+
+base24: 
+    extension: .sh
+    output: scripts
+    supported-systems: [base24]

@@ -17,17 +17,17 @@ automatically.
 1. Run `cd /path/to/base-builder-go && go build` to generate a binary:
 `/path/to/base-builder-go/base16-builder-go`
 1. Now execute the binary you generated while giving the `-template-dir`
-arg the path to `base16-shell` repository: `./base16-builder-go
--template-dir ../base16-shell`
+arg the path to `tinted-shell` repository: `./base16-builder-go
+-template-dir ../tinted-shell`
 
 Or the above steps represented in shell commands:
 
 ```shell 
-cd /path/to/base16-shell/../ # This repos parent dir 
+cd /path/to/tinted-shell/../ # This repos parent dir 
 git clone git@github.com:tinted-theming/base16-builder-go.git
 cd base16-builder-go
 go build ./base16-builder-go/base16-builder-go \
-  -template-dir ../base16-shell
+  -template-dir ../tinted-shell
 ```
 
 ### Usage for adding or editing a colorscheme
@@ -39,7 +39,7 @@ executing the `base16-builder-go` binary.
 ```shell
 base16-builder-go \
   -schemes-dir /path/to/base16-schemes \
-  -template-dir /path/to/base16-shell
+  -template-dir /path/to/tinted-shell
 ```
 
 If you have more questions about [base16-builder-go][1], have a look at

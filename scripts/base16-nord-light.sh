@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# base16-shell (https://github.com/tinted-theming/base16-shell)
+# tinted-shell (https://github.com/tinted-theming/tinted-shell)
 # Scheme name: Nord Light 
 # Scheme author: threddast, based on fuxialexander&#39;s doom-nord-light-theme (Doom Emacs)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
@@ -132,7 +132,7 @@ unset color_foreground
 unset color_background
 
 # Optionally export variables
-if [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
+if [ -n "$TINTED_SHELL_ENABLE_BASE16_VARS" ] || [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
   export BASE16_COLOR_00_HEX="e5e9f0"
   export BASE16_COLOR_01_HEX="c2d0e7"
   export BASE16_COLOR_02_HEX="b8c5db"
