@@ -9,9 +9,9 @@ color00="00/26/35" # Base 00 - Black
 color01="ff/5a/67" # Base 08 - Red
 color02="7f/c0/6e" # Base 0B - Green
 color03="ff/cc/1b" # Base 0A - Yellow
-color04="5d/d7/b9" # Base 0D - Blue
+color04="14/74/7e" # Base 0D - Blue
 color05="9a/70/a4" # Base 0E - Magenta
-color06="14/74/7e" # Base 0C - Cyan
+color06="5d/d7/b9" # Base 0C - Cyan
 color07="a1/a1/9a" # Base 05 - White
 color08="6c/8b/91" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
@@ -145,8 +145,8 @@ if [ -n "$TINTED_SHELL_ENABLE_BASE16_VARS" ] || [ -n "$BASE16_SHELL_ENABLE_VARS"
   export BASE16_COLOR_09_HEX="f08e48"
   export BASE16_COLOR_0A_HEX="ffcc1b"
   export BASE16_COLOR_0B_HEX="7fc06e"
-  export BASE16_COLOR_0C_HEX="14747e"
-  export BASE16_COLOR_0D_HEX="5dd7b9"
+  export BASE16_COLOR_0C_HEX="5dd7b9"
+  export BASE16_COLOR_0D_HEX="14747e"
   export BASE16_COLOR_0E_HEX="9a70a4"
   export BASE16_COLOR_0F_HEX="c43060"
 fi
