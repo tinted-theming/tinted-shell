@@ -1,17 +1,17 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
 # Scheme name: Everforest Dark Hard 
-# Scheme author: Oskar Liew (https://github.com/OskarLiew)
+# Scheme author: Sainnhe Park (https://github.com/sainnhe)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=everforest-dark-hard
 
 color00="27/2e/33" # Base 00 - Black
-color01="7f/bb/b3" # Base 08 - Red
-color02="83/c0/92" # Base 0B - Green
+color01="e6/7e/80" # Base 08 - Red
+color02="a7/c0/80" # Base 0B - Green
 color03="db/bc/7f" # Base 0A - Yellow
-color04="a7/c0/80" # Base 0D - Blue
-color05="e6/7e/80" # Base 0E - Magenta
-color06="e6/98/75" # Base 0C - Cyan
+color04="7f/bb/b3" # Base 0D - Blue
+color05="d6/99/b6" # Base 0E - Magenta
+color06="83/c0/92" # Base 0C - Cyan
 color07="d3/c6/aa" # Base 05 - White
 color08="85/92/89" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
@@ -20,13 +20,13 @@ color11="$color03" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
-color15="fd/f6/e3" # Base 07 - Bright White
-color16="d6/99/b6" # Base 09
-color17="4c/37/43" # Base 0F
+color15="ff/fb/ef" # Base 07 - Bright White
+color16="e6/98/75" # Base 09
+color17="9d/a9/a0" # Base 0F
 color18="2e/38/3c" # Base 01
 color19="41/4b/50" # Base 02
 color20="9d/a9/a0" # Base 04
-color21="e4/e1/cd" # Base 06
+color21="ed/ea/da" # Base 06
 color_foreground="d3/c6/aa" # Base 05
 color_background="27/2e/33" # Base 00
 
@@ -139,14 +139,14 @@ if [ -n "$TINTED_SHELL_ENABLE_BASE16_VARS" ] || [ -n "$BASE16_SHELL_ENABLE_VARS"
   export BASE16_COLOR_03_HEX="859289"
   export BASE16_COLOR_04_HEX="9da9a0"
   export BASE16_COLOR_05_HEX="d3c6aa"
-  export BASE16_COLOR_06_HEX="e4e1cd"
-  export BASE16_COLOR_07_HEX="fdf6e3"
-  export BASE16_COLOR_08_HEX="7fbbb3"
-  export BASE16_COLOR_09_HEX="d699b6"
+  export BASE16_COLOR_06_HEX="edeada"
+  export BASE16_COLOR_07_HEX="fffbef"
+  export BASE16_COLOR_08_HEX="e67e80"
+  export BASE16_COLOR_09_HEX="e69875"
   export BASE16_COLOR_0A_HEX="dbbc7f"
-  export BASE16_COLOR_0B_HEX="83c092"
-  export BASE16_COLOR_0C_HEX="e69875"
-  export BASE16_COLOR_0D_HEX="a7c080"
-  export BASE16_COLOR_0E_HEX="e67e80"
-  export BASE16_COLOR_0F_HEX="4c3743"
+  export BASE16_COLOR_0B_HEX="a7c080"
+  export BASE16_COLOR_0C_HEX="83c092"
+  export BASE16_COLOR_0D_HEX="7fbbb3"
+  export BASE16_COLOR_0E_HEX="d699b6"
+  export BASE16_COLOR_0F_HEX="9da9a0"
 fi

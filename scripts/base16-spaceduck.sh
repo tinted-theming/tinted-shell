@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
 # Scheme name: Spaceduck 
-# Scheme author: Guillermo Rodriguez (https://github.com/pineapplegiant), packaged by Gabriel Fontes (https://github.com/Misterio77)
+# Scheme author: Guillermo Rodriguez (https://github.com/pineapplegiant),
+packaged by Gabriel Fontes (https://github.com/Misterio77)
+
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=spaceduck
 
