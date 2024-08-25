@@ -1,9 +1,7 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
 # Scheme name: Shades of Purple 
-# Scheme author: Iolar Demartini Junior (http://github.com/demartini
-based on Shades of Purple Theme (https://github.com/ahmadawais/shades-of-purple-vscode).
-
+# Scheme author: Iolar Demartini Junior (http://github.com/demartini), based on Shades of Purple Theme (https://github.com/ahmadawais/shades-of-purple-vscode)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=shades-of-purple
 
