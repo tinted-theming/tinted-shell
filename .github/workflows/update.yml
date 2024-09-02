@@ -1,4 +1,4 @@
-name: Update with the latest tinted-theming colorschemes
+name: "Update with the latest tinted-theming colorschemes"
 on:
   workflow_dispatch:
   schedule:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-commit:
-    uses: tinted-theming/home/.github/workflows/shared-build-template-and-commit-themes.yml@main
+    uses: "tinted-theming/home/.github/workflows/shared-build-template-and-commit-themes.yml@main"
     secrets:
       token: ${{ secrets.BOT_ACCESS_TOKEN }}
     with:
