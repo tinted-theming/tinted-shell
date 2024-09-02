@@ -14,6 +14,20 @@ look at the [Tinted Theming] Home repository.
 
 ![Shell image]
 
+Note: tinted-shell currently has 2 functions:
+
+1. It contains shell script themes in `scripts/*.sh` which one can use
+   to set their shell color theme.
+2. There is a "profile_helper" which is used to manage the settings of
+   themes throughout the system. This manager can be hooked up to all
+   other tinted templates and changing a theme in tinted-shell will
+   change all themes throughout the system.
+
+If you are using tinted-shell for point number 2, we suggest using
+[Tinty] as your theme manager instead, which uses tinted-shell
+`scripts/*.sh` themesunder the hood by default. More information under
+[Theme Managers](#theme-managers).
+
 ## Use Cases for using a script to theme your shell
 
 - Portability Across Different Terminal Emulators and SSH sessions.
@@ -25,7 +39,7 @@ look at the [Tinted Theming] Home repository.
 Clone the repo locally and execute the script with your posix compliant
 shell (sh, bash, zsh, etc).
 
-```shell
+```sh
 cd path/to/cloned/repo/tinted-shell
 sh ./scripts/base16-mocha.sh
 ```
