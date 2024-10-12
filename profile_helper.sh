@@ -58,7 +58,8 @@ set_theme()
 {
   local theme_name="$1"
   local force_load="$2"
-  local script_path="$BASE16_SHELL_PATH/scripts/base16-$theme_name.sh"
+  local n="${3-16}"
+  local script_path="${BASE16_SHELL_PATH}/scripts/base${n}-${theme_name}.sh"
   local current_theme_name
 
   # Only read from file if it exists
@@ -110,10 +111,6 @@ set_theme()
     done
     unset hook
   fi
-
-  unset theme_name
-  unset script_path
-  unset current_theme_name
 }
 
 # ----------------------------------------------------------------------
@@ -126,17 +123,19 @@ alias reset="command reset \
   && . $BASE16_SHELL_COLORSCHEME_PATH"
 
 # Set base16_* aliases
-for script_path in "$BASE16_SHELL_PATH"/scripts/base16*.sh; do
-  script_name=${script_path##*/}
-  script_name=${script_name%.sh}
-  theme_name=${script_name#base16-} # eg: solarized-light
-  function_name="base16_${theme_name}"
+for n in 16 24; do
+  for script_path in "${BASE16_SHELL_PATH}/scripts/base${n}-"*.sh; do
+    script_name=${script_path##*/}
+    script_name=${script_name%.sh}
+    theme_name=${script_name#"base${n}-"} # eg: solarized-light
+    function_name="base${n}_${theme_name}"
 
-  alias $function_name="set_theme \"${theme_name}\""
+    alias ${function_name}="set_theme ${theme_name} '' ${n}"
+  done;
 done;
 
 # unset loop variables to not leak to user's shell
-unset script_path script_name theme_name function_name
+unset n script_path script_name theme_name function_name
 
 # If $BASE16_THEME is set, this has already been loaded. This guards
 # against a bug where this script is sourced two or more times.
