@@ -54,4 +54,4 @@ end
 # Execution
 # ----------------------------------------------------------------------
 
-cp -f "$hexchat_theme_path" "$BASE16_HEXCHAT_COLORS_CONF_PATH"
+command cp -f "$hexchat_theme_path" "$BASE16_HEXCHAT_COLORS_CONF_PATH"
