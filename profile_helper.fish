@@ -13,12 +13,12 @@ if test -z "$BASE16_CONFIG_PATH"
     set -g BASE16_CONFIG_PATH "$HOME/.config/tinted-theming"
   end
 end
-set BASE16_SHELL_COLORSCHEME_PATH \
+set -g BASE16_SHELL_COLORSCHEME_PATH \
   "$BASE16_CONFIG_PATH/base16_shell_theme"
 # Store the theme name in a file so we aren't reliant on environment
 # variables to store this value alone since it can be inaccurate when
 # using session managers such as TMUX
-set BASE16_SHELL_THEME_NAME_PATH "$BASE16_CONFIG_PATH/theme_name" 
+set -g BASE16_SHELL_THEME_NAME_PATH "$BASE16_CONFIG_PATH/theme_name" 
 
 # Allow users to optionally configure their tinted-shell path and set
 # the value if one doesn't exist
@@ -103,7 +103,7 @@ alias reset "command reset \
 # Set base16-* aliases
 for script_path in $BASE16_SHELL_PATH/scripts/*.sh
   set function_name (basename $script_path .sh)
-  set theme_name (string replace -a 'base16-' '' $function_name) 
+  set theme_name (string replace -a 'base16-' '' $function_name)
 
   alias $function_name="set_theme \"$theme_name\""
 end
