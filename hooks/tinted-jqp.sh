@@ -10,7 +10,7 @@
 
 TINTED_JQP_PATH="${TINTED_JQP_PATH:-$BASE16_CONFIG_PATH/tinted-jqp}"
 
-# If TINTED_HEXCHAT_PATH doesn't exist, stop hook
+# If TINTED_JQP_PATH doesn't exist, stop hook
 if [ ! -d "$TINTED_JQP_PATH" ]; then
   return 2
 fi
@@ -20,10 +20,6 @@ TINTED_JQP_CONFIG_FILE="${TINTED_JQP_CONFIG_FILE:-$BASE16_CONFIG_PATH/jqp_theme.
 if [[ -d "$TINTED_JQP_CONFIG_FILE" ]]; then
   2>&1 echo "${TINTED_JQP_CONFIG_FILE} exists but is a directory. It should either be non-existent, or a file."
   return 1
-fi
-
-if [ ! -e "$TINTED_JQP_CONFIG_FILE" ]; then
-  touch "$TINTED_JQP_CONFIG_FILE"
 fi
 
 # Set current theme name
