@@ -12,8 +12,7 @@ if [ -z "$BASE16_HEXCHAT_PATH" ]; then
   BASE16_HEXCHAT_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming/base16-hexchat"
 fi
 
-# If BASE16_HEXCHAT_PATH doesn't exist, stop hook
-if [ ! -d "$BASE16_HEXCHAT_PATH" ]; then
+# If BASE16_HEXCHAT_PATH doesn't exist, stop hook if [ ! -d "$BASE16_HEXCHAT_PATH" ]; then
   return 2
 fi
 
@@ -49,4 +48,5 @@ fi
 # Execution
 # ----------------------------------------------------------------------
 
-cp -f "$hexchat_theme_path" "$BASE16_HEXCHAT_COLORS_CONF_PATH"
+command cp -f "$hexchat_theme_path" "$BASE16_HEXCHAT_COLORS_CONF_PATH"
+
