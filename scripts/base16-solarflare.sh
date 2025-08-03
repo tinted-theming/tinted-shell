@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Solar Flare 
+# Scheme name: Solar Flare
 # Scheme author: Chuck Harmston (https://chuck.harmston.ch)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=solarflare
@@ -13,7 +13,7 @@ color04="33/b5/e1" # Base 0D - Blue
 color05="a3/63/d5" # Base 0E - Magenta
 color06="52/cb/b0" # Base 0C - Cyan
 color07="a6/af/b8" # Base 05 - White
-color08="58/68/75" # Base 03 - Bright Black
+color08="66/75/81" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

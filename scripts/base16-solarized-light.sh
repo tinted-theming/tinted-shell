@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Solarized Light 
+# Scheme name: Solarized Light
 # Scheme author: Ethan Schoonover (modified by aramisgithub)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=solarized-light
@@ -13,7 +13,7 @@ color04="26/8b/d2" # Base 0D - Blue
 color05="6c/71/c4" # Base 0E - Magenta
 color06="2a/a1/98" # Base 0C - Cyan
 color07="58/6e/75" # Base 05 - White
-color08="93/a1/a1" # Base 03 - Bright Black
+color08="83/94/96" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

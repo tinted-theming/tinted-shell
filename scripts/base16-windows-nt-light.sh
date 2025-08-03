@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Windows NT Light 
+# Scheme name: Windows NT Light
 # Scheme author: Fergus Collins (https://github.com/ferguscollins)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=windows-nt-light
@@ -13,7 +13,7 @@ color04="00/00/80" # Base 0D - Blue
 color05="80/00/80" # Base 0E - Magenta
 color06="00/80/80" # Base 0C - Cyan
 color07="80/80/80" # Base 05 - White
-color08="d5/d5/d5" # Base 03 - Bright Black
+color08="c0/c0/c0" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

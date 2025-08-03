@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Windows High Contrast 
+# Scheme name: Windows High Contrast
 # Scheme author: Fergus Collins (https://github.com/ferguscollins)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=windows-highcontrast
@@ -13,7 +13,7 @@ color04="54/54/fc" # Base 0D - Blue
 color05="fc/54/fc" # Base 0E - Magenta
 color06="54/fc/fc" # Base 0C - Cyan
 color07="c0/c0/c0" # Base 05 - White
-color08="38/38/38" # Base 03 - Bright Black
+color08="54/54/54" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

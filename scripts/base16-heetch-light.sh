@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Heetch Light 
+# Scheme name: Heetch Light
 # Scheme author: Geoffrey Teale (tealeg@gmail.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=heetch-light
@@ -13,7 +13,7 @@ color04="47/f9/f5" # Base 0D - Blue
 color05="bd/01/52" # Base 0E - Magenta
 color06="c3/36/78" # Base 0C - Cyan
 color07="5a/49/6e" # Base 05 - White
-color08="7b/6d/8b" # Base 03 - Bright Black
+color08="9c/92/a8" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

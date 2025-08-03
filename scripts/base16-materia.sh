@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Materia 
+# Scheme name: Materia
 # Scheme author: Defman21
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=materia
@@ -13,7 +13,7 @@ color04="89/dd/ff" # Base 0D - Blue
 color05="82/aa/ff" # Base 0E - Magenta
 color06="80/cb/c4" # Base 0C - Cyan
 color07="cd/d3/de" # Base 05 - White
-color08="37/47/4f" # Base 03 - Bright Black
+color08="70/78/80" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

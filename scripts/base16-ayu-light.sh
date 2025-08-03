@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Ayu Light 
+# Scheme name: Ayu Light
 # Scheme author: Khue Nguyen &lt;Z5483Y@gmail.com&gt;
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=ayu-light
@@ -13,7 +13,7 @@ color04="36/a3/d9" # Base 0D - Blue
 color05="a3/7a/cc" # Base 0E - Magenta
 color06="4c/bf/99" # Base 0C - Cyan
 color07="5c/67/73" # Base 05 - White
-color08="f8/f9/fa" # Base 03 - Bright Black
+color08="ab/b0/b6" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

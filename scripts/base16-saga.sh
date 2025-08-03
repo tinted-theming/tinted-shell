@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: SAGA 
+# Scheme name: SAGA
 # Scheme author: https://github.com/SAGAtheme/SAGA
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=saga
@@ -13,7 +13,7 @@ color04="c9/ff/f7" # Base 0D - Blue
 color05="dc/c3/f9" # Base 0E - Magenta
 color06="c5/ed/c1" # Base 0C - Cyan
 color07="dc/e2/f7" # Base 05 - White
-color08="0f/18/1e" # Base 03 - Bright Black
+color08="14/1f/27" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

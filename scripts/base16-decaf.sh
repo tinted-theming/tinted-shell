@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Decaf 
+# Scheme name: Decaf
 # Scheme author: Alex Mirrington (https://github.com/alexmirrington)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=decaf
@@ -13,7 +13,7 @@ color04="90/be/e1" # Base 0D - Blue
 color05="ef/b3/f7" # Base 0E - Magenta
 color06="be/d6/ff" # Base 0C - Cyan
 color07="cc/cc/cc" # Base 05 - White
-color08="51/51/51" # Base 03 - Bright Black
+color08="77/77/77" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

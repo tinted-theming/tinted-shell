@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Valua 
+# Scheme name: Valua
 # Scheme author: Nonetrix (https://github.com/nonetrix)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=valua
@@ -13,7 +13,7 @@ color04="4e/d2/d2" # Base 0D - Blue
 color05="a8/74/e0" # Base 0E - Magenta
 color06="76/db/d2" # Base 0C - Cyan
 color07="98/c1/a3" # Base 05 - White
-color08="27/3d/3c" # Base 03 - Bright Black
+color08="3e/5c/53" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

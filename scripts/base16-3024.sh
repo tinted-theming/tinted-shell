@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: 3024 
+# Scheme name: 3024
 # Scheme author: Jan T. Sott (http://github.com/idleberg)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=3024
@@ -13,7 +13,7 @@ color04="01/a0/e4" # Base 0D - Blue
 color05="a1/6a/94" # Base 0E - Magenta
 color06="b5/e4/f4" # Base 0C - Cyan
 color07="a5/a2/a2" # Base 05 - White
-color08="4a/45/43" # Base 03 - Bright Black
+color08="5c/58/55" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

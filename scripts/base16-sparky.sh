@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Sparky 
+# Scheme name: Sparky
 # Scheme author: Leila Sother (https://github.com/mixcoac)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=sparky
@@ -13,7 +13,7 @@ color04="46/98/cb" # Base 0D - Blue
 color05="d5/9e/d7" # Base 0E - Magenta
 color06="2d/cc/d3" # Base 0C - Cyan
 color07="f4/f5/f0" # Base 05 - White
-color08="00/3c/46" # Base 03 - Bright Black
+color08="00/3b/49" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

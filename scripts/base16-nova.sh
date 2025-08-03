@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Nova 
+# Scheme name: Nova
 # Scheme author: George Essig (https://github.com/gessig), Trevor D. Miller (https://trevordmiller.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=nova
@@ -13,7 +13,7 @@ color04="83/af/e5" # Base 0D - Blue
 color05="9a/93/e1" # Base 0E - Magenta
 color06="f2/c3/8f" # Base 0C - Cyan
 color07="c5/d4/dd" # Base 05 - White
-color08="6a/7d/89" # Base 03 - Bright Black
+color08="89/9b/a6" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

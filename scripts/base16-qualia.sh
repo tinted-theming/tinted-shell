@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Qualia 
+# Scheme name: Qualia
 # Scheme author: isaacwhanson
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=qualia

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Molokai 
+# Scheme name: Molokai
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="molokai"
@@ -12,8 +12,8 @@ color03="00/af/ff" # Base 0A - Yellow
 color04="0f/7f/cf" # Base 0D - Blue
 color05="87/00/ff" # Base 0E - Magenta
 color06="42/a7/cf" # Base 0C - Cyan
-color07="bb/bb/bb" # Base 06 - White
-color08="55/55/55" # Base 02 - Bright Black
+color07="a1/a1/a1" # Base 05 - White
+color08="6e/6e/6e" # Base 03 - Bright Black
 color09="f5/66/9c" # Base 12 - Bright Red
 color10="b0/e0/5e" # Base 14 - Bright Green
 color11="fe/f2/6c" # Base 13 - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Digital Rain 
+# Scheme name: Digital Rain
 # Scheme author: Nathan Byrd (https://github.com/cognitivegears)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=digital-rain
@@ -13,7 +13,7 @@ color04="54/82/af" # Base 0D - Blue
 color05="94/72/b4" # Base 0E - Magenta
 color06="46/8c/78" # Base 0C - Cyan
 color07="00/ff/00" # Base 05 - White
-color08="4a/8d/7e" # Base 03 - Bright Black
+color08="7c/8d/7c" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

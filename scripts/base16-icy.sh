@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Icy Dark 
+# Scheme name: Icy Dark
 # Scheme author: icyphox (https://icyphox.ga)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=icy
@@ -13,7 +13,7 @@ color04="00/bc/d4" # Base 0D - Blue
 color05="00/ac/c1" # Base 0E - Magenta
 color06="26/c6/da" # Base 0C - Cyan
 color07="09/5b/67" # Base 05 - White
-color08="04/1f/23" # Base 03 - Bright Black
+color08="05/2e/34" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

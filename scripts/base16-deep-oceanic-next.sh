@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Deep Oceanic Next 
+# Scheme name: Deep Oceanic Next
 # Scheme author: spearkkk (https://github.com/spearkkk)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=deep-oceanic-next
@@ -13,7 +13,7 @@ color04="56/8c/cf" # Base 0D - Blue
 color05="8b/66/d6" # Base 0E - Magenta
 color06="4f/b7/ae" # Base 0C - Cyan
 color07="d4/e1/e8" # Base 05 - White
-color08="00/36/40" # Base 03 - Bright Black
+color08="00/48/52" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

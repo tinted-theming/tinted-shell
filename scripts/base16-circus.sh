@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Circus 
+# Scheme name: Circus
 # Scheme author: Stephan Boyer (https://github.com/stepchowfun) and Esther Wang (https://github.com/ewang12)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=circus
@@ -13,7 +13,7 @@ color04="63/9e/e4" # Base 0D - Blue
 color05="b8/88/e2" # Base 0E - Magenta
 color06="4b/b1/a7" # Base 0C - Cyan
 color07="a7/a7/a7" # Base 05 - White
-color08="30/30/30" # Base 03 - Bright Black
+color08="5f/5a/60" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

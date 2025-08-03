@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Spacemacs 
+# Scheme name: Spacemacs
 # Scheme author: Nasser Alshammari (https://github.com/nashamri/spacemacs-theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=spacemacs
@@ -13,7 +13,7 @@ color04="4f/97/d7" # Base 0D - Blue
 color05="a3/1d/b1" # Base 0E - Magenta
 color06="2d/95/74" # Base 0C - Cyan
 color07="a3/a3/a3" # Base 05 - White
-color08="44/41/55" # Base 03 - Bright Black
+color08="58/58/58" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

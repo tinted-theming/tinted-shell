@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Atelier Cave Light 
+# Scheme name: Atelier Cave Light
 # Scheme author: Bram de Haan (http://atelierbramdehaan.nl)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=atelier-cave-light
@@ -13,7 +13,7 @@ color04="57/6d/db" # Base 0D - Blue
 color05="95/5a/e7" # Base 0E - Magenta
 color06="39/8b/c6" # Base 0C - Cyan
 color07="58/52/60" # Base 05 - White
-color08="8b/87/92" # Base 03 - Bright Black
+color08="7e/78/87" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

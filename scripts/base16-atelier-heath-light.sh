@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Atelier Heath Light 
+# Scheme name: Atelier Heath Light
 # Scheme author: Bram de Haan (http://atelierbramdehaan.nl)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=atelier-heath-light
@@ -13,7 +13,7 @@ color04="51/6a/ec" # Base 0D - Blue
 color05="7b/59/c0" # Base 0E - Magenta
 color06="15/93/93" # Base 0C - Cyan
 color07="69/5d/69" # Base 05 - White
-color08="ab/9b/ab" # Base 03 - Bright Black
+color08="9e/8f/9e" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

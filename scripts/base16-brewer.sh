@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Brewer 
+# Scheme name: Brewer
 # Scheme author: Timothée Poisot (http://github.com/tpoisot)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=brewer
@@ -13,7 +13,7 @@ color04="31/82/bd" # Base 0D - Blue
 color05="75/6b/b1" # Base 0E - Magenta
 color06="80/b1/d3" # Base 0C - Cyan
 color07="b7/b8/b9" # Base 05 - White
-color08="51/52/53" # Base 03 - Bright Black
+color08="73/74/75" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

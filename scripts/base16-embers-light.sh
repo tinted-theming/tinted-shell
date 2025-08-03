@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Embers Light 
+# Scheme name: Embers Light
 # Scheme author: Jannik Siebert (https://github.com/janniks)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=embers-light
@@ -13,7 +13,7 @@ color04="82/57/6d" # Base 0D - Blue
 color05="6d/57/82" # Base 0E - Magenta
 color06="82/6d/57" # Base 0C - Cyan
 color07="32/3b/43" # Base 05 - White
-color08="90/9a/a3" # Base 03 - Bright Black
+color08="75/80/8a" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

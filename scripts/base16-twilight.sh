@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Twilight 
+# Scheme name: Twilight
 # Scheme author: David Hart (https://github.com/hartbit)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=twilight
@@ -13,7 +13,7 @@ color04="75/87/a6" # Base 0D - Blue
 color05="9b/85/9d" # Base 0E - Magenta
 color06="af/c4/db" # Base 0C - Cyan
 color07="a7/a7/a7" # Base 05 - White
-color08="46/4b/50" # Base 03 - Bright Black
+color08="5f/5a/60" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

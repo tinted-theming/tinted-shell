@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Mellow Purple 
+# Scheme name: Mellow Purple
 # Scheme author: gidsi
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=mellow-purple
@@ -13,7 +13,7 @@ color04="55/00/68" # Base 0D - Blue
 color05="89/91/bb" # Base 0E - Magenta
 color06="b9/00/b1" # Base 0C - Cyan
 color07="ff/ee/ff" # Base 05 - White
-color08="33/13/54" # Base 03 - Bright Black
+color08="32/0f/55" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

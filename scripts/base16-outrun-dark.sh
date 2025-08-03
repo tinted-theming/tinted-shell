@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Outrun Dark 
+# Scheme name: Outrun Dark
 # Scheme author: Hugo Delahousse (http://github.com/hugodelahousse/)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=outrun-dark
@@ -13,7 +13,7 @@ color04="66/b0/ff" # Base 0D - Blue
 color05="f1/05/96" # Base 0E - Magenta
 color06="0e/f0/f0" # Base 0C - Cyan
 color07="d0/d0/fa" # Base 05 - White
-color08="30/30/5a" # Base 03 - Bright Black
+color08="50/50/7a" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

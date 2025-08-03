@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Hopscotch 
+# Scheme name: Hopscotch
 # Scheme author: Jan T. Sott
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=hopscotch
@@ -13,7 +13,7 @@ color04="12/90/bf" # Base 0D - Blue
 color05="c8/5e/7c" # Base 0E - Magenta
 color06="14/9b/93" # Base 0C - Cyan
 color07="b9/b5/b8" # Base 05 - White
-color08="5c/54/5b" # Base 03 - Bright Black
+color08="79/73/79" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

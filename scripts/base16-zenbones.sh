@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Zenbones 
+# Scheme name: Zenbones
 # Scheme author: mcchrish
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=zenbones
@@ -13,7 +13,7 @@ color04="cf/86/c1" # Base 0D - Blue
 color05="65/b8/c1" # Base 0E - Magenta
 color06="61/ab/da" # Base 0C - Cyan
 color07="b2/79/a7" # Base 05 - White
-color08="81/9b/69" # Base 03 - Bright Black
+color08="b7/7e/64" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

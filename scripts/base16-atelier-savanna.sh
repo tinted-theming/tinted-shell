@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Atelier Savanna 
+# Scheme name: Atelier Savanna
 # Scheme author: Bram de Haan (http://atelierbramdehaan.nl)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=atelier-savanna
@@ -13,7 +13,7 @@ color04="47/8c/90" # Base 0D - Blue
 color05="55/85/9b" # Base 0E - Magenta
 color06="1c/9a/a0" # Base 0C - Cyan
 color07="87/92/8a" # Base 05 - White
-color08="52/60/57" # Base 03 - Bright Black
+color08="5f/6d/64" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

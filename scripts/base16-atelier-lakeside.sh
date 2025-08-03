@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Atelier Lakeside 
+# Scheme name: Atelier Lakeside
 # Scheme author: Bram de Haan (http://atelierbramdehaan.nl)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=atelier-lakeside
@@ -13,7 +13,7 @@ color04="25/7f/ad" # Base 0D - Blue
 color05="6b/6b/b8" # Base 0E - Magenta
 color06="2d/8f/6f" # Base 0C - Cyan
 color07="7e/a2/b4" # Base 05 - White
-color08="51/6d/7b" # Base 03 - Bright Black
+color08="5a/7b/8c" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

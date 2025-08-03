@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Shades of Purple 
+# Scheme name: Shades of Purple
 # Scheme author: Iolar Demartini Junior (http://github.com/demartini), based on Shades of Purple Theme (https://github.com/ahmadawais/shades-of-purple-vscode)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=shades-of-purple
@@ -13,7 +13,7 @@ color04="69/43/ff" # Base 0D - Blue
 color05="ff/2c/70" # Base 0E - Magenta
 color06="00/c5/c7" # Base 0C - Cyan
 color07="c7/c7/c7" # Base 05 - White
-color08="f1/d0/00" # Base 03 - Bright Black
+color08="80/80/80" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

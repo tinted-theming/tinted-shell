@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Terracotta Dark 
+# Scheme name: Terracotta Dark
 # Scheme author: Alexander Rossell Hayes (https://github.com/rossellhayes)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=terracotta-dark
@@ -13,7 +13,7 @@ color04="b0/a4/c3" # Base 0D - Blue
 color05="d8/a2/b0" # Base 0E - Magenta
 color06="c0/bc/db" # Base 0C - Cyan
 color07="b8/a5/9d" # Base 05 - White
-color08="47/39/33" # Base 03 - Bright Black
+color08="59/47/40" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

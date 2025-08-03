@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Everforest 
+# Scheme name: Everforest
 # Scheme author: Sainnhe Park (https://github.com/sainnhe)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=everforest
@@ -13,7 +13,7 @@ color04="7f/bb/b3" # Base 0D - Blue
 color05="d6/99/b6" # Base 0E - Magenta
 color06="83/c0/92" # Base 0C - Cyan
 color07="d3/c6/aa" # Base 05 - White
-color08="47/52/58" # Base 03 - Bright Black
+color08="85/92/89" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

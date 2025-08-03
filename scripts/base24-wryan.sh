@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Wryan 
+# Scheme name: Wryan
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="wryan"
@@ -12,8 +12,8 @@ color03="47/7a/b3" # Base 0A - Yellow
 color04="39/55/73" # Base 0D - Blue
 color05="5e/46/8c" # Base 0E - Magenta
 color06="31/65/8c" # Base 0C - Cyan
-color07="89/9c/a1" # Base 06 - White
-color08="3d/3d/3d" # Base 02 - Bright Black
+color07="76/84/88" # Base 05 - White
+color08="50/54/56" # Base 03 - Bright Black
 color09="bf/4d/80" # Base 12 - Bright Red
 color10="53/a6/a6" # Base 14 - Bright Green
 color11="9e/9e/cb" # Base 13 - Bright Yellow

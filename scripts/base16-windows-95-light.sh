@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Windows 95 Light 
+# Scheme name: Windows 95 Light
 # Scheme author: Fergus Collins (https://github.com/ferguscollins)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=windows-95-light
@@ -13,7 +13,7 @@ color04="00/00/a8" # Base 0D - Blue
 color05="a8/00/a8" # Base 0E - Magenta
 color06="00/a8/a8" # Base 0C - Cyan
 color07="54/54/54" # Base 05 - White
-color08="c4/c4/c4" # Base 03 - Bright Black
+color08="a8/a8/a8" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

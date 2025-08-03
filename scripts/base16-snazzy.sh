@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Snazzy 
+# Scheme name: Snazzy
 # Scheme author: Chawye Hsu (https://github.com/chawyehsu), based on Hyper Snazzy Theme (https://github.com/sindresorhus/hyper-snazzy)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=snazzy
@@ -13,7 +13,7 @@ color04="57/c7/ff" # Base 0D - Blue
 color05="ff/6a/c1" # Base 0E - Magenta
 color06="9a/ed/fe" # Base 0C - Cyan
 color07="e2/e4/e5" # Base 05 - White
-color08="43/45/4f" # Base 03 - Bright Black
+color08="78/78/7e" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

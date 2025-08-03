@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Scarlet Protocol 
+# Scheme name: Scarlet Protocol
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="scarlet-protocol"
@@ -12,8 +12,8 @@ color03="68/71/ff" # Base 0A - Yellow
 color04="02/71/b6" # Base 0D - Blue
 color05="c9/30/c7" # Base 0E - Magenta
 color06="00/c5/c7" # Base 0C - Cyan
-color07="c7/c7/c7" # Base 06 - White
-color08="67/67/67" # Base 02 - Bright Black
+color07="af/af/af" # Base 05 - White
+color08="7f/7f/7f" # Base 03 - Bright Black
 color09="ff/6d/67" # Base 12 - Bright Red
 color10="5f/f9/67" # Base 14 - Bright Green
 color11="fe/fb/67" # Base 13 - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Synth Midnight Terminal Light 
+# Scheme name: Synth Midnight Terminal Light
 # Scheme author: Michaël Ball (http://github.com/michael-ball/)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=synth-midnight-light
@@ -13,7 +13,7 @@ color04="03/ae/ff" # Base 0D - Blue
 color05="ea/5c/e2" # Base 0E - Magenta
 color06="42/ff/f9" # Base 0C - Cyan
 color07="28/29/2a" # Base 05 - White
-color08="c1/c3/c4" # Base 03 - Bright Black
+color08="a3/a5/a6" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

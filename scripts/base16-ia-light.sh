@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: iA Light 
+# Scheme name: iA Light
 # Scheme author: iA Inc. (modified by aramisgithub)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=ia-light
@@ -13,7 +13,7 @@ color04="48/ba/c2" # Base 0D - Blue
 color05="a9/45/98" # Base 0E - Magenta
 color06="2d/6b/b1" # Base 0C - Cyan
 color07="18/18/18" # Base 05 - White
-color08="bd/e5/f2" # Base 03 - Bright Black
+color08="89/89/89" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Jellybeans 
+# Scheme name: Jellybeans
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="jellybeans"
@@ -12,8 +12,8 @@ color03="b1/d8/f6" # Base 0A - Yellow
 color04="97/be/dc" # Base 0D - Blue
 color05="e1/c0/fa" # Base 0E - Magenta
 color06="00/98/8e" # Base 0C - Cyan
-color07="de/de/de" # Base 06 - White
-color08="bd/bd/bd" # Base 02 - Bright Black
+color07="d5/d5/d5" # Base 05 - White
+color08="c5/c5/c5" # Base 03 - Bright Black
 color09="ff/a1/a1" # Base 12 - Bright Red
 color10="bd/de/ab" # Base 14 - Bright Green
 color11="ff/dc/a0" # Base 13 - Bright Yellow

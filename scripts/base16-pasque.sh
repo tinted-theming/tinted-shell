@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Pasque 
+# Scheme name: Pasque
 # Scheme author: Gabriel Fontes (https://github.com/Misterio77)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=pasque
@@ -13,7 +13,7 @@ color04="8e/7d/c6" # Base 0D - Blue
 color05="95/3b/9d" # Base 0E - Magenta
 color06="72/63/aa" # Base 0C - Cyan
 color07="de/dc/df" # Base 05 - White
-color08="3e/2d/5c" # Base 03 - Bright Black
+color08="5d/57/66" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

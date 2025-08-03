@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: OneDark 
+# Scheme name: OneDark
 # Scheme author: Lalit Magant (http://github.com/tilal6991)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=onedark
@@ -13,7 +13,7 @@ color04="61/af/ef" # Base 0D - Blue
 color05="c6/78/dd" # Base 0E - Magenta
 color06="56/b6/c2" # Base 0C - Cyan
 color07="ab/b2/bf" # Base 05 - White
-color08="3e/44/51" # Base 03 - Bright Black
+color08="54/58/62" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

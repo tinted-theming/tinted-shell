@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Grayscale Dark 
+# Scheme name: Grayscale Dark
 # Scheme author: Alexandre Gavioli (https://github.com/Alexx2/)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=grayscale-dark
@@ -13,7 +13,7 @@ color04="68/68/68" # Base 0D - Blue
 color05="74/74/74" # Base 0E - Magenta
 color06="86/86/86" # Base 0C - Cyan
 color07="b9/b9/b9" # Base 05 - White
-color08="46/46/46" # Base 03 - Bright Black
+color08="52/52/52" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

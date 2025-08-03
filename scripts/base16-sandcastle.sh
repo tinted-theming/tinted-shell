@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Sandcastle 
+# Scheme name: Sandcastle
 # Scheme author: George Essig (https://github.com/gessig)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=sandcastle
@@ -13,7 +13,7 @@ color04="83/a5/98" # Base 0D - Blue
 color05="d7/5f/5f" # Base 0E - Magenta
 color06="83/a5/98" # Base 0C - Cyan
 color07="a8/99/84" # Base 05 - White
-color08="3e/44/51" # Base 03 - Bright Black
+color08="66/5c/54" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

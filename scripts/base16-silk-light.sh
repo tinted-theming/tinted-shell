@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Silk Light 
+# Scheme name: Silk Light
 # Scheme author: Gabriel Fontes (https://github.com/Misterio77)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=silk-light
@@ -13,7 +13,7 @@ color04="39/aa/c9" # Base 0D - Blue
 color05="6e/65/82" # Base 0E - Magenta
 color06="32/9c/a2" # Base 0C - Cyan
 color07="38/51/56" # Base 05 - White
-color08="90/b7/b6" # Base 03 - Bright Black
+color08="5c/78/7b" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

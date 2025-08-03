@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Firefox Dev 
+# Scheme name: Firefox Dev
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="firefox-dev"
@@ -12,8 +12,8 @@ color03="00/6f/c0" # Base 0A - Yellow
 color04="35/9d/df" # Base 0D - Blue
 color05="d7/5c/ff" # Base 0E - Magenta
 color06="4b/73/a2" # Base 0C - Cyan
-color07="dc/dc/dc" # Base 06 - White
-color08="00/1e/26" # Base 02 - Bright Black
+color07="a5/ac/ae" # Base 05 - White
+color08="37/4d/53" # Base 03 - Bright Black
 color09="e1/00/3f" # Base 12 - Bright Red
 color10="1d/90/00" # Base 14 - Bright Green
 color11="cc/93/08" # Base 13 - Bright Yellow

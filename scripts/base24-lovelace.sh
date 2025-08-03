@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Lovelace 
+# Scheme name: Lovelace
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="lovelace"
@@ -12,8 +12,8 @@ color03="55/6f/ff" # Base 0A - Yellow
 color04="88/97/f4" # Base 0D - Blue
 color05="c5/74/dd" # Base 0E - Magenta
 color06="79/e6/f3" # Base 0C - Cyan
-color07="fd/fd/fd" # Base 06 - White
-color08="41/44/58" # Base 02 - Bright Black
+color07="ce/ce/d3" # Base 05 - White
+color08="70/72/81" # Base 03 - Bright Black
 color09="ff/49/71" # Base 12 - Bright Red
 color10="18/e3/c8" # Base 14 - Bright Green
 color11="ff/80/37" # Base 13 - Bright Yellow

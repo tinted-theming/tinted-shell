@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Marrakesh 
+# Scheme name: Marrakesh
 # Scheme author: Alexandre Gavioli (http://github.com/Alexx2/)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=marrakesh
@@ -13,7 +13,7 @@ color04="47/7c/a1" # Base 0D - Blue
 color05="88/68/b3" # Base 0E - Magenta
 color06="75/a7/38" # Base 0C - Cyan
 color07="94/8e/48" # Base 05 - White
-color08="5f/5b/17" # Base 03 - Bright Black
+color08="6c/68/23" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

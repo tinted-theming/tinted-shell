@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Penumbra Dark Contrast Plus 
+# Scheme name: Penumbra Dark Contrast Plus
 # Scheme author: Zachary Weiss (https://github.com/zacharyweiss)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=penumbra-dark-contrast-plus
@@ -13,7 +13,7 @@ color04="61/a3/e6" # Base 0D - Blue
 color05="a4/8f/e1" # Base 0E - Magenta
 color06="00/b3/c2" # Base 0C - Cyan
 color07="ce/ce/ce" # Base 05 - White
-color08="3e/40/44" # Base 03 - Bright Black
+color08="63/63/63" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

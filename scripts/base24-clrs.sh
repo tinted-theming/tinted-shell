@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: CLRS 
+# Scheme name: CLRS
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="clrs"
@@ -12,8 +12,8 @@ color03="15/6f/fe" # Base 0A - Yellow
 color04="12/5c/cf" # Base 0D - Blue
 color05="9f/00/bc" # Base 0E - Magenta
 color06="32/c2/c0" # Base 0C - Cyan
-color07="b2/b2/b2" # Base 06 - White
-color08="54/57/53" # Base 02 - Bright Black
+color07="9a/9b/9a" # Base 05 - White
+color08="6b/6d/6a" # Base 03 - Bright Black
 color09="fb/04/16" # Base 12 - Bright Red
 color10="2c/c6/31" # Base 14 - Bright Green
 color11="fc/d6/27" # Base 13 - Bright Yellow

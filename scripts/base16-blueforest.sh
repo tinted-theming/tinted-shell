@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Blue Forest 
+# Scheme name: Blue Forest
 # Scheme author: alonsodomin (https://github.com/alonsodomin)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=blueforest
@@ -13,7 +13,7 @@ color04="a2/cf/f5" # Base 0D - Blue
 color05="00/99/ff" # Base 0E - Magenta
 color06="80/ff/80" # Base 0C - Cyan
 color07="ff/cc/33" # Base 05 - White
-color08="27/3e/5c" # Base 03 - Bright Black
+color08="a0/ff/a0" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

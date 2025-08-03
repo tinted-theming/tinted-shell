@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Tokyo Night Terminal Storm 
+# Scheme name: Tokyo Night Terminal Storm
 # Scheme author: Michaël Ball
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=tokyo-night-terminal-storm
@@ -13,7 +13,7 @@ color04="7a/a2/f7" # Base 0D - Blue
 color05="bb/9a/f7" # Base 0E - Magenta
 color06="7d/cf/ff" # Base 0C - Cyan
 color07="78/7c/99" # Base 05 - White
-color08="34/3a/52" # Base 03 - Bright Black
+color08="44/4b/6a" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

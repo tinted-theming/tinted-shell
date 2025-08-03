@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Chicago Night 
+# Scheme name: Chicago Night
 # Scheme author: Wendell, Ryan &lt;ryanjwendell@gmail.com&gt;
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=chicago-night
@@ -13,7 +13,7 @@ color04="52/23/98" # Base 0D - Blue
 color05="e2/7e/a6" # Base 0E - Magenta
 color06="00/a1/de" # Base 0C - Cyan
 color07="a7/b8/af" # Base 05 - White
-color08="36/4c/40" # Base 03 - Bright Black
+color08="5f/73/68" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Kanagawa Dragon 
+# Scheme name: Kanagawa Dragon
 # Scheme author: Tommaso Laurenzi (https://github.com/rebelot)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=kanagawa-dragon
@@ -13,7 +13,7 @@ color04="8b/a4/b0" # Base 0D - Blue
 color05="89/92/a7" # Base 0E - Magenta
 color06="8e/a4/a2" # Base 0C - Cyan
 color07="c5/c9/c5" # Base 05 - White
-color08="28/27/27" # Base 03 - Bright Black
+color08="73/7c/73" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

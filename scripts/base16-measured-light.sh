@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Measured Light 
+# Scheme name: Measured Light
 # Scheme author: Measured (https://measured.co)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=measured-light
@@ -13,7 +13,7 @@ color04="01/58/ad" # Base 0D - Blue
 color05="66/45/c2" # Base 0E - Magenta
 color06="01/71/6f" # Base 0C - Cyan
 color07="29/29/29" # Base 05 - White
-color08="ff/ea/da" # Base 03 - Bright Black
+color08="5a/5a/5a" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

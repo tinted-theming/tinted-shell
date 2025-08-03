@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: eris 
+# Scheme name: eris
 # Scheme author: ed (https://codeberg.org/ed)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=eris
@@ -13,7 +13,7 @@ color04="25/8f/c4" # Base 0D - Blue
 color05="f7/68/a3" # Base 0E - Magenta
 color06="25/8f/c4" # Base 0C - Cyan
 color07="60/6b/ac" # Base 05 - White
-color08="23/25/5a" # Base 03 - Bright Black
+color08="33/37/73" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

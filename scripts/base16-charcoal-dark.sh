@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Charcoal Dark 
+# Scheme name: Charcoal Dark
 # Scheme author: Mubin Muhammad (https://github.com/mubin6th)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=charcoal-dark
@@ -13,7 +13,7 @@ color04="d6/b8/91" # Base 0D - Blue
 color05="a2/86/62" # Base 0E - Magenta
 color06="a2/86/62" # Base 0C - Cyan
 color07="c0/a1/79" # Base 05 - White
-color08="35/29/1d" # Base 03 - Bright Black
+color08="66/55/3f" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

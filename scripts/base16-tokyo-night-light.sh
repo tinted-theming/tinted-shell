@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Tokyo Night Light 
+# Scheme name: Tokyo Night Light
 # Scheme author: Michaël Ball
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=tokyo-night-light
@@ -13,7 +13,7 @@ color04="34/54/8a" # Base 0D - Blue
 color05="5a/4a/78" # Base 0E - Magenta
 color06="3e/69/68" # Base 0C - Cyan
 color07="34/3b/59" # Base 05 - White
-color08="df/e0/e5" # Base 03 - Bright Black
+color08="96/99/a3" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

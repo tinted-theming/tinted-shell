@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Equilibrium Gray Light 
+# Scheme name: Equilibrium Gray Light
 # Scheme author: Carlo Abelli
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=equilibrium-gray-light
@@ -13,7 +13,7 @@ color04="00/73/b5" # Base 0D - Blue
 color05="4e/66/b6" # Base 0E - Magenta
 color06="00/7a/72" # Base 0C - Cyan
 color07="47/47/47" # Base 05 - White
-color08="d4/d4/d4" # Base 03 - Bright Black
+color08="77/77/77" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

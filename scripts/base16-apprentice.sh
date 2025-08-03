@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Apprentice 
+# Scheme name: Apprentice
 # Scheme author: romainl
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=apprentice
@@ -13,7 +13,7 @@ color04="87/87/af" # Base 0D - Blue
 color05="5f/af/af" # Base 0E - Magenta
 color06="87/af/d7" # Base 0C - Cyan
 color07="5f/5f/87" # Base 05 - White
-color08="5f/87/5f" # Base 03 - Bright Black
+color08="87/87/5f" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

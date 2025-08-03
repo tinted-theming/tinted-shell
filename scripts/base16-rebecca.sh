@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Rebecca 
+# Scheme name: Rebecca
 # Scheme author: Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=rebecca
@@ -13,7 +13,7 @@ color04="2d/e0/a7" # Base 0D - Blue
 color05="7a/a5/ff" # Base 0E - Magenta
 color06="8e/ae/e0" # Base 0C - Cyan
 color07="f1/ef/f8" # Base 05 - White
-color08="38/3a/62" # Base 03 - Bright Black
+color08="66/66/99" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

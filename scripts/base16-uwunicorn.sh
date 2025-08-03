@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: UwUnicorn 
+# Scheme name: UwUnicorn
 # Scheme author: Fernando Marques (https://github.com/RakkiUwU) and Gabriel Fontes (https://github.com/Misterio77)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=uwunicorn
@@ -13,7 +13,7 @@ color04="6a/9e/b5" # Base 0D - Blue
 color05="78/a3/8f" # Base 0E - Magenta
 color06="9c/5f/ce" # Base 0C - Cyan
 color07="ee/d5/d9" # Base 05 - White
-color08="46/35/4a" # Base 03 - Bright Black
+color08="6c/3c/b2" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

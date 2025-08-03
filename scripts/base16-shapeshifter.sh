@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Shapeshifter 
+# Scheme name: Shapeshifter
 # Scheme author: Tyler Benziger (http://tybenz.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=shapeshifter
@@ -13,7 +13,7 @@ color04="3b/48/e3" # Base 0D - Blue
 color05="f9/96/e2" # Base 0E - Magenta
 color06="23/ed/da" # Base 0C - Cyan
 color07="10/20/15" # Base 05 - White
-color08="ab/ab/ab" # Base 03 - Bright Black
+color08="55/55/55" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

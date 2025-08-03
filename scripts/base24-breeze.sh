@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Breeze 
+# Scheme name: Breeze
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="breeze"
@@ -12,8 +12,8 @@ color03="3d/ae/e9" # Base 0A - Yellow
 color04="1d/99/f3" # Base 0D - Blue
 color05="9b/59/b6" # Base 0E - Magenta
 color06="1a/bc/9c" # Base 0C - Cyan
-color07="ef/f0/f1" # Base 06 - White
-color08="7f/8c/8d" # Base 02 - Bright Black
+color07="d3/d7/d8" # Base 05 - White
+color08="9b/a5/a6" # Base 03 - Bright Black
 color09="c0/39/2b" # Base 12 - Bright Red
 color10="1c/dc/9a" # Base 14 - Bright Green
 color11="fd/bc/4b" # Base 13 - Bright Yellow

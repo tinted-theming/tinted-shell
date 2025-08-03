@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Gruvbox light, soft 
+# Scheme name: Gruvbox light, soft
 # Scheme author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gruvbox-light-soft
@@ -13,7 +13,7 @@ color04="07/66/78" # Base 0D - Blue
 color05="8f/3f/71" # Base 0E - Magenta
 color06="42/7b/58" # Base 0C - Cyan
 color07="50/49/45" # Base 05 - White
-color08="d5/c4/a1" # Base 03 - Bright Black
+color08="bd/ae/93" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Tomorrow Night 
+# Scheme name: Tomorrow Night
 # Scheme author: Chris Kempson (http://chriskempson.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=tomorrow-night
@@ -13,7 +13,7 @@ color04="81/a2/be" # Base 0D - Blue
 color05="b2/94/bb" # Base 0E - Magenta
 color06="8a/be/b7" # Base 0C - Cyan
 color07="c5/c8/c6" # Base 05 - White
-color08="37/3b/41" # Base 03 - Bright Black
+color08="96/98/96" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

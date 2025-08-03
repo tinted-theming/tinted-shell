@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Helios 
+# Scheme name: Helios
 # Scheme author: Alex Meyer (https://github.com/reyemxela)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=helios
@@ -13,7 +13,7 @@ color04="1e/8b/ac" # Base 0D - Blue
 color05="be/42/64" # Base 0E - Magenta
 color06="1b/a5/95" # Base 0C - Cyan
 color07="d5/d5/d5" # Base 05 - White
-color08="53/58/5b" # Base 03 - Bright Black
+color08="6f/75/79" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: PaperColor Dark 
+# Scheme name: PaperColor Dark
 # Scheme author: Jon Leopard (http://github.com/jonleopard), based on PaperColor Theme (https://github.com/NLKNguyen/papercolor-theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=papercolor-dark
@@ -13,7 +13,7 @@ color04="ff/5f/af" # Base 0D - Blue
 color05="00/af/af" # Base 0E - Magenta
 color06="ff/af/00" # Base 0C - Cyan
 color07="80/80/80" # Base 05 - White
-color08="5f/af/00" # Base 03 - Bright Black
+color08="d7/af/5f" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: DanQing 
+# Scheme name: DanQing
 # Scheme author: Wenhan Zhu (Cosmos) (zhuwenhan950913@gmail.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=danqing
@@ -13,7 +13,7 @@ color04="b0/a4/e3" # Base 0D - Blue
 color05="cc/a4/e3" # Base 0E - Magenta
 color06="30/df/f3" # Base 0C - Cyan
 color07="e0/f0/ef" # Base 05 - White
-color08="5a/60/5d" # Base 03 - Bright Black
+color08="9d/a8/a3" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

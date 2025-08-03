@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Tokyo City Dark 
+# Scheme name: Tokyo City Dark
 # Scheme author: Michaël Ball
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=tokyo-city-dark
@@ -13,7 +13,7 @@ color04="7a/a2/f7" # Base 0D - Blue
 color05="bb/9a/f7" # Base 0E - Magenta
 color06="89/dd/ff" # Base 0C - Cyan
 color07="d8/e2/ec" # Base 05 - White
-color08="28/32/3a" # Base 03 - Bright Black
+color08="52/62/70" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

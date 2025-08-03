@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Cobalt Neon 
+# Scheme name: Cobalt Neon
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="cobalt-neon"
@@ -12,8 +12,8 @@ color03="3c/7d/d2" # Base 0A - Yellow
 color04="8f/f5/86" # Base 0D - Blue
 color05="78/1a/a0" # Base 0E - Magenta
 color06="8f/f5/86" # Base 0C - Cyan
-color07="ba/45/b1" # Base 06 - White
-color08="ff/f6/88" # Base 02 - Bright Black
+color07="cc/72/a6" # Base 05 - White
+color08="ee/ca/92" # Base 03 - Bright Black
 color09="d4/31/2e" # Base 12 - Bright Red
 color10="8f/f5/86" # Base 14 - Bright Green
 color11="e9/f0/6d" # Base 13 - Bright Yellow

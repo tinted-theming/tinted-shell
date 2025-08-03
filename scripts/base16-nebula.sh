@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Nebula 
+# Scheme name: Nebula
 # Scheme author: Gabriel Fontes (https://github.com/Misterio77)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=nebula
@@ -13,7 +13,7 @@ color04="4d/6b/b6" # Base 0D - Blue
 color05="71/6c/ae" # Base 0E - Magenta
 color06="22/6f/68" # Base 0C - Cyan
 color07="a4/a6/a9" # Base 05 - White
-color08="5a/83/80" # Base 03 - Bright Black
+color08="6e/6f/72" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

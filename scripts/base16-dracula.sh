@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Dracula 
+# Scheme name: Dracula
 # Scheme author: Jamy Golden (http://github.com/JamyGolden), based on Dracula Theme (http://github.com/dracula)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=dracula
@@ -13,7 +13,7 @@ color04="80/bf/ff" # Base 0D - Blue
 color05="ff/79/c6" # Base 0E - Magenta
 color06="8b/e9/fd" # Base 0C - Cyan
 color07="f8/f8/f2" # Base 05 - White
-color08="44/47/5a" # Base 03 - Bright Black
+color08="62/72/a4" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

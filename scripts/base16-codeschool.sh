@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Codeschool 
+# Scheme name: Codeschool
 # Scheme author: blockloop
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=codeschool
@@ -13,7 +13,7 @@ color04="48/4d/79" # Base 0D - Blue
 color05="c5/98/20" # Base 0E - Magenta
 color06="b0/2f/30" # Base 0C - Cyan
 color07="9e/a7/a6" # Base 05 - White
-color08="2a/34/3a" # Base 03 - Bright Black
+color08="3f/49/44" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Apathy 
+# Scheme name: Apathy
 # Scheme author: Jannik Siebert (https://github.com/janniks)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=apathy
@@ -13,7 +13,7 @@ color04="96/88/3e" # Base 0D - Blue
 color05="4c/96/3e" # Base 0E - Magenta
 color06="96/3e/4c" # Base 0C - Cyan
 color07="81/b5/ac" # Base 05 - White
-color08="18/4e/45" # Base 03 - Bright Black
+color08="2b/68/5e" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

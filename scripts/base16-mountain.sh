@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Mountain 
+# Scheme name: Mountain
 # Scheme author: gnsfujiwara (https://github.com/gnsfujiwara)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=mountain
@@ -13,7 +13,7 @@ color04="8f/8a/ac" # Base 0D - Blue
 color05="ac/8a/ac" # Base 0E - Magenta
 color06="8a/ab/ac" # Base 0C - Cyan
 color07="ca/ca/ca" # Base 05 - White
-color08="26/26/26" # Base 03 - Bright Black
+color08="39/39/39" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

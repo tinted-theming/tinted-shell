@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Gigavolt 
+# Scheme name: Gigavolt
 # Scheme author: Aidan Swope (http://github.com/Whillikers)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gigavolt
@@ -13,7 +13,7 @@ color04="40/bf/ff" # Base 0D - Blue
 color05="ae/94/f9" # Base 0E - Magenta
 color06="fb/6a/cb" # Base 0C - Cyan
 color07="e9/e7/e1" # Base 05 - White
-color08="5a/57/6e" # Base 03 - Bright Black
+color08="a1/d2/e6" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

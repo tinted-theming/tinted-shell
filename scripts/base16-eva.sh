@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Eva 
+# Scheme name: Eva
 # Scheme author: kjakapat (https://github.com/kjakapat)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=eva
@@ -13,7 +13,7 @@ color04="15/f4/ee" # Base 0D - Blue
 color05="9c/6c/d3" # Base 0E - Magenta
 color06="4b/8f/77" # Base 0C - Cyan
 color07="9f/a2/a6" # Base 05 - White
-color08="4b/69/88" # Base 03 - Bright Black
+color08="55/79/9c" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

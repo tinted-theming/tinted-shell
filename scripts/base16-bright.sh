@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Bright 
+# Scheme name: Bright
 # Scheme author: Chris Kempson (http://chriskempson.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=bright
@@ -13,7 +13,7 @@ color04="6f/b3/d2" # Base 0D - Blue
 color05="d3/81/c3" # Base 0E - Magenta
 color06="76/c7/b7" # Base 0C - Cyan
 color07="e0/e0/e0" # Base 05 - White
-color08="50/50/50" # Base 03 - Bright Black
+color08="b0/b0/b0" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

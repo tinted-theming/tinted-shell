@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Gotham 
+# Scheme name: Gotham
 # Scheme author: Andrea Leopardi (arranged by Brett Jones)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gotham
@@ -13,7 +13,7 @@ color04="19/54/66" # Base 0D - Blue
 color05="88/8c/a6" # Base 0E - Magenta
 color06="2a/a8/89" # Base 0C - Cyan
 color07="59/9c/ab" # Base 05 - White
-color08="09/1f/2e" # Base 03 - Bright Black
+color08="0a/37/49" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

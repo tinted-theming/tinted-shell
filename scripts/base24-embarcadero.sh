@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Embarcadero 
+# Scheme name: Embarcadero
 # Scheme author: Thomas Leon Highbaugh
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="embarcadero"
@@ -12,8 +12,8 @@ color03="eb/82/4d" # Base 0A - Yellow
 color04="40/80/d0" # Base 0D - Blue
 color05="a0/70/d0" # Base 0E - Magenta
 color06="02/ef/ef" # Base 0C - Cyan
-color07="da/db/db" # Base 06 - White
-color08="61/65/68" # Base 02 - Bright Black
+color07="bc/bd/c0" # Base 05 - White
+color08="7f/82/85" # Base 03 - Bright Black
 color09="f5/7d/9a" # Base 12 - Bright Red
 color10="a0/d0/a0" # Base 14 - Bright Green
 color11="ff/e0/89" # Base 13 - Bright Yellow

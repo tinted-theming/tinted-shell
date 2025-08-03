@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Chalkboard 
+# Scheme name: Chalkboard
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="chalkboard"
@@ -12,8 +12,8 @@ color03="aa/aa/db" # Base 0A - Yellow
 color04="73/72/c3" # Base 0D - Blue
 color05="c3/72/c2" # Base 0E - Magenta
 color06="72/c2/c3" # Base 0C - Cyan
-color07="d9/d9/d9" # Base 06 - White
-color08="32/32/32" # Base 02 - Bright Black
+color07="af/af/af" # Base 05 - White
+color08="5b/5b/5b" # Base 03 - Bright Black
 color09="db/aa/aa" # Base 12 - Bright Red
 color10="aa/db/aa" # Base 14 - Bright Green
 color11="da/db/aa" # Base 13 - Bright Yellow

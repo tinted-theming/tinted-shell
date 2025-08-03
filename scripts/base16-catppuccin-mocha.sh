@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Catppuccin Mocha 
+# Scheme name: Catppuccin Mocha
 # Scheme author: https://github.com/catppuccin/catppuccin
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=catppuccin-mocha
@@ -13,7 +13,7 @@ color04="89/b4/fa" # Base 0D - Blue
 color05="cb/a6/f7" # Base 0E - Magenta
 color06="94/e2/d5" # Base 0C - Cyan
 color07="cd/d6/f4" # Base 05 - White
-color08="31/32/44" # Base 03 - Bright Black
+color08="45/47/5a" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

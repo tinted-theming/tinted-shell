@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Darcula 
+# Scheme name: Darcula
 # Scheme author: jetbrains
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=darcula
@@ -13,7 +13,7 @@ color04="98/76/aa" # Base 0D - Blue
 color05="cc/78/32" # Base 0E - Magenta
 color06="62/97/55" # Base 0C - Cyan
 color07="a9/b7/c6" # Base 05 - White
-color08="32/32/32" # Base 03 - Bright Black
+color08="60/63/66" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

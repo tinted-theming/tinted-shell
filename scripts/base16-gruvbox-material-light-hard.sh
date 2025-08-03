@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Gruvbox Material Light, Hard 
+# Scheme name: Gruvbox Material Light, Hard
 # Scheme author: Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=gruvbox-material-light-hard
@@ -13,7 +13,7 @@ color04="45/70/7a" # Base 0D - Blue
 color05="94/5e/80" # Base 0E - Magenta
 color06="4c/7a/5d" # Base 0C - Cyan
 color07="65/47/35" # Base 05 - White
-color08="e0/cf/a9" # Base 03 - Bright Black
+color08="a8/99/84" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

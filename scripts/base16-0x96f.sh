@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: 0x96f 
+# Scheme name: 0x96f
 # Scheme author: Filip Janevski (https://0x96f.dev/theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=0x96f
@@ -13,7 +13,7 @@ color04="49/ca/e4" # Base 0D - Blue
 color05="a0/93/e2" # Base 0E - Magenta
 color06="ae/e8/f4" # Base 0C - Cyan
 color07="fc/fc/fc" # Base 05 - White
-color08="51/4f/52" # Base 03 - Bright Black
+color08="67/65/67" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

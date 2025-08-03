@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Precious Dark Fifteen 
+# Scheme name: Precious Dark Fifteen
 # Scheme author: 4lex4 &lt;4lex49@zoho.com&gt;
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=precious-dark-fifteen
@@ -13,7 +13,7 @@ color04="66/b0/ef" # Base 0D - Blue
 color05="b7/99/ff" # Base 0E - Magenta
 color06="42/bd/a7" # Base 0C - Cyan
 color07="ba/b9/b6" # Base 05 - White
-color08="3e/40/44" # Base 03 - Bright Black
+color08="89/89/89" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

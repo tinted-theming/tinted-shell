@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: vulcan 
+# Scheme name: vulcan
 # Scheme author: Andrey Varfolomeev
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=vulcan
@@ -13,7 +13,7 @@ color04="97/7d/7c" # Base 0D - Blue
 color05="91/98/a3" # Base 0E - Magenta
 color06="97/7d/7c" # Base 0C - Cyan
 color07="5b/77/8c" # Base 05 - White
-color08="00/35/52" # Base 03 - Bright Black
+color08="7a/57/59" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

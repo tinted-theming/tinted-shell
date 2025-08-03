@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Primer Light 
+# Scheme name: Primer Light
 # Scheme author: Jimmy Lin
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=primer-light
@@ -13,7 +13,7 @@ color04="03/66/d6" # Base 0D - Blue
 color05="ea/4a/aa" # Base 0E - Magenta
 color06="79/b8/ff" # Base 0C - Cyan
 color07="2f/36/3d" # Base 05 - White
-color08="d1/d5/da" # Base 03 - Bright Black
+color08="95/9d/a5" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: selenized-white 
+# Scheme name: selenized-white
 # Scheme author: Jan Warchol (https://github.com/jan-warchol/selenized) / adapted to base16 by ali
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=selenized-white
@@ -13,7 +13,7 @@ color04="00/54/cf" # Base 0D - Blue
 color05="6b/40/c3" # Base 0E - Magenta
 color06="00/9a/8a" # Base 0C - Cyan
 color07="47/47/47" # Base 05 - White
-color08="cd/cd/cd" # Base 03 - Bright Black
+color08="87/87/87" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

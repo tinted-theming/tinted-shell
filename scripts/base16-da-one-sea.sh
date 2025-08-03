@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Da One Sea 
+# Scheme name: Da One Sea
 # Scheme author: NNB (https://github.com/NNBnh)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=da-one-sea
@@ -13,7 +13,7 @@ color04="6b/b8/ff" # Base 0D - Blue
 color05="e7/99/ff" # Base 0E - Magenta
 color06="8a/f5/ff" # Base 0C - Cyan
 color07="ff/ff/ff" # Base 05 - White
-color08="52/58/66" # Base 03 - Bright Black
+color08="87/8d/96" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

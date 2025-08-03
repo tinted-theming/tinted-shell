@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Monokai 
+# Scheme name: Monokai
 # Scheme author: Wimer Hazenberg (http://www.monokai.nl)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=monokai
@@ -13,7 +13,7 @@ color04="66/d9/ef" # Base 0D - Blue
 color05="ae/81/ff" # Base 0E - Magenta
 color06="a1/ef/e4" # Base 0C - Cyan
 color07="f8/f8/f2" # Base 05 - White
-color08="49/48/3e" # Base 03 - Bright Black
+color08="75/71/5e" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

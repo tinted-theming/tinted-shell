@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: dirtysea 
+# Scheme name: dirtysea
 # Scheme author: Kahlil (Kal) Hodgson
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=dirtysea
@@ -13,7 +13,7 @@ color04="00/73/00" # Base 0D - Blue
 color05="00/00/90" # Base 0E - Magenta
 color06="75/5b/00" # Base 0C - Cyan
 color07="00/00/00" # Base 05 - White
-color08="d0/d0/d0" # Base 03 - Bright Black
+color08="70/70/70" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

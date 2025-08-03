@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Google Dark 
+# Scheme name: Google Dark
 # Scheme author: Seth Wright (http://sethawright.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=google-dark
@@ -13,7 +13,7 @@ color04="39/71/ed" # Base 0D - Blue
 color05="a3/6a/c7" # Base 0E - Magenta
 color06="39/71/ed" # Base 0C - Cyan
 color07="c5/c8/c6" # Base 05 - White
-color08="37/3b/41" # Base 03 - Bright Black
+color08="96/98/96" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

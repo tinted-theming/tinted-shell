@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Precious Light Warm 
+# Scheme name: Precious Light Warm
 # Scheme author: 4lex4 &lt;4lex49@zoho.com&gt;
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=precious-light-warm
@@ -13,7 +13,7 @@ color04="24/6d/a5" # Base 0D - Blue
 color05="7a/50/c6" # Base 0E - Magenta
 color06="0e/77/67" # Base 0C - Cyan
 color07="4e/53/59" # Base 05 - White
-color08="d9/d3/c8" # Base 03 - Bright Black
+color08="7f/80/80" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

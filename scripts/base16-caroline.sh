@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: caroline 
+# Scheme name: caroline
 # Scheme author: ed (https://codeberg.org/ed)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=caroline
@@ -13,7 +13,7 @@ color04="68/4c/59" # Base 0D - Blue
 color05="a6/36/50" # Base 0E - Magenta
 color06="6b/65/66" # Base 0C - Cyan
 color07="a8/75/69" # Base 05 - White
-color08="56/38/37" # Base 03 - Bright Black
+color08="6d/47/45" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

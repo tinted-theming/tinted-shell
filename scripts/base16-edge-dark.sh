@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Edge Dark 
+# Scheme name: Edge Dark
 # Scheme author: cjayross (https://github.com/cjayross)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=edge-dark
@@ -13,7 +13,7 @@ color04="73/b3/e7" # Base 0D - Blue
 color05="d3/90/e7" # Base 0E - Magenta
 color06="5e/ba/a5" # Base 0C - Cyan
 color07="b7/be/c9" # Base 05 - White
-color08="b7/be/c9" # Base 03 - Bright Black
+color08="3e/42/49" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Penumbra Light 
+# Scheme name: Penumbra Light
 # Scheme author: Zachary Weiss (https://github.com/zacharyweiss)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=penumbra-light
@@ -13,7 +13,7 @@ color04="57/94/d0" # Base 0D - Blue
 color05="94/81/cc" # Base 0E - Magenta
 color06="00/a2/af" # Base 0C - Cyan
 color07="63/63/63" # Base 05 - White
-color08="f2/e6/d4" # Base 03 - Bright Black
+color08="be/be/be" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

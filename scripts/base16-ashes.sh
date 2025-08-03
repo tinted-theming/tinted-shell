@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Ashes 
+# Scheme name: Ashes
 # Scheme author: Jannik Siebert (https://github.com/janniks)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=ashes
@@ -13,7 +13,7 @@ color04="ae/95/c7" # Base 0D - Blue
 color05="c7/95/ae" # Base 0E - Magenta
 color06="95/ae/c7" # Base 0C - Cyan
 color07="c7/cc/d1" # Base 05 - White
-color08="56/5e/65" # Base 03 - Bright Black
+color08="74/7c/84" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

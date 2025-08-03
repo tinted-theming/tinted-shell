@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Pico 
+# Scheme name: Pico
 # Scheme author: PICO-8 (http://www.lexaloffle.com/pico-8.php)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=pico
@@ -13,7 +13,7 @@ color04="83/76/9c" # Base 0D - Blue
 color05="ff/77/a8" # Base 0E - Magenta
 color06="29/ad/ff" # Base 0C - Cyan
 color07="5f/57/4f" # Base 05 - White
-color08="7e/25/53" # Base 03 - Bright Black
+color08="00/87/51" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

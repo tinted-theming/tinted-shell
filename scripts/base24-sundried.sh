@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Sundried 
+# Scheme name: Sundried
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="sundried"
@@ -12,8 +12,8 @@ color03="78/98/f7" # Base 0A - Yellow
 color04="48/5a/98" # Base 0D - Blue
 color05="85/45/51" # Base 0E - Magenta
 color06="9c/81/4e" # Base 0C - Cyan
-color07="c8/c8/c8" # Base 06 - White
-color08="4d/4d/47" # Base 02 - Bright Black
+color07="a9/a9/a7" # Base 05 - White
+color08="6b/6b/67" # Base 03 - Bright Black
 color09="aa/00/0c" # Base 12 - Bright Red
 color10="12/8c/20" # Base 14 - Bright Green
 color11="fc/6a/20" # Base 13 - Bright Yellow

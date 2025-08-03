@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Classic Light 
+# Scheme name: Classic Light
 # Scheme author: Jason Heeris (http://heeris.id.au)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=classic-light
@@ -13,7 +13,7 @@ color04="6a/9f/b5" # Base 0D - Blue
 color05="aa/75/9f" # Base 0E - Magenta
 color06="75/b5/aa" # Base 0C - Cyan
 color07="30/30/30" # Base 05 - White
-color08="d0/d0/d0" # Base 03 - Bright Black
+color08="b0/b0/b0" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

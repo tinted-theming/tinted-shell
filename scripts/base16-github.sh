@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Github 
+# Scheme name: Github
 # Scheme author: Tinted Theming (https://github.com/tinted-theming)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=github
@@ -13,7 +13,7 @@ color04="21/8b/ff" # Base 0D - Blue
 color05="a4/75/f9" # Base 0E - Magenta
 color06="33/9d/9b" # Base 0C - Cyan
 color07="42/4a/53" # Base 05 - White
-color08="af/b8/c1" # Base 03 - Bright Black
+color08="8c/95/9f" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

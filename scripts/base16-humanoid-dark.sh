@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Humanoid dark 
+# Scheme name: Humanoid dark
 # Scheme author: Thomas (tasmo) Friese
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=humanoid-dark
@@ -13,7 +13,7 @@ color04="00/a6/fb" # Base 0D - Blue
 color05="f1/5e/e3" # Base 0E - Magenta
 color06="0d/d9/d6" # Base 0C - Cyan
 color07="f8/f8/f2" # Base 05 - White
-color08="48/4e/54" # Base 03 - Bright Black
+color08="60/61/5d" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

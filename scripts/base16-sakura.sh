@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Sakura 
+# Scheme name: Sakura
 # Scheme author: Misterio77 (http://github.com/Misterio77)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=sakura
@@ -13,7 +13,7 @@ color04="00/6e/93" # Base 0D - Blue
 color05="5e/21/80" # Base 0E - Magenta
 color06="1d/89/91" # Base 0C - Cyan
 color07="56/44/48" # Base 05 - White
-color08="e0/cc/d1" # Base 03 - Bright Black
+color08="75/5f/64" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

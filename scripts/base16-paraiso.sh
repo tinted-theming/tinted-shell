@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Paraiso 
+# Scheme name: Paraiso
 # Scheme author: Jan T. Sott
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=paraiso
@@ -13,7 +13,7 @@ color04="06/b6/ef" # Base 0D - Blue
 color05="81/5b/a4" # Base 0E - Magenta
 color06="5b/c4/bf" # Base 0C - Cyan
 color07="a3/9e/9b" # Base 05 - White
-color08="4f/42/4c" # Base 03 - Bright Black
+color08="77/6e/71" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: standardized-light 
+# Scheme name: standardized-light
 # Scheme author: ali (https://github.com/ali-githb/base16-standardized-scheme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=standardized-light
@@ -13,7 +13,7 @@ color04="31/73/c5" # Base 0D - Blue
 color05="9e/57/c2" # Base 0E - Magenta
 color06="00/99/8f" # Base 0C - Cyan
 color07="44/44/44" # Base 05 - White
-color08="cc/cc/cc" # Base 03 - Bright Black
+color08="76/76/76" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: PhD 
+# Scheme name: PhD
 # Scheme author: Hennig Hasemann (http://leetless.de/vim.html)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=phd
@@ -13,7 +13,7 @@ color04="52/99/bf" # Base 0D - Blue
 color05="99/89/cc" # Base 0E - Magenta
 color06="72/b9/bf" # Base 0C - Cyan
 color07="b8/bb/c2" # Base 05 - White
-color08="4d/56/66" # Base 03 - Bright Black
+color08="71/78/85" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

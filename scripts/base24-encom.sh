@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: ENCOM 
+# Scheme name: ENCOM
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="encom"
@@ -12,8 +12,8 @@ color03="00/00/ff" # Base 0A - Yellow
 color04="00/81/ff" # Base 0D - Blue
 color05="bc/00/ca" # Base 0E - Magenta
 color06="00/8b/8b" # Base 0C - Cyan
-color07="bb/bb/bb" # Base 06 - White
-color08="55/55/55" # Base 02 - Bright Black
+color07="a1/a1/a1" # Base 05 - White
+color08="6e/6e/6e" # Base 03 - Bright Black
 color09="ff/00/00" # Base 12 - Bright Red
 color10="00/ee/00" # Base 14 - Bright Green
 color11="ff/ff/00" # Base 13 - Bright Yellow

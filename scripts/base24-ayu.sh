@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: ayu 
+# Scheme name: ayu
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="ayu"
@@ -12,8 +12,8 @@ color03="68/d5/ff" # Base 0A - Yellow
 color04="36/a3/d9" # Base 0D - Blue
 color05="f0/71/78" # Base 0E - Magenta
 color06="95/e6/cb" # Base 0C - Cyan
-color07="ff/ff/ff" # Base 06 - White
-color08="32/32/32" # Base 02 - Bright Black
+color07="cb/cb/cb" # Base 05 - White
+color08="65/65/65" # Base 03 - Bright Black
 color09="ff/65/65" # Base 12 - Bright Red
 color10="ea/fe/84" # Base 14 - Bright Green
 color11="ff/f7/79" # Base 13 - Bright Yellow

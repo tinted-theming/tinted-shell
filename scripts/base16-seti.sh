@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Seti UI 
+# Scheme name: Seti UI
 # Scheme author: 
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=seti
@@ -13,7 +13,7 @@ color04="55/b5/db" # Base 0D - Blue
 color05="a0/74/c4" # Base 0E - Magenta
 color06="55/db/be" # Base 0C - Cyan
 color07="d6/d6/d6" # Base 05 - White
-color08="3b/75/8c" # Base 03 - Bright Black
+color08="41/53/5b" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

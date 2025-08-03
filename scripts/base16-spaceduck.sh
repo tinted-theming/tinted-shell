@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Spaceduck 
+# Scheme name: Spaceduck
 # Scheme author: Guillermo Rodriguez (https://github.com/pineapplegiant), packaged by Gabriel Fontes (https://github.com/Misterio77)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=spaceduck
@@ -13,7 +13,7 @@ color04="7a/5c/cc" # Base 0D - Blue
 color05="b3/a1/e6" # Base 0E - Magenta
 color06="00/a3/cc" # Base 0C - Cyan
 color07="ec/f0/c1" # Base 05 - White
-color08="30/36/5f" # Base 03 - Bright Black
+color08="68/6f/9a" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

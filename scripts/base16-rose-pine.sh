@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Rosé Pine 
+# Scheme name: Rosé Pine
 # Scheme author: Emilia Dunfelt &lt;edun@dunfelt.se&gt;
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=rose-pine
@@ -13,7 +13,7 @@ color04="c4/a7/e7" # Base 0D - Blue
 color05="f6/c1/77" # Base 0E - Magenta
 color06="9c/cf/d8" # Base 0C - Cyan
 color07="e0/de/f4" # Base 05 - White
-color08="26/23/3a" # Base 03 - Bright Black
+color08="6e/6a/86" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

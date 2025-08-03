@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: One Light 
+# Scheme name: One Light
 # Scheme author: Daniel Pfeifer (http://github.com/purpleKarrot)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=one-light
@@ -13,7 +13,7 @@ color04="40/78/f2" # Base 0D - Blue
 color05="a6/26/a4" # Base 0E - Magenta
 color06="01/84/bc" # Base 0C - Cyan
 color07="38/3a/42" # Base 05 - White
-color08="e5/e5/e6" # Base 03 - Bright Black
+color08="a0/a1/a7" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Spiderman 
+# Scheme name: Spiderman
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="spiderman"
@@ -12,8 +12,8 @@ color03="1d/4f/ff" # Base 0A - Yellow
 color04="2b/3f/ff" # Base 0D - Blue
 color05="24/35/db" # Base 0E - Magenta
 color06="32/55/ff" # Base 0C - Cyan
-color07="ff/fe/f6" # Base 06 - White
-color08="50/53/54" # Base 02 - Bright Black
+color07="d3/d3/cd" # Base 05 - White
+color08="7b/7d/7c" # Base 03 - Bright Black
 color09="ff/03/25" # Base 12 - Bright Red
 color10="ff/32/38" # Base 14 - Bright Green
 color11="fe/39/35" # Base 13 - Bright Yellow

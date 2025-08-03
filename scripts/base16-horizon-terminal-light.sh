@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Horizon Terminal Light 
+# Scheme name: Horizon Terminal Light
 # Scheme author: Michaël Ball (http://github.com/michael-ball/)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=horizon-terminal-light
@@ -13,7 +13,7 @@ color04="26/bb/d9" # Base 0D - Blue
 color05="ee/64/ac" # Base 0E - Magenta
 color06="59/e1/e3" # Base 0C - Cyan
 color07="40/3c/3d" # Base 05 - White
-color08="f9/cb/be" # Base 03 - Bright Black
+color08="bd/b3/b1" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

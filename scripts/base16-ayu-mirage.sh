@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Ayu Mirage 
+# Scheme name: Ayu Mirage
 # Scheme author: Khue Nguyen &lt;Z5483Y@gmail.com&gt;
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=ayu-mirage
@@ -13,7 +13,7 @@ color04="5c/cf/e6" # Base 0D - Blue
 color05="d4/bf/ff" # Base 0E - Magenta
 color06="95/e6/cb" # Base 0C - Cyan
 color07="cc/ca/c2" # Base 05 - White
-color08="24/29/36" # Base 03 - Bright Black
+color08="70/7a/8c" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

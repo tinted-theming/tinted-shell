@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Vesper 
+# Scheme name: Vesper
 # Scheme author: FormalSnake (https://github.com/formalsnake)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=vesper
@@ -13,7 +13,7 @@ color04="8e/aa/aa" # Base 0D - Blue
 color05="d6/90/94" # Base 0E - Magenta
 color06="60/a5/92" # Base 0C - Cyan
 color07="b7/b7/b7" # Base 05 - White
-color08="22/22/22" # Base 03 - Bright Black
+color08="33/33/33" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

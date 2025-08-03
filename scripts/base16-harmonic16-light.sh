@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Harmonic16 Light 
+# Scheme name: Harmonic16 Light
 # Scheme author: Jannik Siebert (https://github.com/janniks)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=harmonic16-light
@@ -13,7 +13,7 @@ color04="8b/56/bf" # Base 0D - Blue
 color05="bf/56/8b" # Base 0E - Magenta
 color06="56/8b/bf" # Base 0C - Cyan
 color07="40/5c/79" # Base 05 - White
-color08="cb/d6/e2" # Base 03 - Bright Black
+color08="aa/bc/ce" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow

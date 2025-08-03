@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Aztec 
+# Scheme name: Aztec
 # Scheme author: TheNeverMan (github.com/TheNeverMan)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=aztec
@@ -13,7 +13,7 @@ color04="5b/4a/9f" # Base 0D - Blue
 color05="88/3e/9f" # Base 0E - Magenta
 color06="3d/94/a5" # Base 0C - Cyan
 color07="ff/da/51" # Base 05 - White
-color08="24/26/04" # Base 03 - Bright Black
+color08="2e/2e/05" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow
