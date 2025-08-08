@@ -31,7 +31,7 @@ color_foreground="{{base05-hex-r}}/{{base05-hex-g}}/{{base05-hex-b}}" # Base 05
 color_background="{{base00-hex-r}}/{{base00-hex-g}}/{{base00-hex-b}}" # Base 00
 
 
-if [ -z "$TTY" ] && ! TTY=$(tty); then
+if [ -z "$TTY" ] && ! TTY=$(tty) || [ ! -w "$TTY" ]; then
   put_template() { true; }
   put_template_var() { true; }
   put_template_custom() { true; }
