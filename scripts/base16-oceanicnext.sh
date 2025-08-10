@@ -30,7 +30,7 @@ color21="cd/d3/de" # Base 06
 color_foreground="c0/c5/ce" # Base 05
 color_background="1b/2b/34" # Base 00
 
-if [ -z "$TTY" ] && ! TTY=$(tty); then
+if [ -z "$TTY" ] && ! TTY=$(tty) || [ ! -w "$TTY" ]; then
   put_template() { true; }
   put_template_var() { true; }
   put_template_custom() { true; }

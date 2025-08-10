@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
 # Scheme name: Ayu Dark
-# Scheme author: Khue Nguyen &lt;Z5483Y@gmail.com&gt;
+# Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE16_THEME=ayu-dark
 
-color00="0f/14/19" # Base 00 - Black
+color00="0b/0e/14" # Base 00 - Black
 color01="f0/71/78" # Base 08 - Red
-color02="b8/cc/52" # Base 0B - Green
+color02="aa/d9/4c" # Base 0B - Green
 color03="ff/b4/54" # Base 0A - Yellow
 color04="59/c2/ff" # Base 0D - Blue
 color05="d2/a6/ff" # Base 0E - Magenta
@@ -20,17 +20,17 @@ color11="$color03" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
-color15="f3/f4/f5" # Base 07 - Bright White
+color15="f2/f0/e7" # Base 07 - Bright White
 color16="ff/8f/40" # Base 09
-color17="e6/b6/73" # Base 0F
+color17="e6/b4/50" # Base 0F
 color18="13/17/21" # Base 01
-color19="27/2d/38" # Base 02
+color19="20/22/29" # Base 02
 color20="bf/bd/b6" # Base 04
-color21="e6/e1/cf" # Base 06
+color21="ec/e8/db" # Base 06
 color_foreground="e6/e1/cf" # Base 05
-color_background="0f/14/19" # Base 00
+color_background="0b/0e/14" # Base 00
 
-if [ -z "$TTY" ] && ! TTY=$(tty); then
+if [ -z "$TTY" ] && ! TTY=$(tty) || [ ! -w "$TTY" ]; then
   put_template() { true; }
   put_template_var() { true; }
   put_template_custom() { true; }
@@ -85,12 +85,12 @@ put_template 21 "$color21"
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   put_template_custom Pg e6e1cf # foreground
-  put_template_custom Ph 0f1419 # background
+  put_template_custom Ph 0b0e14 # background
   put_template_custom Pi e6e1cf # bold color
-  put_template_custom Pj 272d38 # selection color
+  put_template_custom Pj 202229 # selection color
   put_template_custom Pk e6e1cf # selected text color
   put_template_custom Pl e6e1cf # cursor
-  put_template_custom Pm 0f1419 # cursor text
+  put_template_custom Pm 0b0e14 # cursor text
 else
   put_template_var 10 "$color_foreground"
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
@@ -133,20 +133,20 @@ unset color_background
 
 # Optionally export variables
 if [ -n "$TINTED_SHELL_ENABLE_BASE16_VARS" ] || [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
-  export BASE16_COLOR_00_HEX="0f1419"
+  export BASE16_COLOR_00_HEX="0b0e14"
   export BASE16_COLOR_01_HEX="131721"
-  export BASE16_COLOR_02_HEX="272d38"
+  export BASE16_COLOR_02_HEX="202229"
   export BASE16_COLOR_03_HEX="3e4b59"
   export BASE16_COLOR_04_HEX="bfbdb6"
   export BASE16_COLOR_05_HEX="e6e1cf"
-  export BASE16_COLOR_06_HEX="e6e1cf"
-  export BASE16_COLOR_07_HEX="f3f4f5"
+  export BASE16_COLOR_06_HEX="ece8db"
+  export BASE16_COLOR_07_HEX="f2f0e7"
   export BASE16_COLOR_08_HEX="f07178"
   export BASE16_COLOR_09_HEX="ff8f40"
   export BASE16_COLOR_0A_HEX="ffb454"
-  export BASE16_COLOR_0B_HEX="b8cc52"
+  export BASE16_COLOR_0B_HEX="aad94c"
   export BASE16_COLOR_0C_HEX="95e6cb"
   export BASE16_COLOR_0D_HEX="59c2ff"
   export BASE16_COLOR_0E_HEX="d2a6ff"
-  export BASE16_COLOR_0F_HEX="e6b673"
+  export BASE16_COLOR_0F_HEX="e6b450"
 fi
