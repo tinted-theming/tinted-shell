@@ -67,7 +67,7 @@ HSP_BC
 
 eval "$bc_output"
 
-if [ "$is_light_theme" -eq "1" ]; then
+if [ "$is_light_theme" = "1" ]; then
   is_light_theme="true"
 else
   is_light_theme="false"

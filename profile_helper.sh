@@ -84,7 +84,7 @@ set_theme()
 
   # If theme is already sourced, don't rerun the script and hooks, 
   # unless $force_load is set
-  if [ "$theme_name" -eq "$current_theme_name" ] && [ -z "$force_load" ]; then
+  if [ "$theme_name" = "$current_theme_name" ] && [ -z "$force_load" ]; then
     return 0
   fi
 
