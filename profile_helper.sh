@@ -6,7 +6,7 @@
 
 # Allow users to optionally configure where their tinted-shell config is
 # stored by specifying BASE16_CONFIG_PATH before loading this script
-if [ -z "BASE16_CONFIG_PATH" ]; then
+if [ -z "$BASE16_CONFIG_PATH" ]; then
   BASE16_CONFIG_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/tinted-theming"
 fi
 BASE16_SHELL_COLORSCHEME_PATH="$BASE16_CONFIG_PATH/base16_shell_theme"
