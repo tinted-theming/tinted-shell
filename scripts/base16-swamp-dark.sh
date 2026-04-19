@@ -1,34 +1,34 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Dracula
-# Scheme author: clach04 (https://github.com/clach04)
+# Scheme name: Swamp Dark
+# Scheme author: Masroof Maindak (https://github.com/masroof-maindak)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
-export BASE16_THEME=dracula
+export BASE16_THEME=swamp-dark
 
-color00="28/2a/36" # Base 00 - Black
-color01="ff/55/55" # Base 08 - Red
-color02="50/fa/7b" # Base 0B - Green
-color03="f1/fa/8c" # Base 0A - Yellow
-color04="bd/93/f9" # Base 0D - Blue
-color05="ff/79/c6" # Base 0E - Magenta
-color06="8b/e9/fd" # Base 0C - Cyan
-color07="f8/f8/f2" # Base 05 - White
-color08="62/72/a4" # Base 03 - Bright Black
+color00="24/20/15" # Base 00 - Black
+color01="db/93/0d" # Base 08 - Red
+color02="7a/76/53" # Base 0B - Green
+color03="a8/2d/56" # Base 0A - Yellow
+color04="c1/66/6b" # Base 0D - Blue
+color05="91/50/6c" # Base 0E - Magenta
+color06="db/93/0d" # Base 0C - Cyan
+color07="d2/c3/a4" # Base 05 - White
+color08="5f/4e/41" # Base 03 - Bright Black
 color09="$color01" # Base 08 - Bright Red
 color10="$color02" # Base 0B - Bright Green
 color11="$color03" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
-color15="ff/ff/ff" # Base 07 - Bright White
-color16="ff/b8/6c" # Base 09
-color17="99/33/33" # Base 0F
-color18="21/22/2c" # Base 01
-color19="44/47/5a" # Base 02
-color20="9e/a8/c7" # Base 04
-color21="f8/f8/f2" # Base 06
-color_foreground="f8/f8/f2" # Base 05
-color_background="28/2a/36" # Base 00
+color15="f1/e9/d0" # Base 07 - Bright White
+color16="eb/e0/bb" # Base 09
+color17="61/a0/a8" # Base 0F
+color18="3a/31/24" # Base 01
+color19="4d/3f/32" # Base 02
+color20="b8/a5/8c" # Base 04
+color21="eb/e0/bb" # Base 06
+color_foreground="d2/c3/a4" # Base 05
+color_background="24/20/15" # Base 00
 
 if [ -z "$TTY" ] && ! TTY=$(tty) || [ ! -w "$TTY" ]; then
   put_template() { true; }
@@ -84,13 +84,13 @@ put_template 21 "$color21"
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg f8f8f2 # foreground
-  put_template_custom Ph 282a36 # background
-  put_template_custom Pi f8f8f2 # bold color
-  put_template_custom Pj 44475a # selection color
-  put_template_custom Pk f8f8f2 # selected text color
-  put_template_custom Pl f8f8f2 # cursor
-  put_template_custom Pm 282a36 # cursor text
+  put_template_custom Pg d2c3a4 # foreground
+  put_template_custom Ph 242015 # background
+  put_template_custom Pi d2c3a4 # bold color
+  put_template_custom Pj 4d3f32 # selection color
+  put_template_custom Pk d2c3a4 # selected text color
+  put_template_custom Pl d2c3a4 # cursor
+  put_template_custom Pm 242015 # cursor text
 else
   put_template_var 10 "$color_foreground"
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
@@ -133,20 +133,20 @@ unset color_background
 
 # Optionally export variables
 if [ -n "$TINTED_SHELL_ENABLE_BASE16_VARS" ] || [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
-  export BASE16_COLOR_00_HEX="282a36"
-  export BASE16_COLOR_01_HEX="21222c"
-  export BASE16_COLOR_02_HEX="44475a"
-  export BASE16_COLOR_03_HEX="6272a4"
-  export BASE16_COLOR_04_HEX="9ea8c7"
-  export BASE16_COLOR_05_HEX="f8f8f2"
-  export BASE16_COLOR_06_HEX="f8f8f2"
-  export BASE16_COLOR_07_HEX="ffffff"
-  export BASE16_COLOR_08_HEX="ff5555"
-  export BASE16_COLOR_09_HEX="ffb86c"
-  export BASE16_COLOR_0A_HEX="f1fa8c"
-  export BASE16_COLOR_0B_HEX="50fa7b"
-  export BASE16_COLOR_0C_HEX="8be9fd"
-  export BASE16_COLOR_0D_HEX="bd93f9"
-  export BASE16_COLOR_0E_HEX="ff79c6"
-  export BASE16_COLOR_0F_HEX="993333"
+  export BASE16_COLOR_00_HEX="242015"
+  export BASE16_COLOR_01_HEX="3a3124"
+  export BASE16_COLOR_02_HEX="4d3f32"
+  export BASE16_COLOR_03_HEX="5f4e41"
+  export BASE16_COLOR_04_HEX="b8a58c"
+  export BASE16_COLOR_05_HEX="d2c3a4"
+  export BASE16_COLOR_06_HEX="ebe0bb"
+  export BASE16_COLOR_07_HEX="f1e9d0"
+  export BASE16_COLOR_08_HEX="db930d"
+  export BASE16_COLOR_09_HEX="ebe0bb"
+  export BASE16_COLOR_0A_HEX="a82d56"
+  export BASE16_COLOR_0B_HEX="7a7653"
+  export BASE16_COLOR_0C_HEX="db930d"
+  export BASE16_COLOR_0D_HEX="c1666b"
+  export BASE16_COLOR_0E_HEX="91506c"
+  export BASE16_COLOR_0F_HEX="61a0a8"
 fi
