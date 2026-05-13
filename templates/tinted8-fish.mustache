@@ -142,12 +142,6 @@ set -e color12
 set -e color13
 set -e color14
 set -e color15
-set -e color16
-set -e color17
-set -e color18
-set -e color19
-set -e color20
-set -e color21
 set -e color_foreground
 set -e color_background
 functions -e put_template put_template_var put_template_custom
@@ -162,20 +156,30 @@ set -Ux TINTED8_THEME {{scheme.slug}}
 
 # Optionally export variables
 if test -n "$TINTED_SHELL_ENABLE_TINTED8_VARS"
-  set -gx TINTED8_COLOR_00_HEX "{{base00-hex}}"
-  set -gx TINTED8_COLOR_01_HEX "{{base01-hex}}"
-  set -gx TINTED8_COLOR_02_HEX "{{base02-hex}}"
-  set -gx TINTED8_COLOR_03_HEX "{{base03-hex}}"
-  set -gx TINTED8_COLOR_04_HEX "{{base04-hex}}"
-  set -gx TINTED8_COLOR_05_HEX "{{base05-hex}}"
-  set -gx TINTED8_COLOR_06_HEX "{{base06-hex}}"
-  set -gx TINTED8_COLOR_07_HEX "{{base07-hex}}"
-  set -gx TINTED8_COLOR_08_HEX "{{base08-hex}}"
-  set -gx TINTED8_COLOR_09_HEX "{{base09-hex}}"
-  set -gx TINTED8_COLOR_0A_HEX "{{base0A-hex}}"
-  set -gx TINTED8_COLOR_0B_HEX "{{base0B-hex}}"
-  set -gx TINTED8_COLOR_0C_HEX "{{base0C-hex}}"
-  set -gx TINTED8_COLOR_0D_HEX "{{base0D-hex}}"
-  set -gx TINTED8_COLOR_0E_HEX "{{base0E-hex}}"
-  set -gx TINTED8_COLOR_0F_HEX "{{base0F-hex}}"
+  set -gx TINTED8_COLOR_BLACK_NORMAL_HEX "{{palette.black.normal.hex}}"
+  set -gx TINTED8_COLOR_BLACK_RED_HEX "{{palette.red.normal.hex}}"
+  set -gx TINTED8_COLOR_BLACK_GREEN_HEX "{{palette.green.normal.hex}}"
+  set -gx TINTED8_COLOR_YELLOW_NORMAL_HEX "{{palette.yellow.normal.hex}}"
+  set -gx TINTED8_COLOR_BLUE_NORMAL_HEX "{{palette.blue.normal.hex}}"
+  set -gx TINTED8_COLOR_MAGENTA_NORMAL_HEX "{{palette.magenta.normal.hex}}"
+  set -gx TINTED8_COLOR_CYAN_NORMAL_HEX "{{palette.cyan.normal.hex}}"
+  set -gx TINTED8_COLOR_WHITE_NORMAL_HEX "{{palette.white.normal.hex}}"
+
+  set -gx TINTED8_COLOR_BLACK_BRIGHT_HEX "{{palette.black.bright.hex}}"
+  set -gx TINTED8_COLOR_RED_BRIGHT_HEX "{{palette.red.bright.hex}}"
+  set -gx TINTED8_COLOR_GREEN_BRIGHT_HEX "{{palette.green.bright.hex}}"
+  set -gx TINTED8_COLOR_YELLOW_BRIGHT_HEX "{{palette.yellow.bright.hex}}"
+  set -gx TINTED8_COLOR_BLUE_BRIGHT_HEX "{{palette.blue.bright.hex}}"
+  set -gx TINTED8_COLOR_MAGENTA_BRIGHT_HEX "{{palette.magenta.bright.hex}}"
+  set -gx TINTED8_COLOR_CYAN_BRIGHT_HEX "{{palette.cyan.bright.hex}}"
+  set -gx TINTED8_COLOR_WHITE_BRIGHT_HEX "{{palette.white.bright.hex}}"
+
+  set -gx TINTED8_COLOR_BLACK_DIM_HEX "{{palette.black.dim.hex}}"
+  set -gx TINTED8_COLOR_RED_DIM_HEX "{{palette.red.dim.hex}}"
+  set -gx TINTED8_COLOR_GREEN_DIM_HEX "{{palette.green.dim.hex}}"
+  set -gx TINTED8_COLOR_YELLOW_DIM_HEX "{{palette.yellow.dim.hex}}"
+  set -gx TINTED8_COLOR_BLUE_DIM_HEX "{{palette.blue.dim.hex}}"
+  set -gx TINTED8_COLOR_MAGENTA_DIM_HEX "{{palette.magenta.dim.hex}}"
+  set -gx TINTED8_COLOR_CYAN_DIM_HEX "{{palette.cyan.dim.hex}}"
+  set -gx TINTED8_COLOR_WHITE_DIM_HEX "{{palette.white.dim.hex}}"
 end
