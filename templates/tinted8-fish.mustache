@@ -92,17 +92,17 @@ end
 
 # Set fish highlight colors
 set -U fish_color_normal {{ui.global.foreground.normal.hex}}
-set -U fish_color_command {{syntax.support.hex}}
+set -U fish_color_command {{syntax.support.function.hex}}
 set -U fish_color_keyword {{syntax.keyword.hex}}
-set -U fish_color_quote {{syntax.string.quoted.hex}}
+set -U fish_color_quote {{syntax.support.function.builtin.hex}}
 set -U fish_color_redirection {{syntax.keyword.other.hex}}
-set -U fish_color_end {{syntax.punctuation.hex}}
-set -U fish_color_error {{ui.status.error.hex}}
-set -U fish_color_param {{syntax.variable.hex}}
+set -U fish_color_end {{syntax.punctuation.separator.hex}}
+set -U fish_color_error {{syntax.invalid.hex}}
+set -U fish_color_param {{syntax.variable.parameter.hex}}
 set -U fish_color_valid_path --underline
-set -U fish_color_option {{syntax.variable.parameter.hex}}
+set -U fish_color_option {{syntax.variable.parameter.hex}} --italics
 set -U fish_color_comment {{syntax.comment.hex}}
-set -U fish_color_selection {{ui.selection.foreground.hex}} --bold --background={{ui.selection.background.hex}}
+set -U fish_color_selection {{ui.selection.foreground.hex}} --background={{ui.selection.background.hex}}
 set -U fish_color_operator {{syntax.keyword.operator.hex}}
 set -U fish_color_escape {{syntax.constant.character.escape.hex}}
 set -U fish_color_autosuggestion {{syntax.comment.documentation.hex}}
@@ -110,20 +110,20 @@ set -U fish_color_cwd green
 set -U fish_color_cwd_root red
 set -U fish_color_user brgreen
 set -U fish_color_host normal
-set -U fish_color_host_remote normal --italics
+set -U fish_color_host_remote normal
 set -U fish_color_status {{ui.status.error.hex}}
 set -U fish_color_cancel -r
 set -U fish_color_search_match {{ui.highlight.search.foreground.hex}} --background={{ui.highlight.search.background.hex}}
-set -U fish_color_history_current --bold
+set -U fish_color_history_current --underline=curly
 set -U fish_pager_color_progress {{ui.chrome.background.normal.hex}} --background={{ui.chrome.foreground.normal.hex}}
-set -U fish_pager_color_background normal --background={{ui.global.background.normal}}
-set -U fish_pager_color_prefix normal --bold
-set -U fish_pager_color_completion normal
-set -U fish_pager_color_description {{palette.orange.hex}} --dim
-set -U fish_pager_color_selected_background {{ui.selection.foreground.hex}} --background={{ui.selection.background.hex}}
-set -U fish_pager_color_selected_prefix {{ui.selection.foreground.hex}} --bold --background={{ui.selection.background.hex}}
-set -U fish_pager_color_selected_completion {{ui.selection.foreground.hex}}
-set -U fish_pager_color_description yellow --dim
+set -U fish_pager_color_background --background={{ui.selection.inactive-background}}
+set -U fish_pager_color_prefix --bold --italics
+set -U fish_pager_color_completion {{ui.highlight.text.foreground.hex}}
+set -U fish_pager_color_description {{syntax.markup.hex}}
+set -U fish_pager_color_selected_background --background={{ui.selection.background.hex}}
+set -U fish_pager_color_selected_prefix --bold --italics --background={{ui.selection.background.hex}}
+set -U fish_pager_color_selected_completion {{ui.highlight.text.foreground.hex}}
+set -U fish_pager_color_description {{syntax.markup.hex}}
 
 # clean up
 set -e color00

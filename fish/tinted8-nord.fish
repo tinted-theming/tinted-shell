@@ -94,15 +94,15 @@ end
 set -U fish_color_normal e5e9f0
 set -U fish_color_command 
 set -U fish_color_keyword 
-set -U fish_color_quote 
+set -U fish_color_quote aac0d5
 set -U fish_color_redirection 81a1c1
-set -U fish_color_end 
-set -U fish_color_error bf616a
-set -U fish_color_param 
+set -U fish_color_end e5e9f0
+set -U fish_color_error 
+set -U fish_color_param b4d7e1
 set -U fish_color_valid_path --underline
-set -U fish_color_option b4d7e1
+set -U fish_color_option b4d7e1 --italics
 set -U fish_color_comment 
-set -U fish_color_selection e5e9f0 --bold --background=465165
+set -U fish_color_selection e5e9f0 --background=465165
 set -U fish_color_operator 81a1c1
 set -U fish_color_escape 88c0d0
 set -U fish_color_autosuggestion 616e88
@@ -110,20 +110,20 @@ set -U fish_color_cwd green
 set -U fish_color_cwd_root red
 set -U fish_color_user brgreen
 set -U fish_color_host normal
-set -U fish_color_host_remote normal --italics
+set -U fish_color_host_remote normal
 set -U fish_color_status bf616a
 set -U fish_color_cancel -r
 set -U fish_color_search_match ebcb8b --background=465165
-set -U fish_color_history_current --bold
+set -U fish_color_history_current --underline=curly
 set -U fish_pager_color_progress 465165 --background=e5e9f0
-set -U fish_pager_color_background normal --background=
-set -U fish_pager_color_prefix normal --bold
-set -U fish_pager_color_completion normal
-set -U fish_pager_color_description  --dim
-set -U fish_pager_color_selected_background e5e9f0 --background=465165
-set -U fish_pager_color_selected_prefix e5e9f0 --bold --background=465165
+set -U fish_pager_color_background --background=
+set -U fish_pager_color_prefix --bold --italics
+set -U fish_pager_color_completion e5e9f0
+set -U fish_pager_color_description 
+set -U fish_pager_color_selected_background --background=465165
+set -U fish_pager_color_selected_prefix --bold --italics --background=465165
 set -U fish_pager_color_selected_completion e5e9f0
-set -U fish_pager_color_description yellow --dim
+set -U fish_pager_color_description 
 
 # clean up
 set -e color00

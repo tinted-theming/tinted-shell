@@ -104,38 +104,38 @@ else
 end
 
 set -U fish_color_normal normal
-set -U fish_color_command brgreen
+set -U fish_color_command blue
 set -U fish_color_keyword magenta
 set -U fish_color_quote green
-set -U fish_color_redirection brcyan
-set -U fish_color_end 93a5b4
+set -U fish_color_redirection brblue
+set -U fish_color_end normal
 set -U fish_color_error brred
-set -U fish_color_param 788ea1
+set -U fish_color_param brcyan
 set -U fish_color_valid_path --underline
-set -U fish_color_option brcyan
+set -U fish_color_option brcyan --italics
 set -U fish_color_comment 60778a
-set -U fish_color_selection abb9c4 --bold --background=4d606f
-set -U fish_color_operator brblue
-set -U fish_color_escape brcyan
+set -U fish_color_selection abb9c4 --background=4d606f
+set -U fish_color_operator magenta
+set -U fish_color_escape f2db78
 set -U fish_color_autosuggestion 60778a
 set -U fish_color_cwd green
 set -U fish_color_cwd_root red
 set -U fish_color_user brgreen
 set -U fish_color_host normal
-set -U fish_color_host_remote normal --italics
+set -U fish_color_host_remote normal
 set -U fish_color_status red
 set -U fish_color_cancel -r
-set -U fish_color_search_match bryellow --background=4d606f
-set -U fish_color_history_current --bold
+set -U fish_color_search_match yellow --background=4d606f
+set -U fish_color_history_current --underline=curly
 set -U fish_pager_color_progress 3b4954 --background=788ea1
-set -U fish_pager_color_background normal --background=283139
-set -U fish_pager_color_prefix normal --bold
+set -U fish_pager_color_background --background=283139
+set -U fish_pager_color_prefix --bold --italics
 set -U fish_pager_color_completion normal
-set -U fish_pager_color_description f2db78 --dim
-set -U fish_pager_color_selected_background abb9c4 --background=4d606f
-set -U fish_pager_color_selected_prefix abb9c4 --bold --background=4d606f
-set -U fish_pager_color_selected_completion abb9c4
-set -U fish_pager_color_description yellow --dim
+set -U fish_pager_color_description f2db78
+set -U fish_pager_color_selected_background --background=4d606f
+set -U fish_pager_color_selected_prefix --bold --italics --background=4d606f
+set -U fish_pager_color_selected_completion normal
+set -U fish_pager_color_description f2db78
 
 # clean up
 set -e color00
