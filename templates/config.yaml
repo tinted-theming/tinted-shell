@@ -12,3 +12,18 @@ tinted8:
   supports:
     tinted8-builder: "~0.2.0"
     tinted8-styling: "~0.2.0"
+
+base16-fish:
+  filename: fish/{{ scheme-system }}-{{ scheme-slug }}.fish
+  supported-systems: [base16]
+
+base24-fish:
+  filename: fish/{{ scheme-system }}-{{ scheme-slug }}.fish
+  supported-systems: [base24]
+
+tinted8-fish:
+  filename: fish/{{ scheme.system }}-{{ scheme.slug }}.fish
+  supported-systems: [tinted8]
+  supports:
+    tinted8-builder: "~0.2.0"
+    tinted8-styling: "~0.2.0"
