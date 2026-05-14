@@ -13,12 +13,12 @@ set -l color05 "6a/26/74" # Base 0E - Magenta
 set -l color06 "38/45/63" # Base 0C - Cyan
 set -l color07 "c8/c5/c4" # Base 05 - White
 set -l color08 "80/76/72" # Base 03 - Bright Black
-set -l color09 "$color01" # Base 08 - Bright Red
-set -l color10 "$color02" # Base 0B - Bright Green
-set -l color11 "$color03" # Base 0A - Bright Yellow
-set -l color12 "$color04" # Base 0D - Bright Blue
-set -l color13 "$color05" # Base 0E - Bright Magenta
-set -l color14 "$color06" # Base 0C - Bright Cyan
+set -l color09 "ef/7d/17" # Base 12 - Bright Red
+set -l color10 "b1/d1/30" # Base 14 - Bright Green
+set -l color11 "ff/f1/1f" # Base 13 - Bright Yellow
+set -l color12 "4f/c2/fd" # Base 16 - Bright Blue
+set -l color13 "de/00/70" # Base 17 - Bright Magenta
+set -l color14 "5c/4f/49" # Base 15 - Bright Cyan
 set -l color15 "fe/ff/fe" # Base 07 - Bright White
 set -l color16 "ff/ca/3d" # Base 09
 set -l color17 "67/06/0b" # Base 0F
