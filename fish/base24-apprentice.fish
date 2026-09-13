@@ -13,12 +13,12 @@ set -l color05 "5f/5f/87" # Base 0E - Magenta
 set -l color06 "5f/87/87" # Base 0C - Cyan
 set -l color07 "bc/bc/bc" # Base 05 - White
 set -l color08 "44/44/44" # Base 03 - Bright Black
-set -l color09 "$color01" # Base 08 - Bright Red
-set -l color10 "$color02" # Base 0B - Bright Green
-set -l color11 "$color03" # Base 0A - Bright Yellow
-set -l color12 "$color04" # Base 0D - Bright Blue
-set -l color13 "$color05" # Base 0E - Bright Magenta
-set -l color14 "$color06" # Base 0C - Bright Cyan
+set -l color09 "ff/87/00" # Base 12 - Bright Red
+set -l color10 "87/af/87" # Base 14 - Bright Green
+set -l color11 "ff/ff/af" # Base 13 - Bright Yellow
+set -l color12 "87/af/d7" # Base 16 - Bright Blue
+set -l color13 "87/87/af" # Base 17 - Bright Magenta
+set -l color14 "5f/af/af" # Base 15 - Bright Cyan
 set -l color15 "ff/ff/ff" # Base 07 - Bright White
 set -l color16 "ff/87/00" # Base 09
 set -l color17 "af/5f/5f" # Base 0F
@@ -94,7 +94,7 @@ if test -n "$ITERM_SESSION_ID"
   put_template_custom Pm 262626 # cursor text
 else
   put_template_var 10 $color_foreground
-  if test "$BASE16_SHELL_SET_BACKGROUND" != false
+  if test "$BASE24_SHELL_SET_BACKGROUND" != false
     put_template_var 11 $color_background
     if string match -q 'rxvt*' $TERM
       put_template_var 708 $color_background # internal border (rxvt)
@@ -170,24 +170,24 @@ test -n "$legacy_env"; and set -Ue $legacy_env
 set -e legacy_env
 
 # Set theme
-set -Ux BASE16_THEME apprentice
+set -Ux BASE24_THEME apprentice
 
 # Optionally export variables
-if test -n "$TINTED_SHELL_ENABLE_BASE16_VARS"; or test -n "$BASE16_SHELL_ENABLE_VARS"
-  set -gx BASE16_COLOR_00_HEX "262626"
-  set -gx BASE16_COLOR_01_HEX "303030"
-  set -gx BASE16_COLOR_02_HEX "3a3a3a"
-  set -gx BASE16_COLOR_03_HEX "444444"
-  set -gx BASE16_COLOR_04_HEX "6c6c6c"
-  set -gx BASE16_COLOR_05_HEX "bcbcbc"
-  set -gx BASE16_COLOR_06_HEX "dfdfdf"
-  set -gx BASE16_COLOR_07_HEX "ffffff"
-  set -gx BASE16_COLOR_08_HEX "af5f5f"
-  set -gx BASE16_COLOR_09_HEX "ff8700"
-  set -gx BASE16_COLOR_0A_HEX "87875f"
-  set -gx BASE16_COLOR_0B_HEX "5f875f"
-  set -gx BASE16_COLOR_0C_HEX "5f8787"
-  set -gx BASE16_COLOR_0D_HEX "5f87af"
-  set -gx BASE16_COLOR_0E_HEX "5f5f87"
-  set -gx BASE16_COLOR_0F_HEX "af5f5f"
+if test -n "$TINTED_SHELL_ENABLE_BASE24_VARS"; or test -n "$BASE24_SHELL_ENABLE_VARS"
+  set -gx BASE24_COLOR_00_HEX "262626"
+  set -gx BASE24_COLOR_01_HEX "303030"
+  set -gx BASE24_COLOR_02_HEX "3a3a3a"
+  set -gx BASE24_COLOR_03_HEX "444444"
+  set -gx BASE24_COLOR_04_HEX "6c6c6c"
+  set -gx BASE24_COLOR_05_HEX "bcbcbc"
+  set -gx BASE24_COLOR_06_HEX "dfdfdf"
+  set -gx BASE24_COLOR_07_HEX "ffffff"
+  set -gx BASE24_COLOR_08_HEX "af5f5f"
+  set -gx BASE24_COLOR_09_HEX "ff8700"
+  set -gx BASE24_COLOR_0A_HEX "87875f"
+  set -gx BASE24_COLOR_0B_HEX "5f875f"
+  set -gx BASE24_COLOR_0C_HEX "5f8787"
+  set -gx BASE24_COLOR_0D_HEX "5f87af"
+  set -gx BASE24_COLOR_0E_HEX "5f5f87"
+  set -gx BASE24_COLOR_0F_HEX "af5f5f"
 end
