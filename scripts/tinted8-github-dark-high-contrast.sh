@@ -1,35 +1,28 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Github Dark Colorblind
+# Scheme name: tinted8 Github Dark High Contrast
 # Scheme author: Tinted Theming (https://github.com/tinted-theming)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
-export BASE24_THEME="github-dark-colorblind"
+export TINTED8_THEME="github-dark-high-contrast"
 
-color00="0d/11/17" # Base 00 - Black
-color01="f0/88/3e" # Base 08 - Red
-color02="58/a6/ff" # Base 0B - Green
-color03="d2/99/22" # Base 0A - Yellow
-color04="58/a6/ff" # Base 0D - Blue
-color05="be/8f/ff" # Base 0E - Magenta
-color06="39/c5/cf" # Base 0C - Cyan
-color07="d1/d7/e0" # Base 05 - White
-color08="65/6c/76" # Base 03 - Bright Black
-color09="ff/a6/57" # Base 12 - Bright Red
-color10="79/c0/ff" # Base 14 - Bright Green
-color11="e3/b3/41" # Base 13 - Bright Yellow
-color12="79/c0/ff" # Base 16 - Bright Blue
-color13="d2/a8/ff" # Base 17 - Bright Magenta
-color14="56/d4/dd" # Base 15 - Bright Cyan
-color15="ff/ff/ff" # Base 07 - Bright White
-color16="ff/a6/57" # Base 09
-color17="ff/a6/57" # Base 0F
-color18="15/1b/23" # Base 01
-color19="2f/37/42" # Base 02
-color20="91/98/a1" # Base 04
-color21="f0/f6/fc" # Base 06
-color_foreground="d1/d7/e0" # Base 05
-color_background="0d/11/17" # Base 00
-
+color00="2f/37/42"
+color01="ff/94/92"
+color02="28/d7/51"
+color03="f0/b7/2f"
+color04="71/b7/ff"
+color05="cb/9e/ff"
+color06="39/c5/cf"
+color07="f0/f6/fc"
+color08="65/6c/76"
+color09="ff/b1/af"
+color10="4a/e1/68"
+color11="f7/c8/43"
+color12="91/cb/ff"
+color13="db/b7/ff"
+color14="56/d4/dd"
+color15="ff/ff/ff"
+color_foreground="ff/ff/ff"
+color_background="01/04/09"
 
 if [ -z "$TTY" ] && ! TTY=$(tty) || [ ! -w "$TTY" ]; then
   put_template() { true; }
@@ -74,27 +67,19 @@ put_template 13 "$color13"
 put_template 14 "$color14"
 put_template 15 "$color15"
 
-# 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
-
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg d1d7e0 # foreground
-  put_template_custom Ph 0d1117 # background
-  put_template_custom Pi d1d7e0 # bold color
-  put_template_custom Pj 2f3742 # selection color
-  put_template_custom Pk d1d7e0 # selected text color
-  put_template_custom Pl d1d7e0 # cursor
-  put_template_custom Pm 0d1117 # cursor text
+  put_template_custom Pg ffffff # foreground
+  put_template_custom Ph 010409 # background
+  put_template_custom Pi ffffff # bold color
+  put_template_custom Pj 656c76 # selection color
+  put_template_custom Pk f0f6fc # selected text color
+  put_template_custom Pl ffffff # cursor
+  put_template_custom Pm 010409 # cursor text
 else
   put_template_var 10 "$color_foreground"
-  if [ "$BASE24_SHELL_SET_BACKGROUND" != false ]; then
+  if [ "$TINTED8_SHELL_SET_BACKGROUND" != false ]; then
     put_template_var 11 "$color_background"
     if [ "${TERM%%-*}" = "rxvt" ]; then
       put_template_var 708 "$color_background" # internal border (rxvt)
@@ -133,29 +118,31 @@ unset color_foreground
 unset color_background
 
 # Optionally export variables
-if [ -n "$TINTED_SHELL_ENABLE_BASE24_VARS" ]; then
-  export BASE24_COLOR_00_HEX="0d1117"
-  export BASE24_COLOR_01_HEX="151b23"
-  export BASE24_COLOR_02_HEX="2f3742"
-  export BASE24_COLOR_03_HEX="656c76"
-  export BASE24_COLOR_04_HEX="9198a1"
-  export BASE24_COLOR_05_HEX="d1d7e0"
-  export BASE24_COLOR_06_HEX="f0f6fc"
-  export BASE24_COLOR_07_HEX="ffffff"
-  export BASE24_COLOR_08_HEX="f0883e"
-  export BASE24_COLOR_09_HEX="ffa657"
-  export BASE24_COLOR_0A_HEX="d29922"
-  export BASE24_COLOR_0B_HEX="58a6ff"
-  export BASE24_COLOR_0C_HEX="39c5cf"
-  export BASE24_COLOR_0D_HEX="58a6ff"
-  export BASE24_COLOR_0E_HEX="be8fff"
-  export BASE24_COLOR_0F_HEX="ffa657"
-  export BASE24_COLOR_10_HEX="010409"
-  export BASE24_COLOR_11_HEX="000000"
-  export BASE24_COLOR_12_HEX="ffa657"
-  export BASE24_COLOR_13_HEX="e3b341"
-  export BASE24_COLOR_14_HEX="79c0ff"
-  export BASE24_COLOR_15_HEX="56d4dd"
-  export BASE24_COLOR_16_HEX="79c0ff"
-  export BASE24_COLOR_17_HEX="d2a8ff"
+if [ -n "$TINTED_SHELL_ENABLE_TINTED8_VARS" ]; then
+  export TINTED8_COLOR_BLACK_NORMAL_HEX="2f3742"
+  export TINTED8_COLOR_BLACK_RED_HEX="ff9492"
+  export TINTED8_COLOR_BLACK_GREEN_HEX="28d751"
+  export TINTED8_COLOR_YELLOW_NORMAL_HEX="f0b72f"
+  export TINTED8_COLOR_BLUE_NORMAL_HEX="71b7ff"
+  export TINTED8_COLOR_MAGENTA_NORMAL_HEX="cb9eff"
+  export TINTED8_COLOR_CYAN_NORMAL_HEX="39c5cf"
+  export TINTED8_COLOR_WHITE_NORMAL_HEX="f0f6fc"
+
+  export TINTED8_COLOR_BLACK_BRIGHT_HEX="656c76"
+  export TINTED8_COLOR_RED_BRIGHT_HEX="ffb1af"
+  export TINTED8_COLOR_GREEN_BRIGHT_HEX="4ae168"
+  export TINTED8_COLOR_YELLOW_BRIGHT_HEX="f7c843"
+  export TINTED8_COLOR_BLUE_BRIGHT_HEX="91cbff"
+  export TINTED8_COLOR_MAGENTA_BRIGHT_HEX="dbb7ff"
+  export TINTED8_COLOR_CYAN_BRIGHT_HEX="56d4dd"
+  export TINTED8_COLOR_WHITE_BRIGHT_HEX="ffffff"
+
+  export TINTED8_COLOR_BLACK_DIM_HEX="15191e"
+  export TINTED8_COLOR_RED_DIM_HEX="ff5855"
+  export TINTED8_COLOR_GREEN_DIM_HEX="1aa83b"
+  export TINTED8_COLOR_YELLOW_DIM_HEX="d99c08"
+  export TINTED8_COLOR_BLUE_DIM_HEX="3498ff"
+  export TINTED8_COLOR_MAGENTA_DIM_HEX="aa61ff"
+  export TINTED8_COLOR_CYAN_DIM_HEX="239fa8"
+  export TINTED8_COLOR_WHITE_DIM_HEX="bad7f4"
 fi

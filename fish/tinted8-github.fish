@@ -1,33 +1,27 @@
 #!/usr/bin/env fish
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Github Light
-# Scheme author: Tinted Theming (https://github.com/tinted-theming)
+# Scheme name: 
+# Scheme author: 
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
-set -l color00 "ff/ff/ff" # Base 00 - Black
-set -l color01 "cf/22/2e" # Base 08 - Red
-set -l color02 "11/63/29" # Base 0B - Green
-set -l color03 "9a/67/00" # Base 0A - Yellow
-set -l color04 "09/69/da" # Base 0D - Blue
-set -l color05 "82/50/df" # Base 0E - Magenta
-set -l color06 "1b/7c/83" # Base 0C - Cyan
-set -l color07 "45/4c/54" # Base 05 - White
-set -l color08 "81/8b/98" # Base 03 - Bright Black
-set -l color09 "a4/0e/26" # Base 12 - Bright Red
-set -l color10 "1a/7f/37" # Base 14 - Bright Green
-set -l color11 "63/3c/01" # Base 13 - Bright Yellow
-set -l color12 "21/8b/ff" # Base 16 - Bright Blue
-set -l color13 "a4/75/f9" # Base 17 - Bright Magenta
-set -l color14 "31/92/aa" # Base 15 - Bright Cyan
-set -l color15 "1f/23/28" # Base 07 - Bright White
-set -l color16 "95/38/00" # Base 09
-set -l color17 "a4/0e/26" # Base 0F
-set -l color18 "f6/f8/fa" # Base 01
-set -l color19 "d1/d9/e0" # Base 02
-set -l color20 "59/63/6e" # Base 04
-set -l color21 "25/29/2e" # Base 06
-set -l color_foreground "45/4c/54" # Base 05
-set -l color_background "ff/ff/ff" # Base 00
+set -l color00 "1f/23/28"
+set -l color01 "cf/22/2e"
+set -l color02 "11/63/29"
+set -l color03 "4d/2d/00"
+set -l color04 "09/69/da"
+set -l color05 "82/50/df"
+set -l color06 "1b/7c/83"
+set -l color07 "59/63/6e"
+set -l color08 "39/3f/46"
+set -l color09 "a4/0e/26"
+set -l color10 "1a/7f/37"
+set -l color11 "63/3c/01"
+set -l color12 "21/8b/ff"
+set -l color13 "a4/75/f9"
+set -l color14 "31/92/aa"
+set -l color15 "81/8b/98"
+set -l color_foreground "1f/23/28"
+set -l color_background "ff/ff/ff"
 
 if test -z "$TTY"
   set -gx TTY (tty)
@@ -74,27 +68,20 @@ put_template 12 $color12
 put_template 13 $color13
 put_template 14 $color14
 put_template 15 $color15
-
-# 256 color space
-put_template 16 $color16
-put_template 17 $color17
-put_template 18 $color18
-put_template 19 $color19
-put_template 20 $color20
 put_template 21 $color21
 
 # foreground / background / cursor color
 if test -n "$ITERM_SESSION_ID"
-  put_template_custom Pg 454c54 # foreground
+  put_template_custom Pg 1f2328 # foreground
   put_template_custom Ph ffffff # background
-  put_template_custom Pi 454c54 # bold color
-  put_template_custom Pj d1d9e0 # selection color
-  put_template_custom Pk 454c54 # selected text color
-  put_template_custom Pl 454c54 # cursor
+  put_template_custom Pi 1f2328 # bold color
+  put_template_custom Pj 3d454c # selection color
+  put_template_custom Pk 1f2328 # selected text color
+  put_template_custom Pl 1f2328 # cursor
   put_template_custom Pm ffffff # cursor text
 else
   put_template_var 10 $color_foreground
-  if test "$BASE24_SHELL_SET_BACKGROUND" != false
+  if test "$TINTED8_SHELL_SET_BACKGROUND" != false
     put_template_var 11 $color_background
     if string match -q 'rxvt*' $TERM
       put_template_var 708 $color_background # internal border (rxvt)
@@ -103,39 +90,40 @@ else
   put_template_custom 12 ";7" # cursor (reverse video)
 end
 
-set -U fish_color_normal normal
-set -U fish_color_command blue
-set -U fish_color_keyword magenta
-set -U fish_color_quote green
-set -U fish_color_redirection brblue
-set -U fish_color_end normal
-set -U fish_color_error brred
-set -U fish_color_param brcyan
+# Set fish highlight colors
+set -U fish_color_normal 1f2328
+set -U fish_color_command 
+set -U fish_color_keyword 
+set -U fish_color_quote 6639ba
+set -U fish_color_redirection cf222e
+set -U fish_color_end 1f2328
+set -U fish_color_error 
+set -U fish_color_param 1f2328
 set -U fish_color_valid_path --underline
-set -U fish_color_option brcyan --italics
-set -U fish_color_comment 818b98
-set -U fish_color_selection 25292e --background=d1d9e0
-set -U fish_color_operator magenta
-set -U fish_color_escape 953800
-set -U fish_color_autosuggestion 818b98
+set -U fish_color_option 1f2328 --italics
+set -U fish_color_comment 
+set -U fish_color_selection 1f2328 --background=3d454c
+set -U fish_color_operator cf222e
+set -U fish_color_escape 0550ae
+set -U fish_color_autosuggestion 59636e
 set -U fish_color_cwd green
 set -U fish_color_cwd_root red
 set -U fish_color_user brgreen
 set -U fish_color_host normal
 set -U fish_color_host_remote normal
-set -U fish_color_status red
+set -U fish_color_status d1242f
 set -U fish_color_cancel -r
-set -U fish_color_search_match yellow --background=d1d9e0
+set -U fish_color_search_match 4d2d00 --background=3d454c
 set -U fish_color_history_current --underline=curly
-set -U fish_pager_color_progress f6f8fa --background=59636e
-set -U fish_pager_color_background --background=ffffff
+set -U fish_pager_color_progress f6f8fa --background=1f2328
+set -U fish_pager_color_background --background=
 set -U fish_pager_color_prefix --bold --italics
-set -U fish_pager_color_completion normal
-set -U fish_pager_color_description 953800
-set -U fish_pager_color_selected_background --background=d1d9e0
-set -U fish_pager_color_selected_prefix --bold --italics --background=d1d9e0
-set -U fish_pager_color_selected_completion normal
-set -U fish_pager_color_description 953800
+set -U fish_pager_color_completion 1f2328
+set -U fish_pager_color_description 
+set -U fish_pager_color_selected_background --background=3d454c
+set -U fish_pager_color_selected_prefix --bold --italics --background=3d454c
+set -U fish_pager_color_selected_completion 1f2328
+set -U fish_pager_color_description 
 
 # clean up
 set -e color00
@@ -154,12 +142,6 @@ set -e color12
 set -e color13
 set -e color14
 set -e color15
-set -e color16
-set -e color17
-set -e color18
-set -e color19
-set -e color20
-set -e color21
 set -e color_foreground
 set -e color_background
 functions -e put_template put_template_var put_template_custom
@@ -170,24 +152,34 @@ test -n "$legacy_env"; and set -Ue $legacy_env
 set -e legacy_env
 
 # Set theme
-set -Ux BASE24_THEME github-light
+set -Ux TINTED8_THEME github
 
 # Optionally export variables
-if test -n "$TINTED_SHELL_ENABLE_BASE24_VARS"; or test -n "$BASE24_SHELL_ENABLE_VARS"
-  set -gx BASE24_COLOR_00_HEX "ffffff"
-  set -gx BASE24_COLOR_01_HEX "f6f8fa"
-  set -gx BASE24_COLOR_02_HEX "d1d9e0"
-  set -gx BASE24_COLOR_03_HEX "818b98"
-  set -gx BASE24_COLOR_04_HEX "59636e"
-  set -gx BASE24_COLOR_05_HEX "454c54"
-  set -gx BASE24_COLOR_06_HEX "25292e"
-  set -gx BASE24_COLOR_07_HEX "1f2328"
-  set -gx BASE24_COLOR_08_HEX "cf222e"
-  set -gx BASE24_COLOR_09_HEX "953800"
-  set -gx BASE24_COLOR_0A_HEX "9a6700"
-  set -gx BASE24_COLOR_0B_HEX "116329"
-  set -gx BASE24_COLOR_0C_HEX "1b7c83"
-  set -gx BASE24_COLOR_0D_HEX "0969da"
-  set -gx BASE24_COLOR_0E_HEX "8250df"
-  set -gx BASE24_COLOR_0F_HEX "a40e26"
+if test -n "$TINTED_SHELL_ENABLE_TINTED8_VARS"
+  set -gx TINTED8_COLOR_BLACK_NORMAL_HEX "1f2328"
+  set -gx TINTED8_COLOR_BLACK_RED_HEX "cf222e"
+  set -gx TINTED8_COLOR_BLACK_GREEN_HEX "116329"
+  set -gx TINTED8_COLOR_YELLOW_NORMAL_HEX "4d2d00"
+  set -gx TINTED8_COLOR_BLUE_NORMAL_HEX "0969da"
+  set -gx TINTED8_COLOR_MAGENTA_NORMAL_HEX "8250df"
+  set -gx TINTED8_COLOR_CYAN_NORMAL_HEX "1b7c83"
+  set -gx TINTED8_COLOR_WHITE_NORMAL_HEX "59636e"
+
+  set -gx TINTED8_COLOR_BLACK_BRIGHT_HEX "393f46"
+  set -gx TINTED8_COLOR_RED_BRIGHT_HEX "a40e26"
+  set -gx TINTED8_COLOR_GREEN_BRIGHT_HEX "1a7f37"
+  set -gx TINTED8_COLOR_YELLOW_BRIGHT_HEX "633c01"
+  set -gx TINTED8_COLOR_BLUE_BRIGHT_HEX "218bff"
+  set -gx TINTED8_COLOR_MAGENTA_BRIGHT_HEX "a475f9"
+  set -gx TINTED8_COLOR_CYAN_BRIGHT_HEX "3192aa"
+  set -gx TINTED8_COLOR_WHITE_BRIGHT_HEX "818b98"
+
+  set -gx TINTED8_COLOR_BLACK_DIM_HEX "040506"
+  set -gx TINTED8_COLOR_RED_DIM_HEX "9f151e"
+  set -gx TINTED8_COLOR_GREEN_DIM_HEX "073013"
+  set -gx TINTED8_COLOR_YELLOW_DIM_HEX "100900"
+  set -gx TINTED8_COLOR_BLUE_DIM_HEX "014ca5"
+  set -gx TINTED8_COLOR_MAGENTA_DIM_HEX "5e20d2"
+  set -gx TINTED8_COLOR_CYAN_DIM_HEX "0f4d52"
+  set -gx TINTED8_COLOR_WHITE_DIM_HEX "3d454c"
 end
