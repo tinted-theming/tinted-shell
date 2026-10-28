@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: {{scheme-name}}
-# Scheme author: {{scheme-author}}
+# Scheme name: {{scheme.system}} {{scheme.name}}
+# Scheme author: {{scheme.author}}
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 set -l color00 "{{palette.black.normal.hex-r}}/{{palette.black.normal.hex-g}}/{{palette.black.normal.hex-b}}"
@@ -20,8 +20,8 @@ set -l color12 "{{palette.blue.bright.hex-r}}/{{palette.blue.bright.hex-g}}/{{pa
 set -l color13 "{{palette.magenta.bright.hex-r}}/{{palette.magenta.bright.hex-g}}/{{palette.magenta.bright.hex-b}}"
 set -l color14 "{{palette.cyan.bright.hex-r}}/{{palette.cyan.bright.hex-g}}/{{palette.cyan.bright.hex-b}}"
 set -l color15 "{{palette.white.bright.hex-r}}/{{palette.white.bright.hex-g}}/{{palette.white.bright.hex-b}}"
-set -l color_foreground "{{ui.global.foreground.normal.hex-r}}/{{ui.global.foreground.normal.hex-g}}/{{ui.global.foreground.normal.hex-b}}"
-set -l color_background "{{ui.global.background.normal.hex-r}}/{{ui.global.background.normal.hex-g}}/{{ui.global.background.normal.hex-b}}"
+set -l color_foreground "{{ui.global.normal.foreground.default.hex-r}}/{{ui.global.normal.foreground.default.hex-g}}/{{ui.global.normal.foreground.default.hex-b}}"
+set -l color_background "{{ui.global.normal.background.default.hex-r}}/{{ui.global.normal.background.default.hex-g}}/{{ui.global.normal.background.default.hex-b}}"
 
 if test -z "$TTY"
   set -gx TTY (tty)
@@ -72,13 +72,13 @@ put_template 21 $color21
 
 # foreground / background / cursor color
 if test -n "$ITERM_SESSION_ID"
-  put_template_custom Pg {{ui.global.foreground.normal.hex}} # foreground
-  put_template_custom Ph {{ui.global.background.normal.hex}} # background
-  put_template_custom Pi {{ui.global.foreground.normal.hex}} # bold color
-  put_template_custom Pj {{ui.selection.background.hex}} # selection color
-  put_template_custom Pk {{ui.selection.foreground.hex}} # selected text color
-  put_template_custom Pl {{ui.cursor.normal.background.hex}} # cursor
-  put_template_custom Pm {{ui.cursor.normal.foreground.hex}} # cursor text
+  put_template_custom Pg {{ui.global.normal.foreground.default.hex}} # foreground
+  put_template_custom Ph {{ui.global.normal.background.default.hex}} # background
+  put_template_custom Pi {{ui.global.normal.foreground.default.hex}} # bold color
+  put_template_custom Pj {{ui.selection.background.default.hex}} # selection color
+  put_template_custom Pk {{ui.selection.foreground.default.hex}} # selected text color
+  put_template_custom Pl {{ui.cursor.normal.background.default.hex}} # cursor
+  put_template_custom Pm {{ui.cursor.normal.foreground.default.hex}} # cursor text
 else
   put_template_var 10 $color_foreground
   if test "$TINTED8_SHELL_SET_BACKGROUND" != false
@@ -91,39 +91,39 @@ else
 end
 
 # Set fish highlight colors
-set -U fish_color_normal {{ui.global.foreground.normal.hex}}
-set -U fish_color_command {{syntax.support.function.hex}}
-set -U fish_color_keyword {{syntax.keyword.hex}}
-set -U fish_color_quote {{syntax.support.function.builtin.hex}}
-set -U fish_color_redirection {{syntax.keyword.other.hex}}
-set -U fish_color_end {{syntax.punctuation.separator.hex}}
-set -U fish_color_error {{syntax.invalid.hex}}
-set -U fish_color_param {{syntax.variable.parameter.hex}}
+set -U fish_color_normal {{ui.global.normal.foreground.default.hex}}
+set -U fish_color_command {{syntax.support.function.default.hex}}
+set -U fish_color_keyword {{syntax.keyword.default.hex}}
+set -U fish_color_quote {{syntax.support.function.builtin.default.hex}}
+set -U fish_color_redirection {{syntax.keyword.other.default.hex}}
+set -U fish_color_end {{syntax.punctuation.separator.default.hex}}
+set -U fish_color_error {{syntax.invalid.default.hex}}
+set -U fish_color_param {{syntax.variable.parameter.default.hex}}
 set -U fish_color_valid_path --underline
-set -U fish_color_option {{syntax.variable.parameter.hex}} --italics
-set -U fish_color_comment {{syntax.comment.hex}}
-set -U fish_color_selection {{ui.selection.foreground.hex}} --background={{ui.selection.background.hex}}
-set -U fish_color_operator {{syntax.keyword.operator.hex}}
-set -U fish_color_escape {{syntax.constant.character.escape.hex}}
-set -U fish_color_autosuggestion {{syntax.comment.documentation.hex}}
+set -U fish_color_option {{syntax.variable.parameter.default.hex}} --italics
+set -U fish_color_comment {{syntax.comment.default.hex}}
+set -U fish_color_selection {{ui.selection.foreground.default.hex}} --background={{ui.selection.background.default.hex}}
+set -U fish_color_operator {{syntax.keyword.operator.default.hex}}
+set -U fish_color_escape {{syntax.constant.character.escape.default.hex}}
+set -U fish_color_autosuggestion {{syntax.comment.documentation.default.hex}}
 set -U fish_color_cwd green
 set -U fish_color_cwd_root red
 set -U fish_color_user brgreen
 set -U fish_color_host normal
 set -U fish_color_host_remote normal
-set -U fish_color_status {{ui.status.error.hex}}
+set -U fish_color_status {{ui.status.error.default.hex}}
 set -U fish_color_cancel -r
-set -U fish_color_search_match {{ui.highlight.search.foreground.hex}} --background={{ui.highlight.search.background.hex}}
+set -U fish_color_search_match {{ui.highlight.search.foreground.default.hex}} --background={{ui.highlight.search.background.default.hex}}
 set -U fish_color_history_current --underline=curly
-set -U fish_pager_color_progress {{ui.chrome.background.normal.hex}} --background={{ui.chrome.foreground.normal.hex}}
-set -U fish_pager_color_background --background={{ui.selection.inactive-background}}
+set -U fish_pager_color_progress {{ui.chrome.normal.background.default.hex}} --background={{ui.chrome.normal.foreground.default.hex}}
+set -U fish_pager_color_background --background={{ui.selection.inactive.background.default.hex}}
 set -U fish_pager_color_prefix --bold --italics
-set -U fish_pager_color_completion {{ui.highlight.text.foreground.hex}}
-set -U fish_pager_color_description {{syntax.markup.hex}}
-set -U fish_pager_color_selected_background --background={{ui.selection.background.hex}}
-set -U fish_pager_color_selected_prefix --bold --italics --background={{ui.selection.background.hex}}
-set -U fish_pager_color_selected_completion {{ui.highlight.text.foreground.hex}}
-set -U fish_pager_color_description {{syntax.markup.hex}}
+set -U fish_pager_color_completion {{ui.highlight.text.foreground.default.hex}}
+set -U fish_pager_color_description {{syntax.markup.default.hex}}
+set -U fish_pager_color_selected_background --background={{ui.selection.background.default.hex}}
+set -U fish_pager_color_selected_prefix --bold --italics --background={{ui.selection.background.default.hex}}
+set -U fish_pager_color_selected_completion {{ui.highlight.text.foreground.default.hex}}
+set -U fish_pager_color_description {{syntax.markup.default.hex}}
 
 # clean up
 set -e color00

@@ -21,8 +21,8 @@ color12="{{palette.blue.bright.hex-r}}/{{palette.blue.bright.hex-g}}/{{palette.b
 color13="{{palette.magenta.bright.hex-r}}/{{palette.magenta.bright.hex-g}}/{{palette.magenta.bright.hex-b}}"
 color14="{{palette.cyan.bright.hex-r}}/{{palette.cyan.bright.hex-g}}/{{palette.cyan.bright.hex-b}}"
 color15="{{palette.white.bright.hex-r}}/{{palette.white.bright.hex-g}}/{{palette.white.bright.hex-b}}"
-color_foreground="{{ui.global.foreground.normal.hex-r}}/{{ui.global.foreground.normal.hex-g}}/{{ui.global.foreground.normal.hex-b}}"
-color_background="{{ui.global.background.normal.hex-r}}/{{ui.global.background.normal.hex-g}}/{{ui.global.background.normal.hex-b}}"
+color_foreground="{{ui.global.normal.foreground.default.hex-r}}/{{ui.global.normal.foreground.default.hex-g}}/{{ui.global.normal.foreground.default.hex-b}}"
+color_background="{{ui.global.normal.background.default.hex-r}}/{{ui.global.normal.background.default.hex-g}}/{{ui.global.normal.background.default.hex-b}}"
 
 if [ -z "$TTY" ] && ! TTY=$(tty) || [ ! -w "$TTY" ]; then
   put_template() { true; }
@@ -70,13 +70,13 @@ put_template 15 "$color15"
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg {{ui.global.foreground.normal.hex}} # foreground
-  put_template_custom Ph {{ui.global.background.normal.hex}} # background
-  put_template_custom Pi {{ui.global.foreground.normal.hex}} # bold color
-  put_template_custom Pj {{ui.selection.background.hex}} # selection color
-  put_template_custom Pk {{ui.selection.foreground.hex}} # selected text color
-  put_template_custom Pl {{ui.cursor.normal.background.hex}} # cursor
-  put_template_custom Pm {{ui.cursor.normal.foreground.hex}} # cursor text
+  put_template_custom Pg {{ui.global.normal.foreground.default.hex}} # foreground
+  put_template_custom Ph {{ui.global.normal.background.default.hex}} # background
+  put_template_custom Pi {{ui.global.normal.foreground.default.hex}} # bold color
+  put_template_custom Pj {{ui.selection.background.default.hex}} # selection color
+  put_template_custom Pk {{ui.selection.foreground.default.hex}} # selected text color
+  put_template_custom Pl {{ui.cursor.normal.background.default.hex}} # cursor
+  put_template_custom Pm {{ui.cursor.normal.foreground.default.hex}} # cursor text
 else
   put_template_var 10 "$color_foreground"
   if [ "$TINTED8_SHELL_SET_BACKGROUND" != false ]; then
