@@ -5,30 +5,30 @@
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="lumina-dusk-dark"
 
-color00="32/24/34" # Base 00 - Black
-color01="dd/71/68" # Base 08 - Red
-color02="97/d2/a2" # Base 0B - Green
-color03="fa/d9/75" # Base 0A - Yellow
-color04="9e/c4/f7" # Base 0D - Blue
-color05="96/9f/ff" # Base 0E - Magenta
-color06="81/d1/da" # Base 0C - Cyan
-color07="e6/de/e8" # Base 05 - White
-color08="4d/3d/50" # Base 03 - Bright Black
-color09="e9/94/8c" # Base 12 - Bright Red
-color10="b0/ed/bb" # Base 14 - Bright Green
-color11="ff/e6/9e" # Base 13 - Bright Yellow
-color12="c4/dd/ff" # Base 16 - Bright Blue
-color13="f1/c5/ff" # Base 17 - Bright Magenta
-color14="9a/eb/f5" # Base 15 - Bright Cyan
-color15="e6/de/e8" # Base 07 - Bright White
-color16="e0/c4/ad" # Base 09
-color17="e3/a0/f8" # Base 0F
-color18="38/28/3a" # Base 01
-color19="42/32/45" # Base 02
-color20="87/74/89" # Base 04
-color21="b9/ac/ba" # Base 06
-color_foreground="e6/de/e8" # Base 05
-color_background="32/24/34" # Base 00
+color00="1a/18/25" # Base 00 - Black
+color01="d0/74/6c" # Base 08 - Red
+color02="a0/d1/a9" # Base 0B - Green
+color03="ef/cb/7b" # Base 0A - Yellow
+color04="9b/be/f2" # Base 0D - Blue
+color05="c1/bb/f0" # Base 0E - Magenta
+color06="90/cf/d7" # Base 0C - Cyan
+color07="e0/dc/ea" # Base 05 - White
+color08="32/30/40" # Base 03 - Bright Black
+color09="de/95/8d" # Base 12 - Bright Red
+color10="b9/ec/c2" # Base 14 - Bright Green
+color11="ff/e5/ad" # Base 13 - Bright Yellow
+color12="bd/d8/ff" # Base 16 - Bright Blue
+color13="fc/c9/f7" # Base 17 - Bright Magenta
+color14="a9/e9/f2" # Base 15 - Bright Cyan
+color15="e0/dc/ea" # Base 07 - Bright White
+color16="f5/b2/84" # Base 09
+color17="e1/b0/dc" # Base 0F
+color18="1f/1c/2b" # Base 01
+color19="28/26/35" # Base 02
+color20="6d/69/7d" # Base 04
+color21="b1/af/bc" # Base 06
+color_foreground="e0/dc/ea" # Base 05
+color_background="1a/18/25" # Base 00
 
 
 if [ -z "$TTY" ] && ! TTY=$(tty) || [ ! -w "$TTY" ]; then
@@ -85,13 +85,13 @@ put_template 21 "$color21"
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg e6dee8 # foreground
-  put_template_custom Ph 322434 # background
-  put_template_custom Pi e6dee8 # bold color
-  put_template_custom Pj 423245 # selection color
-  put_template_custom Pk e6dee8 # selected text color
-  put_template_custom Pl e6dee8 # cursor
-  put_template_custom Pm 322434 # cursor text
+  put_template_custom Pg e0dcea # foreground
+  put_template_custom Ph 1a1825 # background
+  put_template_custom Pi e0dcea # bold color
+  put_template_custom Pj 282635 # selection color
+  put_template_custom Pk e0dcea # selected text color
+  put_template_custom Pl e0dcea # cursor
+  put_template_custom Pm 1a1825 # cursor text
 else
   put_template_var 10 "$color_foreground"
   if [ "$BASE24_SHELL_SET_BACKGROUND" != false ]; then
@@ -134,28 +134,28 @@ unset color_background
 
 # Optionally export variables
 if [ -n "$TINTED_SHELL_ENABLE_BASE24_VARS" ]; then
-  export BASE24_COLOR_00_HEX="322434"
-  export BASE24_COLOR_01_HEX="38283a"
-  export BASE24_COLOR_02_HEX="423245"
-  export BASE24_COLOR_03_HEX="4d3d50"
-  export BASE24_COLOR_04_HEX="877489"
-  export BASE24_COLOR_05_HEX="e6dee8"
-  export BASE24_COLOR_06_HEX="b9acba"
-  export BASE24_COLOR_07_HEX="e6dee8"
-  export BASE24_COLOR_08_HEX="dd7168"
-  export BASE24_COLOR_09_HEX="e0c4ad"
-  export BASE24_COLOR_0A_HEX="fad975"
-  export BASE24_COLOR_0B_HEX="97d2a2"
-  export BASE24_COLOR_0C_HEX="81d1da"
-  export BASE24_COLOR_0D_HEX="9ec4f7"
-  export BASE24_COLOR_0E_HEX="969fff"
-  export BASE24_COLOR_0F_HEX="e3a0f8"
-  export BASE24_COLOR_10_HEX="251927"
-  export BASE24_COLOR_11_HEX="2a1d2c"
-  export BASE24_COLOR_12_HEX="e9948c"
-  export BASE24_COLOR_13_HEX="ffe69e"
-  export BASE24_COLOR_14_HEX="b0edbb"
-  export BASE24_COLOR_15_HEX="9aebf5"
-  export BASE24_COLOR_16_HEX="c4ddff"
-  export BASE24_COLOR_17_HEX="f1c5ff"
+  export BASE24_COLOR_00_HEX="1a1825"
+  export BASE24_COLOR_01_HEX="1f1c2b"
+  export BASE24_COLOR_02_HEX="282635"
+  export BASE24_COLOR_03_HEX="323040"
+  export BASE24_COLOR_04_HEX="6d697d"
+  export BASE24_COLOR_05_HEX="e0dcea"
+  export BASE24_COLOR_06_HEX="b1afbc"
+  export BASE24_COLOR_07_HEX="e0dcea"
+  export BASE24_COLOR_08_HEX="d0746c"
+  export BASE24_COLOR_09_HEX="f5b284"
+  export BASE24_COLOR_0A_HEX="efcb7b"
+  export BASE24_COLOR_0B_HEX="a0d1a9"
+  export BASE24_COLOR_0C_HEX="90cfd7"
+  export BASE24_COLOR_0D_HEX="9bbef2"
+  export BASE24_COLOR_0E_HEX="c1bbf0"
+  export BASE24_COLOR_0F_HEX="e1b0dc"
+  export BASE24_COLOR_10_HEX="0f0d18"
+  export BASE24_COLOR_11_HEX="13111e"
+  export BASE24_COLOR_12_HEX="de958d"
+  export BASE24_COLOR_13_HEX="ffe5ad"
+  export BASE24_COLOR_14_HEX="b9ecc2"
+  export BASE24_COLOR_15_HEX="a9e9f2"
+  export BASE24_COLOR_16_HEX="bdd8ff"
+  export BASE24_COLOR_17_HEX="fcc9f7"
 fi

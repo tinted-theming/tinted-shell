@@ -4,30 +4,30 @@
 # Scheme author: Razik Ikhlef (https://github.com/RazikSF)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
-set -l color00 "32/24/34" # Base 00 - Black
-set -l color01 "dd/71/68" # Base 08 - Red
-set -l color02 "97/d2/a2" # Base 0B - Green
-set -l color03 "fa/d9/75" # Base 0A - Yellow
-set -l color04 "9e/c4/f7" # Base 0D - Blue
-set -l color05 "96/9f/ff" # Base 0E - Magenta
-set -l color06 "81/d1/da" # Base 0C - Cyan
-set -l color07 "e6/de/e8" # Base 05 - White
-set -l color08 "4d/3d/50" # Base 03 - Bright Black
-set -l color09 "e9/94/8c" # Base 12 - Bright Red
-set -l color10 "b0/ed/bb" # Base 14 - Bright Green
-set -l color11 "ff/e6/9e" # Base 13 - Bright Yellow
-set -l color12 "c4/dd/ff" # Base 16 - Bright Blue
-set -l color13 "f1/c5/ff" # Base 17 - Bright Magenta
-set -l color14 "9a/eb/f5" # Base 15 - Bright Cyan
-set -l color15 "e6/de/e8" # Base 07 - Bright White
-set -l color16 "e0/c4/ad" # Base 09
-set -l color17 "e3/a0/f8" # Base 0F
-set -l color18 "38/28/3a" # Base 01
-set -l color19 "42/32/45" # Base 02
-set -l color20 "87/74/89" # Base 04
-set -l color21 "b9/ac/ba" # Base 06
-set -l color_foreground "e6/de/e8" # Base 05
-set -l color_background "32/24/34" # Base 00
+set -l color00 "1a/18/25" # Base 00 - Black
+set -l color01 "d0/74/6c" # Base 08 - Red
+set -l color02 "a0/d1/a9" # Base 0B - Green
+set -l color03 "ef/cb/7b" # Base 0A - Yellow
+set -l color04 "9b/be/f2" # Base 0D - Blue
+set -l color05 "c1/bb/f0" # Base 0E - Magenta
+set -l color06 "90/cf/d7" # Base 0C - Cyan
+set -l color07 "e0/dc/ea" # Base 05 - White
+set -l color08 "32/30/40" # Base 03 - Bright Black
+set -l color09 "de/95/8d" # Base 12 - Bright Red
+set -l color10 "b9/ec/c2" # Base 14 - Bright Green
+set -l color11 "ff/e5/ad" # Base 13 - Bright Yellow
+set -l color12 "bd/d8/ff" # Base 16 - Bright Blue
+set -l color13 "fc/c9/f7" # Base 17 - Bright Magenta
+set -l color14 "a9/e9/f2" # Base 15 - Bright Cyan
+set -l color15 "e0/dc/ea" # Base 07 - Bright White
+set -l color16 "f5/b2/84" # Base 09
+set -l color17 "e1/b0/dc" # Base 0F
+set -l color18 "1f/1c/2b" # Base 01
+set -l color19 "28/26/35" # Base 02
+set -l color20 "6d/69/7d" # Base 04
+set -l color21 "b1/af/bc" # Base 06
+set -l color_foreground "e0/dc/ea" # Base 05
+set -l color_background "1a/18/25" # Base 00
 
 if test -z "$TTY"
   set -gx TTY (tty)
@@ -85,13 +85,13 @@ put_template 21 $color21
 
 # foreground / background / cursor color
 if test -n "$ITERM_SESSION_ID"
-  put_template_custom Pg e6dee8 # foreground
-  put_template_custom Ph 322434 # background
-  put_template_custom Pi e6dee8 # bold color
-  put_template_custom Pj 423245 # selection color
-  put_template_custom Pk e6dee8 # selected text color
-  put_template_custom Pl e6dee8 # cursor
-  put_template_custom Pm 322434 # cursor text
+  put_template_custom Pg e0dcea # foreground
+  put_template_custom Ph 1a1825 # background
+  put_template_custom Pi e0dcea # bold color
+  put_template_custom Pj 282635 # selection color
+  put_template_custom Pk e0dcea # selected text color
+  put_template_custom Pl e0dcea # cursor
+  put_template_custom Pm 1a1825 # cursor text
 else
   put_template_var 10 $color_foreground
   if test "$BASE24_SHELL_SET_BACKGROUND" != false
@@ -113,11 +113,11 @@ set -U fish_color_error brred
 set -U fish_color_param brcyan
 set -U fish_color_valid_path --underline
 set -U fish_color_option brcyan --italics
-set -U fish_color_comment 4d3d50
-set -U fish_color_selection b9acba --background=423245
+set -U fish_color_comment 323040
+set -U fish_color_selection b1afbc --background=282635
 set -U fish_color_operator magenta
-set -U fish_color_escape e0c4ad
-set -U fish_color_autosuggestion 4d3d50
+set -U fish_color_escape f5b284
+set -U fish_color_autosuggestion 323040
 set -U fish_color_cwd green
 set -U fish_color_cwd_root red
 set -U fish_color_user brgreen
@@ -125,17 +125,17 @@ set -U fish_color_host normal
 set -U fish_color_host_remote normal
 set -U fish_color_status red
 set -U fish_color_cancel -r
-set -U fish_color_search_match yellow --background=423245
+set -U fish_color_search_match yellow --background=282635
 set -U fish_color_history_current --underline=curly
-set -U fish_pager_color_progress 38283a --background=877489
-set -U fish_pager_color_background --background=322434
+set -U fish_pager_color_progress 1f1c2b --background=6d697d
+set -U fish_pager_color_background --background=1a1825
 set -U fish_pager_color_prefix --bold --italics
 set -U fish_pager_color_completion normal
-set -U fish_pager_color_description e0c4ad
-set -U fish_pager_color_selected_background --background=423245
-set -U fish_pager_color_selected_prefix --bold --italics --background=423245
+set -U fish_pager_color_description f5b284
+set -U fish_pager_color_selected_background --background=282635
+set -U fish_pager_color_selected_prefix --bold --italics --background=282635
 set -U fish_pager_color_selected_completion normal
-set -U fish_pager_color_description e0c4ad
+set -U fish_pager_color_description f5b284
 
 # clean up
 set -e color00
@@ -174,20 +174,20 @@ set -Ux BASE24_THEME lumina-dusk-dark
 
 # Optionally export variables
 if test -n "$TINTED_SHELL_ENABLE_BASE24_VARS"; or test -n "$BASE24_SHELL_ENABLE_VARS"
-  set -gx BASE24_COLOR_00_HEX "322434"
-  set -gx BASE24_COLOR_01_HEX "38283a"
-  set -gx BASE24_COLOR_02_HEX "423245"
-  set -gx BASE24_COLOR_03_HEX "4d3d50"
-  set -gx BASE24_COLOR_04_HEX "877489"
-  set -gx BASE24_COLOR_05_HEX "e6dee8"
-  set -gx BASE24_COLOR_06_HEX "b9acba"
-  set -gx BASE24_COLOR_07_HEX "e6dee8"
-  set -gx BASE24_COLOR_08_HEX "dd7168"
-  set -gx BASE24_COLOR_09_HEX "e0c4ad"
-  set -gx BASE24_COLOR_0A_HEX "fad975"
-  set -gx BASE24_COLOR_0B_HEX "97d2a2"
-  set -gx BASE24_COLOR_0C_HEX "81d1da"
-  set -gx BASE24_COLOR_0D_HEX "9ec4f7"
-  set -gx BASE24_COLOR_0E_HEX "969fff"
-  set -gx BASE24_COLOR_0F_HEX "e3a0f8"
+  set -gx BASE24_COLOR_00_HEX "1a1825"
+  set -gx BASE24_COLOR_01_HEX "1f1c2b"
+  set -gx BASE24_COLOR_02_HEX "282635"
+  set -gx BASE24_COLOR_03_HEX "323040"
+  set -gx BASE24_COLOR_04_HEX "6d697d"
+  set -gx BASE24_COLOR_05_HEX "e0dcea"
+  set -gx BASE24_COLOR_06_HEX "b1afbc"
+  set -gx BASE24_COLOR_07_HEX "e0dcea"
+  set -gx BASE24_COLOR_08_HEX "d0746c"
+  set -gx BASE24_COLOR_09_HEX "f5b284"
+  set -gx BASE24_COLOR_0A_HEX "efcb7b"
+  set -gx BASE24_COLOR_0B_HEX "a0d1a9"
+  set -gx BASE24_COLOR_0C_HEX "90cfd7"
+  set -gx BASE24_COLOR_0D_HEX "9bbef2"
+  set -gx BASE24_COLOR_0E_HEX "c1bbf0"
+  set -gx BASE24_COLOR_0F_HEX "e1b0dc"
 end
